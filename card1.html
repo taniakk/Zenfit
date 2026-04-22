@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zen Star Sports | ZenFit</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#f97316"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+<!-- 🔹 NAVBAR -->
+<nav class="bg-white shadow-sm fixed w-full z-50 border-b">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <h1 class="text-xl font-bold text-primary">ZenFit</h1>
+  </div>
+</nav>
+
+
+<!-- 🔹 MAIN -->
+<section class="pt-20 pb-12">
+<div class="max-w-6xl mx-auto px-6">
+
+  <!-- 🔹 IMAGE + DETAILS -->
+  <div class="grid md:grid-cols-2 gap-6 items-center">
+
+    <!-- IMAGE -->
+    <div class="rounded-2xl overflow-hidden shadow-md">
+      <img src="/images/card1.jpg"
+           class="w-full h-[200px] md:h-[240px] object-cover">
+    </div>
+
+    <!-- DETAILS -->
+    <div>
+
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800">
+        Zen Star Sports
+      </h1>
+
+      <!-- LOCATION -->
+      <div class="flex items-center gap-2 mt-2 text-gray-600 text-sm">
+        📍 <span>Oxford School, Muhaisnah 4, Dubai</span>
+      </div>
+
+      <!-- RATING -->
+      <div class="mt-3 inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-lg text-sm font-semibold">
+        ⭐ 4.8
+        <span class="text-xs text-gray-500">(120+ reviews)</span>
+      </div>
+
+      <!-- PRICE -->
+      <p class="mt-3 text-lg font-bold text-primary">
+        AED 175/hr
+      </p>
+
+      <!-- BUTTON -->
+      <div class="mt-4">
+        <a href="https://www.google.com/maps/search/?api=1&query=Oxford+School+Muhaisnah+4+Dubai"
+           target="_blank"
+           class="inline-block bg-primary text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-orange-600 transition">
+          Open Location →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- 🔹 MAP -->
+  <div class="mt-8 rounded-2xl overflow-hidden shadow-md">
+    <iframe
+      src="https://maps.google.com/maps?q=Oxford%20School%20Muhaisnah%204%20Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      class="w-full h-[220px] border-0">
+    </iframe>
+  </div>
+
+
+  <!-- 🔹 TIMING -->
+  <div class="mt-10">
+    <h2 class="font-semibold text-lg mb-2">Timing</h2>
+    <p class="text-gray-600 text-sm">
+      Mon – Fri: 4 PM – 12 AM <br>
+      Sat – Sun: 6 AM – 12 AM
+    </p>
+  </div>
+
+
+  <!-- 🔹 SPORTS -->
+  <div class="mt-8">
+    <h2 class="font-semibold text-lg mb-4">Sports Available</h2>
+
+    <div class="flex gap-4 overflow-x-auto pb-2">
+
+      <div class="min-w-[110px] bg-white border rounded-xl p-4 text-center">
+        ⚽
+        <p class="text-sm mt-2">Football</p>
+      </div>
+
+      <div class="min-w-[110px] bg-white border rounded-xl p-4 text-center">
+        🏸
+        <p class="text-sm mt-2">Badminton</p>
+      </div>
+
+      <div class="min-w-[110px] bg-white border rounded-xl p-4 text-center">
+        🏀
+        <p class="text-sm mt-2">Basketball</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- 🔹 AMENITIES -->
+  <div class="mt-8">
+    <h2 class="font-semibold text-lg mb-4">Amenities</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600">
+      <div>🚗 Free Parking</div>
+      <div>🚻 Washroom</div>
+      <div>💡 Flood Lights</div>
+      <div>🥤 Drinks</div>
+    </div>
+  </div>
+
+
+  <!-- 🔹 ABOUT -->
+  <div class="mt-8">
+    <h2 class="font-semibold text-lg mb-2">About Venue</h2>
+    <p class="text-gray-600 text-sm leading-relaxed">
+      Premium astro turf football ground ideal for matches, tournaments,
+      and training sessions with high-quality lighting and facilities.
+    </p>
+  </div>
+
+
+  <!-- 🔹 BOOK BUTTON -->
+  <div class="mt-10 flex justify-end">
+    <a href="#"
+       class="bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-orange-600 transition shadow">
+      Book Now →
+    </a>
+  </div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+  © 2026 ZenFit
+</footer>
+
+</body>
+</html>
