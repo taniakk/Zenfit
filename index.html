@@ -13,21 +13,64 @@
 <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
+    <!-- Logo -->
     <h1 class="text-2xl font-bold text-blue-600">ZenFit.ae</h1>
 
-    <!-- <nav class="hidden md:flex gap-8 font-medium text-gray-700">
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex gap-8 font-medium text-gray-700">
       <a href="#" class="hover:text-blue-600">Home</a>
       <a href="#" class="hover:text-blue-600">Services</a>
       <a href="#" class="hover:text-blue-600">Programs</a>
       <a href="#" class="hover:text-blue-600">Contact</a>
-    </nav> -->
+    </nav>
 
-    <button class="bg-lime-400 px-5 py-2 rounded-full font-semibold hover:bg-lime-300 transition">
+    <!-- Join Button (Desktop) -->
+    <button class="hidden md:block bg-lime-400 px-5 py-2 rounded-full font-semibold hover:bg-lime-300 transition">
+      Join Now
+    </button>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-6 space-y-4 shadow-md">
+
+    <a href="#" class="block text-gray-700 hover:text-blue-600">Home</a>
+    <a href="#" class="block text-gray-700 hover:text-blue-600">Services</a>
+    <a href="#" class="block text-gray-700 hover:text-blue-600">Programs</a>
+    <a href="#" class="block text-gray-700 hover:text-blue-600">Contact</a>
+
+    <button class="w-full bg-lime-400 px-5 py-2 rounded-full font-semibold hover:bg-lime-300 transition">
       Join Now
     </button>
 
   </div>
 </header>
+
+<!-- JS for Toggle -->
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  let isOpen = false;
+
+  btn.addEventListener("click", () => {
+    isOpen = !isOpen;
+    menu.classList.toggle("hidden");
+  });
+
+  // Close menu on scroll (clean behavior)
+  window.addEventListener("scroll", () => {
+    if (isOpen) {
+      menu.classList.add("hidden");
+      isOpen = false;
+    }
+  });
+</script>
 
 <!-- ⚡ HERO SECTION -->
 <section class="pt-20 bg-gradient-to-br from-white via-blue-50 to-green-50 text-gray-900">
