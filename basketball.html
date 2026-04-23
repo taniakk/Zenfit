@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenFit Basketball</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+
+<!-- 🔹 NAVBAR -->
+<nav class="w-full fixed top-0 z-50 bg-black/60 backdrop-blur-xl text-white shadow-lg border-b border-white/10">
+
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <h1 class="text-2xl font-bold tracking-wide">
+      <span class="text-white">Zen</span>
+      <span class="text-[#4CAF50] drop-shadow-[0_0_8px_rgba(76,175,80,0.6)]">Fit</span>
+      <span class="text-white">.ae</span>
+    </h1>
+
+    <!-- MENU -->
+    <div class="hidden md:flex items-center gap-8 text-sm">
+
+      <a href="/communities.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Home
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Sports
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Venues
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Contact
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <button class="relative bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
+                     hover:scale-105 transition duration-300 shadow-lg 
+                     hover:shadow-[0_0_20px_rgba(76,175,80,0.6)]">
+        Book Now
+      </button>
+
+    </div>
+
+    <!-- MOBILE ICON -->
+    <div class="md:hidden text-2xl text-[#4CAF50] hover:scale-110 transition cursor-pointer">
+      ☰
+    </div>
+
+  </div>
+
+</nav>
+
+
+<!-- 🔹 HERO -->
+<section class="h-[90vh] flex items-center justify-center relative overflow-hidden">
+
+  <!-- Background Image -->
+  <img src="/images/basketballfile.jpg"
+       class="absolute inset-0 w-full h-full object-cover opacity-40 scale-110">
+
+  <!-- Dark Gradient -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/30 to-black"></div>
+
+  <!-- Glow Effect -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(76,175,80,0.15),transparent_70%)]"></div>
+
+  <!-- CONTENT -->
+  <div class="relative text-center px-6" data-aos="fade-up">
+
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+      Basketball at 
+      <span class="text-[#4CAF50] drop-shadow-[0_0_15px_rgba(76,175,80,0.7)]">
+        ZenFit
+      </span>
+    </h1>
+
+    <p class="text-gray-300 max-w-xl mx-auto mb-6 text-lg">
+      Step onto the court, shoot your shot, and become part of a dynamic basketball community.
+    </p>
+
+    <button class="bg-gradient-to-r from-[#4CAF50] to-green-400 px-8 py-3 rounded-full 
+                   hover:scale-110 transition duration-300 shadow-xl 
+                   hover:shadow-[0_0_25px_rgba(76,175,80,0.7)]">
+      Join a Game →
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- intro -->
+<section class="py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+      Play Basketball in Your City with <span class="text-[#4CAF50]">ZenFit</span>
+    </h2>
+
+    <p class="text-gray-300 leading-relaxed text-lg mb-6">
+      Inspired by the greatness of legends like LeBron James and the precision of elite shooters,
+      basketball is more than just a sport — it’s a passion. At ZenFit, we bring that passion to life
+      by connecting you with players in your city who share the same love for the game.
+    </p>
+
+    <p class="text-gray-400 leading-relaxed text-lg mb-6">
+      Whether you're looking for competitive full-court matches or casual evening sessions,
+      ZenFit helps you step into real team-based games — not just pickup play, but structured,
+      high-energy experiences that feel truly rewarding.
+    </p>
+
+    <p class="text-gray-400 leading-relaxed text-lg">
+      Finding the right players and venues can be challenging. That’s where we come in.
+      With a growing and active community, ZenFit makes it simple to discover games,
+      connect with like-minded players, and enjoy basketball the way it’s meant to be played.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- 🔹 IMAGE GRID -->
+<section class="py-16 bg-gradient-to-b from-[#f9fafb] via-[#eef7f0] to-[#f9fafb] rounded-3xl">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6">
+
+    <img src="/images/basketball1.jpg" 
+      class="rounded-2xl h-52 object-cover w-full 
+             hover:scale-105 transition duration-500 
+             shadow-md hover:shadow-[0_10px_30px_rgba(76,175,80,0.2)]">
+
+    <img src="/images/basketball.jpg" 
+      class="rounded-2xl h-52 object-cover w-full 
+             hover:scale-105 transition duration-500 
+             shadow-md hover:shadow-[0_10px_30px_rgba(76,175,80,0.2)]">
+
+    <img src="/images/basketballfile.jpg" 
+      class="rounded-2xl h-52 object-cover w-full 
+             hover:scale-105 transition duration-500 
+             shadow-md hover:shadow-[0_10px_30px_rgba(76,175,80,0.2)]">
+
+    <img src="/images/basketball4.jpg" 
+      class="rounded-2xl h-52 object-cover w-full 
+             hover:scale-105 transition duration-500 
+             shadow-md hover:shadow-[0_10px_30px_rgba(76,175,80,0.2)]">
+
+  </div>
+
+</section>
+
+
+<!-- 🔹 JOIN STEPS -->
+<section class="py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black">
+  <div class="max-w-6xl mx-auto px-6 text-center mb-12">
+    <h2 class="text-3xl font-bold">How to Join</h2>
+  </div>
+
+  <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
+
+    <div class="bg-white/5 p-6 rounded-2xl text-center border border-white/10 hover:scale-105 hover:border-[#4CAF50] transition" data-aos="zoom-in">
+      <h3 class="text-[#4CAF50] font-bold text-xl mb-2">1</h3>
+      <p>Create your profile</p>
+    </div>
+
+    <div class="bg-white/5 p-6 rounded-2xl text-center border border-white/10 hover:scale-105 hover:border-[#4CAF50] transition" data-aos="zoom-in" data-aos-delay="100">
+      <h3 class="text-[#4CAF50] font-bold text-xl mb-2">2</h3>
+      <p>Browse basketball games</p>
+    </div>
+
+    <div class="bg-white/5 p-6 rounded-2xl text-center border border-white/10 hover:scale-105 hover:border-[#4CAF50] transition" data-aos="zoom-in" data-aos-delay="200">
+      <h3 class="text-[#4CAF50] font-bold text-xl mb-2">3</h3>
+      <p>Join or create a match</p>
+    </div>
+
+    <div class="bg-white/5 p-6 rounded-2xl text-center border border-white/10 hover:scale-105 hover:border-[#4CAF50] transition" data-aos="zoom-in" data-aos-delay="300">
+      <h3 class="text-[#4CAF50] font-bold text-xl mb-2">4</h3>
+      <p>Play & improve</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- 🔹 CTA -->
+<section class="py-20 text-center bg-gradient-to-r from-green-50 via-white to-green-50 rounded-3xl">
+
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+    Ready to Hit the Court?
+  </h2>
+
+  <p class="text-gray-600 mb-8 text-lg">
+    Join ZenFit and start playing basketball today.
+  </p>
+
+  <button class="bg-gradient-to-r from-[#4CAF50] to-green-400 text-white px-8 py-3 rounded-full 
+                 hover:scale-110 transition duration-300 shadow-lg 
+                 hover:shadow-[0_10px_25px_rgba(76,175,80,0.4)]">
+    Join Now →
+  </button>
+
+</section>
+
+<footer class="bg-gradient-to-br from-[#0b0f0e] via-[#0f1714] to-black text-gray-300 pt-16 pb-8">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+    <!-- 🔹 BRAND -->
+    <div>
+      <h2 class="text-2xl font-bold text-white mb-3">
+        Zenfit<span class="text-[#4CAF50]">.ae</span>
+      </h2>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        Connecting players, building communities, and making sports more accessible for everyone.
+      </p>
+    </div>
+
+    <!-- 🔹 NAVIGATION -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Explore</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="#home" class="hover:text-[#4CAF50] transition">Home</a>
+        </li>
+        <li>
+          <a href="/communities.html" class="hover:text-[#4CAF50] transition">Communities</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-[#4CAF50] transition">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 🔹 SOCIAL -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Connect</h3>
+
+      <p class="text-gray-400 text-sm mb-4">
+        Follow us on social media
+      </p>
+
+      <div class="flex gap-5 text-xl">
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/yourusername" target="_blank"
+          class="hover:text-[#4CAF50] transition duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"
+          class="hover:text-[#4CAF50] transition duration-300">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 🔹 BOTTOM -->
+  <div class="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-500">
+    <p>
+      © 2026 <span class="text-white font-medium">Zenfit.ae</span>. All rights reserved.
+    </p>
+  </div>
+
+</footer>
+
+
+<!-- AOS INIT -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+</body>
+</html>

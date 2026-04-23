@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenFit Volleyball</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+
+<!-- 🔹 NAVBAR -->
+<nav class="w-full fixed top-0 z-50 bg-black/60 backdrop-blur-xl text-white shadow-lg border-b border-white/10">
+
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <h1 class="text-2xl font-bold tracking-wide">
+      <span class="text-white">Zen</span>
+      <span class="text-[#4CAF50] drop-shadow-[0_0_8px_rgba(76,175,80,0.6)]">Fit</span>
+      <span class="text-white">.ae</span>
+    </h1>
+
+    <!-- MENU -->
+    <div class="hidden md:flex items-center gap-8 text-sm">
+
+      <a href="/communities.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Home
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Sports
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Venues
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Contact
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <button class="relative bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
+                     hover:scale-105 transition duration-300 shadow-lg 
+                     hover:shadow-[0_0_20px_rgba(76,175,80,0.6)]">
+        Book Now
+      </button>
+
+    </div>
+
+    <!-- MOBILE ICON -->
+    <div class="md:hidden text-2xl text-[#4CAF50] hover:scale-110 transition cursor-pointer">
+      ☰
+    </div>
+
+  </div>
+
+</nav>
+
+  <!-- 🔹 HERO -->
+  <section class="h-[90vh] flex items-center justify-center relative">
+
+    <img src="/images/volley-bg.jpg"
+      class="absolute inset-0 w-full h-full object-cover opacity-50">
+
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black"></div>
+
+    <div class="relative text-center px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Volleyball at <span class="text-[#4CAF50]">ZenFit</span>
+      </h1>
+      <p class="text-gray-300 max-w-xl mx-auto mb-6">
+        Play, connect, and compete with passionate volleyball players in a premium sports environment.
+      </p>
+      <button class="bg-gradient-to-r from-[#4CAF50] to-green-400 px-8 py-3 rounded-full font-semibold hover:scale-105 transition shadow-lg">
+        Book a Match →
+      </button>
+    </div>
+  </section>
+
+  <!-- 🔹 IMAGE GRID -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-4">
+      <img src="/images/volley1.jpg" class="rounded-xl h-52 object-cover w-full hover:scale-105 transition">
+      <img src="/images/volley2.jpg" class="rounded-xl h-52 object-cover w-full hover:scale-105 transition">
+      <img src="/images/volley3.jpg" class="rounded-xl h-52 object-cover w-full hover:scale-105 transition">
+      <img src="/images/volley4.jpg" class="rounded-xl h-52 object-cover w-full hover:scale-105 transition">
+    </div>
+  </section>
+
+  <!-- 🔹 INTRO -->
+  <section class="py-12 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-semibold mb-4">Why Play Volleyball with ZenFit?</h2>
+      <p class="text-gray-400 leading-relaxed">
+        ZenFit creates a space where fitness meets fun. Whether you're a beginner or a competitive player,
+        our volleyball sessions are designed to help you improve skills, stay active, and meet like-minded people.
+      </p>
+    </div>
+  </section>
+
+  <!-- 🔹 INFO CARDS -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-6">
+
+      <div class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 hover:border-[#4CAF50] transition">
+        <h3 class="text-lg font-semibold mb-2 text-[#4CAF50]">When & Where</h3>
+        <p class="text-gray-400 text-sm">
+          Evening sessions at premium indoor and outdoor venues.
+        </p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 hover:border-[#4CAF50] transition">
+        <h3 class="text-lg font-semibold mb-2 text-[#4CAF50]">Game Level</h3>
+        <p class="text-gray-400 text-sm">
+          Beginner • Intermediate • Advanced
+        </p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 hover:border-[#4CAF50] transition">
+        <h3 class="text-lg font-semibold mb-2 text-[#4CAF50]">Categories</h3>
+        <p class="text-gray-400 text-sm">
+          Indoor • Outdoor • Mixed Teams
+        </p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 hover:border-[#4CAF50] transition">
+        <h3 class="text-lg font-semibold mb-2 text-[#4CAF50]">What’s Included</h3>
+        <p class="text-gray-400 text-sm">
+          Equipment, court setup, hydration, and match coordination.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+<!-- 🔹 JOIN COMMUNITY STEPS -->
+<section class="py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black">
+
+  <div class="max-w-6xl mx-auto px-6 text-center mb-14">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      How to Join the <span class="text-[#4CAF50]">ZenFit Community</span>
+    </h2>
+    <p class="text-gray-400 max-w-2xl mx-auto">
+      Getting started is simple. Follow these steps and start playing instantly.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+
+    <!-- STEP 1 -->
+    <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#4CAF50] transition">
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+        1
+      </div>
+      <h3 class="mt-6 text-lg font-semibold mb-2">Create Your Profile</h3>
+      <p class="text-gray-400 text-sm">
+        Sign up and set your preferences, skill level, and favorite sports.
+      </p>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#4CAF50] transition">
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+        2
+      </div>
+      <h3 class="mt-6 text-lg font-semibold mb-2">Explore Matches</h3>
+      <p class="text-gray-400 text-sm">
+        Browse available volleyball sessions near you and pick your slot.
+      </p>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#4CAF50] transition">
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+        3
+      </div>
+      <h3 class="mt-6 text-lg font-semibold mb-2">Join & Connect</h3>
+      <p class="text-gray-400 text-sm">
+        Join games as an individual or team and connect with players.
+      </p>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#4CAF50] transition">
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
+        4
+      </div>
+      <h3 class="mt-6 text-lg font-semibold mb-2">Play & Improve</h3>
+      <p class="text-gray-400 text-sm">
+        Enjoy matches, track performance, and grow your skills.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+  
+  <!-- 🔹 CTA -->
+  <section class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-4">Ready to Play?</h2>
+    <p class="text-gray-400 mb-6">Join ZenFit and start your volleyball journey today.</p>
+
+    <button class="bg-gradient-to-r from-[#4CAF50] to-green-400 px-8 py-3 rounded-full font-semibold hover:scale-105 transition shadow-lg">
+      Join Now →
+    </button>
+  </section>
+
+  <!-- 🔹 FOOTER -->
+  <footer class="bg-black border-t border-white/10 py-8 text-center text-gray-400 text-sm">
+    © 2026 ZenFit. All rights reserved.
+  </footer>
+
+</body>
+</html>

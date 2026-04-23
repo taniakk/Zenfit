@@ -10,37 +10,60 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+<style>
+  body,html{
+    overflow-x: hidden;
+  }
+</style>
 
 <body class="font-sans bg-white">
 
+
 <!-- 🔹 NAVBAR -->
-<nav class="w-full bg-gradient-to-r from-black via-[#0b0f0e] to-black text-white shadow-lg border-b border-[#1f2937]">
+<nav class="w-full fixed top-0 z-50 bg-black/60 backdrop-blur-xl text-white shadow-lg border-b border-white/10">
 
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <!-- LOGO -->
     <h1 class="text-2xl font-bold tracking-wide">
-      <span class="text-white">Zen</span><span class="text-[#4CAF50]">Fit</span><span class="text-white">.ae</span>
+      <span class="text-white">Zen</span>
+      <span class="text-[#4CAF50] drop-shadow-[0_0_8px_rgba(76,175,80,0.6)]">Fit</span>
+      <span class="text-white">.ae</span>
     </h1>
 
     <!-- MENU -->
     <div class="hidden md:flex items-center gap-8 text-sm">
 
-      <a href="/index.html" class="hover:text-[#4CAF50] transition duration-300 font-medium">Home</a>
-      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium">Sports</a>
-      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium">Venues</a>
-      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium">Contact</a>
+      <a href="/communities.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Home
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
 
-      <button class="relative bg-[#4CAF50] px-5 py-2 rounded-lg font-semibold 
-                     hover:bg-[#3aa34a] transition duration-300 shadow-md 
-                     hover:shadow-[#4CAF50]/40">
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Sports
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Venues
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Contact
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <button class="relative bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
+                     hover:scale-105 transition duration-300 shadow-lg 
+                     hover:shadow-[0_0_20px_rgba(76,175,80,0.6)]">
         Book Now
       </button>
 
     </div>
 
     <!-- MOBILE ICON -->
-    <div class="md:hidden text-2xl text-[#4CAF50] hover:scale-110 transition">
+    <div class="md:hidden text-2xl text-[#4CAF50] hover:scale-110 transition cursor-pointer">
       ☰
     </div>
 
@@ -49,11 +72,11 @@
 </nav>
 
 <!-- 🔹 HERO SECTION -->
-<section id="home" class="relative w-full h-[70vh] md:h-[85vh] overflow-hidden">
+<section id="home" class="relative w-full h-[70vh] md:h-[85vh]  overflow-hidden">
 
   <!-- 🔹 VIDEO -->
   <video autoplay muted loop playsinline
-         class="absolute inset-0 w-full h-full object-cover blur-sm scale-110">
+         class="absolute inset-0 w-full h-full object-cover scale-110 blur-[1px] sm:blur-[2px] md:blur-sm">
 
     <source src="/images/video.mp4" type="video/mp4">
 
@@ -256,79 +279,151 @@
   <!-- Container -->
   <div class="flex flex-col md:flex-row mt-6 rounded-2xl overflow-hidden shadow-lg">
 
-    <!-- CARD -->
+    <!-- CARD1 -->
+ <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
+
+  <img src="/images/vollyball.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Volleyball</h3>
+  </div>
+
+  <!-- Bottom Button -->
+  <div class="absolute bottom-4 w-full flex justify-center">
+    <button 
+      onclick="window.open('vollyball1.html', '_blank')"
+      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
+      Explore →
+    </button>
+  </div>
+
+</div>
+
+    <!-- CARD2 -->
+   <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
+
+  <img src="/images/basketball.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Basketball</h3>
+  </div>
+
+  <!-- Bottom Button -->
+  <div class="absolute bottom-4 w-full flex justify-center">
+    <button 
+      onclick="window.open('basketball.html', '_blank')"
+      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
+      Explore →
+    </button>
+  </div>
+
+</div>
+
+    <!-- CARD3 -->
     <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-      <img src="/images/vollyball.jpg"
-        class="absolute inset-0 w-full h-full object-cover">
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+  <img src="/images/football.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
 
-      <div class="absolute inset-0 flex items-center justify-center">
-        <h3 class="text-white text-xl md:text-3xl font-black italic">Volleyball</h3>
-      </div>
-    </div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
-    <!-- CARD -->
-    <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-      <img src="/images/basketball.jpg"
-        class="absolute inset-0 w-full h-full object-cover">
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Football</h3>
+  </div>
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+  <!-- Bottom Button -->
+  <div class="absolute bottom-4 w-full flex justify-center">
+    <button 
+      onclick="window.open('football.html', '_blank')"
+      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
+      Explore →
+    </button>
+  </div>
 
-      <div class="absolute inset-0 flex items-center justify-center">
-        <h3 class="text-white text-xl md:text-3xl font-black italic">Basketball</h3>
-      </div>
-    </div>
+</div>
 
-    <!-- CARD -->
-    <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-      <img src="/images/football.jpg"
-        class="absolute inset-0 w-full h-full object-cover">
+    <!-- CARD4 -->
+  <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+  <img src="/images/badminton1.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
 
-      <div class="absolute inset-0 flex items-center justify-center">
-        <h3 class="text-white text-xl md:text-3xl font-black italic">Football</h3>
-      </div>
-    </div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
-    <!-- CARD -->
-    <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-      <img src="/images/badminton1.jpg"
-        class="absolute inset-0 w-full h-full object-cover">
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Badminton</h3>
+  </div>
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+  <!-- Bottom Button -->
+  <div class="absolute bottom-4 w-full flex justify-center">
+    <button 
+      onclick="window.open('badminton.html', '_blank')"
+      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
+      Explore →
+    </button>
+  </div>
 
-      <div class="absolute inset-0 flex items-center justify-center">
-        <h3 class="text-white text-xl md:text-3xl font-black italic">Badminton</h3>
-      </div>
-    </div>
+</div>
 
-    <!-- CARD -->
-    <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-      <img src="/images/padeltennis.jpg"
-        class="absolute inset-0 w-full h-full object-cover">
+    <!-- CARD5 -->
+  <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+  <img src="/images/padeltennis.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
 
-      <div class="absolute inset-0 flex items-center justify-center text-center">
-        <h3 class="text-white text-xl md:text-3xl font-black italic">
-          Padel<br>Tennis
-        </h3>
-      </div>
-    </div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
-    <!-- CARD -->
-    <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden">
-      <img src="/images/cricketcard.jpg"
-        class="absolute inset-0 w-full h-full object-cover">
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center text-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">
+      Padel<br>Tennis
+    </h3>
+  </div>
 
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+  <!-- Bottom Button -->
+  <div class="absolute bottom-4 w-full flex justify-center">
+    <button 
+      onclick="window.open('padeltennis.html', '_blank')"
+      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
+      Explore →
+    </button>
+  </div>
 
-      <div class="absolute inset-0 flex items-center justify-center">
-        <h3 class="text-white text-xl md:text-3xl font-black italic">Cricket</h3>
-      </div>
-    </div>
+</div>
+
+    <!-- CARD6 -->
+   <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden">
+
+  <img src="/images/cricketcard.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Cricket</h3>
+  </div>
+
+  <!-- Bottom Button -->
+  <div class="absolute bottom-4 w-full flex justify-center">
+    <button 
+      onclick="window.open('cricket.html', '_blank')"
+      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
+      Explore →
+    </button>
+  </div>
+
+</div>
 
   </div>
 </section>
@@ -711,11 +806,6 @@
   // Auto-slide
   setInterval(nextSlide, 4000);
 </script>
-
-<!-- 🔹 FOOTER -->
-<footer class="bg-black text-white text-center py-6 text-sm">
-  © 2026 Lineup Clone UI
-</footer>
 
 
 <script>
