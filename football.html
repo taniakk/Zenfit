@@ -32,9 +32,7 @@
 
     <!-- LOGO -->
     <h1 class="text-2xl font-bold tracking-wide">
-      <span class="text-white">Zen</span>
-      <span class="text-[#4CAF50] drop-shadow-[0_0_8px_rgba(76,175,80,0.6)]">Fit</span>
-      <span class="text-white">.ae</span>
+      ZenFit.ae
     </h1>
 
     <!-- DESKTOP MENU -->
@@ -45,12 +43,7 @@
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
-        Sports
-        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
-      </a>
-
-      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+      <a href="/venueBooking.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
         Venues
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
       </a>
@@ -60,11 +53,13 @@
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <button class="relative bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
+      <a href="https://wa.me/971565342725" target="_blank">
+  <button class="relative bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
                      hover:scale-105 transition duration-300 shadow-lg 
                      hover:shadow-[0_0_20px_rgba(76,175,80,0.6)]">
         Book Now
-      </button>
+  </button>
+</a>
 
     </div>
 
@@ -80,7 +75,6 @@
        class="hidden md:hidden fixed top-[72px] left-0 w-full bg-black/90 backdrop-blur-xl px-6 py-6 space-y-5 text-center shadow-lg">
 
     <a href="/communities.html" class="block text-white hover:text-[#4CAF50] transition">Home</a>
-    <a href="#" class="block hover:text-[#4CAF50] transition">Sports</a>
     <a href="#" class="block hover:text-[#4CAF50] transition">Venues</a>
     <a href="#" class="block hover:text-[#4CAF50] transition">Contact</a>
 
@@ -368,6 +362,154 @@
     once: true
   });
 </script>
+
+
+<!-- 🔥 Booking Popup Modal -->
+<div id="bookingModal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4">
+
+  <div class="bg-white w-full max-w-md rounded-2xl p-6 relative shadow-2xl">
+
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-3 right-4 text-gray-500 text-2xl">
+      ×
+    </button>
+
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Book This Venue</h2>
+
+    <!-- Form -->
+    <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
+
+      <input id="name" type="text" placeholder="Your Name"
+        class="w-full border p-3 rounded-lg outline-none focus:border-orange-500">
+
+      <input id="phone" type="tel" placeholder="Phone Number"
+        class="w-full border p-3 rounded-lg outline-none focus:border-orange-500">
+
+      <textarea id="message" placeholder="Message"
+        class="w-full border p-3 rounded-lg outline-none focus:border-orange-500"></textarea>
+
+      <button type="submit"
+        class="w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+        Send on WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<div id="bookingModal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4">
+
+  <div class="bg-white w-full max-w-md rounded-2xl p-6 relative shadow-2xl">
+
+    <button onclick="closeModal()" class="absolute top-3 right-4 text-gray-500 text-2xl">
+      ×
+    </button>
+
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Book Football Venue</h2>
+
+    <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
+
+      <input id="name" type="text" placeholder="Your Name"
+        class="w-full border p-3 rounded-lg">
+
+      <input id="phone" type="tel" placeholder="Phone Number"
+        class="w-full border p-3 rounded-lg">
+
+      <textarea id="message" placeholder="Message"
+        class="w-full border p-3 rounded-lg"></textarea>
+
+      <button type="submit"
+        class="w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+        Send on WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<div id="bookingModal"
+  class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4">
+
+  <div class="bg-white w-full max-w-md rounded-2xl p-6 relative shadow-2xl border-t-4 border-green-500">
+
+    <!-- Close -->
+    <button onclick="closeModal()" class="absolute top-3 right-4 text-gray-500 text-2xl">
+      ×
+    </button>
+
+    <h2 class="text-xl font-bold text-green-600 mb-1">
+      Join Football Community
+    </h2>
+
+    <p class="text-sm text-gray-500 mb-4">
+      Fill your details to join or get updates
+    </p>
+
+    <!-- Form -->
+    <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
+
+      <input id="name" type="text" placeholder="Your Name"
+        class="w-full border p-3 rounded-lg focus:border-green-500 outline-none">
+
+      <input id="phone" type="tel" placeholder="Phone Number"
+        class="w-full border p-3 rounded-lg focus:border-green-500 outline-none">
+
+      <textarea id="message" placeholder="Message"
+        class="w-full border p-3 rounded-lg focus:border-green-500 outline-none"></textarea>
+
+      <button type="submit"
+        class="w-full bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition shadow-md">
+        Send on WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+<div id="bookingModal"
+  class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4">
+
+  <div class="bg-white w-full max-w-md rounded-2xl p-6 relative shadow-2xl border-t-4 border-green-500">
+
+    <!-- Close -->
+    <button onclick="closeModal()" class="absolute top-3 right-4 text-gray-500 text-2xl">
+      ×
+    </button>
+
+    <h2 class="text-xl font-bold text-green-600 mb-1">
+      Join Football Community
+    </h2>
+
+    <p class="text-sm text-gray-500 mb-4">
+      Fill your details to join or get updates
+    </p>
+
+    <!-- Form -->
+    <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
+
+      <input id="name" type="text" placeholder="Your Name"
+        class="w-full border p-3 rounded-lg focus:border-green-500 outline-none">
+
+      <input id="phone" type="tel" placeholder="Phone Number"
+        class="w-full border p-3 rounded-lg focus:border-green-500 outline-none">
+
+      <textarea id="message" placeholder="Message"
+        class="w-full border p-3 rounded-lg focus:border-green-500 outline-none"></textarea>
+
+      <button type="submit"
+        class="w-full bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition shadow-md">
+        Send on WhatsApp
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+
 
 </body>
 </html>
