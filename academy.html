@@ -52,49 +52,45 @@
 
   </div>
 
-  <!-- MOBILE MENU -->
-  <div id="mobile-menu"
-       class="hidden flex-col items-center bg-black/90 backdrop-blur-md text-white py-6 space-y-6 md:hidden transition">
+<!-- MOBILE MENU -->
+<div id="mobile-menu"
+     class="hidden flex flex-col items-center bg-black/90 backdrop-blur-md 
+            text-white py-6 space-y-6 md:hidden transition-all duration-300">
 
-    <a href="/index.html" class="hover:text-green-400">Home</a>
-    <a href="/communities.html" class="hover:text-green-400">Communities</a>
-    <a href="/academy.html" class="hover:text-green-400">Academy</a>
-    <a href="#contactForm" class="hover:text-green-400">Contact</a>
+  <a href="/index.html" class="hover:text-green-400">Home</a>
+  <a href="/communities.html" class="hover:text-green-400">Communities</a>
+  <a href="/academy.html" class="hover:text-green-400">Academy</a>
+  <a href="#contactForm" class="hover:text-green-400">Contact</a>
 
-    <a href="#contactForm">
-      <button class="px-6 py-2 rounded-full border border-white/40 
-                     hover:bg-green-500 hover:border-green-500 transition">
-        Join Now
-      </button>
-    </a>
+  <a href="#contactForm">
+    <button class="px-6 py-2 rounded-full border border-white/40 
+                   hover:bg-green-500 hover:border-green-500 transition">
+      Join Now
+    </button>
+  </a>
 
-  </div>
+</div>
 
 </nav>
 
-<!-- JS -->
 <script>
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
-  const navbar = document.getElementById("navbar");
 
-  // Toggle mobile menu
   menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
+    if (mobileMenu.classList.contains("hidden")) {
+      mobileMenu.classList.remove("hidden");
+      mobileMenu.classList.add("flex"); // 👈 ensures column layout
+    } else {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("flex");
+    }
   });
 
-  // Close menu on scroll (mobile)
+  // Close on scroll
   window.addEventListener("scroll", () => {
     mobileMenu.classList.add("hidden");
-  });
-
-  // Navbar background on scroll
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add("bg-black/80", "backdrop-blur-md");
-    } else {
-      navbar.classList.remove("bg-black/80", "backdrop-blur-md");
-    }
+    mobileMenu.classList.remove("flex");
   });
 </script>
 
