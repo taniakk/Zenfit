@@ -20,25 +20,25 @@
 
 
 <!-- 🔹 NAVBAR -->
-<nav class="w-full fixed top-0 z-50 bg-black/60 backdrop-blur-xl text-white shadow-lg border-b border-white/10">
+<nav class="w-full fixed top-0 z-50 bg-white text-black shadow-lg border-b border-white/10">
 
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-    <!-- LOGO -->
-    <h1 class="text-2xl font-bold tracking-wide">
-      ZenFit.ae
-    </h1>
+     <!-- Logo -->
+<a href="/">
+  <img src="/images/zenfitlogo1.png" alt="ZenFit.ae Logo" class="h-10 w-auto">
+</a>
 
     <!-- DESKTOP MENU -->
-    <div class="hidden md:flex items-center gap-8 text-sm">
+    <div class="hidden md:flex items-center gap-8 ">
 
       <a href="/communities.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
         Home
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <a href="#sports" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
-        Sports
+      <a href="#why" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+        Why us
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
       </a>
 
@@ -74,9 +74,9 @@
        class="hidden md:hidden fixed top-[72px] left-0 w-full bg-black/90 backdrop-blur-xl px-6 py-6 space-y-5 text-center shadow-lg">
 
     <a href="/communities.html" class="block text-white hover:text-[#4CAF50] transition">Home</a>
-    <a href="#" class="block hover:text-[#4CAF50] transition">Sports</a>
-    <a href="#" class="block hover:text-[#4CAF50] transition">Venues</a>
-    <a href="#" class="block hover:text-[#4CAF50] transition">Contact</a>
+    <a href="#why" class="block hover:text-[#4CAF50] transition">Why us</a>
+    <a href="/venueBooking.html" class="block hover:text-[#4CAF50] transition">Venues</a>
+    <a href="#contact" class="block hover:text-[#4CAF50] transition">Contact</a>
 
     <button class="w-full bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
                    hover:scale-105 transition duration-300 shadow-lg">
@@ -110,39 +110,208 @@
   });
 </script>
 
-<!-- 🔹 HERO SECTION -->
-<section id="home" class="relative w-full h-[70vh] md:h-[85vh] lg:h-[100vh] overflow-hidden">
+<!-- 🔹 SPORTS SECTION (MATCHING YOUR WEBSITE STYLE) -->
+<section id="sports" class="w-full mt-10 font-sans px-4 md:px-10 py-10">
 
-  <!-- 🔹 VIDEO -->
-  <video autoplay muted loop playsinline
-         class="absolute inset-0 w-full h-full object-cover scale-110 blur-[1px] sm:blur-[2px] md:blur-sm">
-
-    <source src="/images/video.mp4" type="video/mp4">
-
-  </video>
-
-  <!-- 🔹 OVERLAY (gradient sporty dark + green tone) -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-[#0f3d2e]/80"></div>
-
-  <!-- 🔹 CONTENT -->
-  <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 text-white">
-
-    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-      Join the Ultimate Sports Community at <span class="text-[#4CAF50]">ZenFit.ae</span>
-    </h1>
-
-    <p class="text-gray-200 mb-4 text-lg max-w-2xl">
-      Connect with players, discover top sports venues, book instantly, and be part of an active sports community.
-    </p>
-
-    <p class="text-sm tracking-widest uppercase text-[#a7f3d0] font-medium">
-      Play • Compete • Connect • Grow
-    </p>
-
+  <!-- Header -->
+  <div class="bg-gradient-to-r from-[#4CAF50] to-[#3FA34D] py-5 shadow-md rounded-xl">
+    <h2 class="text-center text-[#102A1C] font-extrabold text-xl tracking-[0.25em] uppercase">
+      Sports We Organise
+    </h2>
   </div>
 
-  <!-- 🔹 GLOW EFFECT (adds premium feel) -->
-  <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#4CAF50]/30 to-transparent"></div>
+  <!-- Container -->
+  <div class="flex flex-col md:flex-row mt-6 rounded-2xl overflow-hidden shadow-lg">
+
+    <!-- CARD1 -->
+<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
+
+  <!-- CLICKABLE OVERLAY -->
+  <a href="basketball.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+  <img src="/images/basketball.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Basketball</h3>
+  </div>
+
+  <!-- Bottom Button REMOVED -->
+
+</div>
+
+    <!-- CARD2 -->
+<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10 cursor-pointer">
+
+  <!-- CLICKABLE OVERLAY -->
+  <a href="vollyball.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+  <img src="/images/vollyball.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Volleyball</h3>
+  </div>
+
+  <!-- Bottom Button REMOVED -->
+
+</div>
+
+    <!-- CARD3 -->
+ <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10 cursor-pointer">
+
+  <!-- CLICKABLE OVERLAY -->
+  <a href="football.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+  <img src="/images/football.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Football</h3>
+  </div>
+
+  <!-- Bottom Button REMOVED -->
+
+</div>
+
+    <!-- CARD4 -->
+<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10 cursor-pointer">
+
+  <!-- CLICKABLE OVERLAY -->
+  <a href="badminton.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+  <img src="/images/badminton1.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Badminton</h3>
+  </div>
+
+  <!-- Bottom Button REMOVED -->
+
+</div>
+
+    <!-- CARD5 -->
+<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10 cursor-pointer">
+
+  <!-- CLICKABLE OVERLAY -->
+  <a href="paddeltennis.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+  <img src="/images/padeltennis.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center text-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">
+      Padel<br>Tennis
+    </h3>
+  </div>
+
+  <!-- Bottom Button REMOVED -->
+
+</div>
+
+    <!-- CARD6 -->
+<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden cursor-pointer">
+
+  <!-- CLICKABLE OVERLAY -->
+  <a href="cricket.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+  <img src="/images/cricketcard.jpg"
+    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+  <!-- Center Title -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h3 class="text-white text-xl md:text-3xl font-black italic">Cricket</h3>
+  </div>
+
+  <!-- Bottom Button REMOVED -->
+
+</div>
+
+  </div>
+</section>
+
+<!-- About -->
+<section class="w-full py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white">
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- 🔹 IMAGE LEFT SIDE -->
+    <div class="relative order-1 md:order-1" data-aos="fade-right">
+
+      <img src="/images/about.jpeg"
+           class="rounded-2xl shadow-2xl w-full h-[380px] object-cover border border-[#1f2937]">
+
+      <!-- glow effect -->
+      <div class="absolute -bottom-5 -left-5 w-full h-full bg-[#4CAF50]/25 rounded-2xl blur-2xl"></div>
+
+      <!-- small floating badge -->
+      <div class="absolute top-4 left-4 bg-black/60 border border-[#4CAF50] text-[#4CAF50] px-3 py-1 text-xs rounded-full">
+        Connect • Play • Enjoy
+      </div>
+
+    </div>
+
+    <!-- 🔹 TEXT RIGHT SIDE -->
+    <div class="order-2 md:order-2" data-aos="fade-left">
+
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+        About <span class="text-[#4CAF50]">ZenFit.ae</span>
+      </h2>
+
+      <p class="text-gray-300 leading-relaxed mb-5" data-aos="fade-up" data-aos-delay="100">
+        ZenFit.ae is built by sports enthusiasts who understood a simple problem — 
+        people love to play, but often struggle to find teammates or nearby games.
+      </p>
+
+      <p class="text-gray-400 leading-relaxed mb-5" data-aos="fade-up" data-aos-delay="200">
+        What started as a personal challenge was transformed into a smart solution. 
+        ZenFit.ae connects players, communities, and sports venues on a single platform, 
+        making it effortless to discover and join games anytime.
+      </p>
+
+      <p class="text-gray-400 leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="300">
+        Our mission is simple — to make sports more accessible, social, and exciting. 
+        We aim to bring people together through real-world play and build strong local sports communities.
+      </p>
+
+      <!-- 🔹 HIGHLIGHTS -->
+      <div class="flex flex-wrap gap-3" data-aos="zoom-in" data-aos-delay="400">
+
+        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
+          Find Players
+        </span>
+
+        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
+          Book Venues
+        </span>
+
+        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
+          Join Matches
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -264,331 +433,6 @@
 
 </section>
 
-<!-- 🔹 OUR IDEA SECTION (BRIGHT + MODERN) -->
-<section class="px-6 md:px-12 py-20 bg-gradient-to-br from-green-50 via-blue-50 to-yellow-50">
-
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
-
-    <!-- LEFT CONTENT -->
-    <div class="text-center md:text-left">
-
-      <!-- Badge -->
-      <div class="inline-block px-5 py-2 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-full text-sm font-bold shadow-md">
-        Sports + Technology Platform
-      </div>
-
-      <!-- Heading -->
-      <h2 class="text-4xl md:text-5xl font-extrabold mt-5 leading-tight text-gray-900">
-        Play Together. <span class="text-green-600">Connect Faster.</span> Compete Better.
-      </h2>
-
-      <!-- Description -->
-      <p class="mt-6 text-gray-700 text-lg leading-relaxed">
-        Join any team sport listed on our platform as an individual, and we instantly connect you with other players who share your passion.
-      </p>
-
-      <p class="mt-4 text-gray-700 text-lg leading-relaxed">
-        We combine <span class="font-bold text-green-600">sports energy</span> with 
-        <span class="font-bold text-blue-600">smart technology</span> to make playing matches easier, faster, and more social than ever.
-      </p>
-
-      <!-- FEATURES -->
-      <div class="mt-8 space-y-4">
-
-        <div class="flex items-center gap-3 justify-center md:justify-start">
-          <div class="w-3 h-3 bg-green-500 rounded-full shadow"></div>
-          <p class="font-semibold text-gray-800">Instant player matchmaking system</p>
-        </div>
-
-        <div class="flex items-center gap-3 justify-center md:justify-start">
-          <div class="w-3 h-3 bg-blue-500 rounded-full shadow"></div>
-          <p class="font-semibold text-gray-800">Join matches with one click</p>
-        </div>
-
-        <div class="flex items-center gap-3 justify-center md:justify-start">
-          <div class="w-3 h-3 bg-orange-400 rounded-full shadow"></div>
-          <p class="font-semibold text-gray-800">Active sports community near you</p>
-        </div>
-
-      </div>
-
-      <!-- CTA BUTTONS -->
-      <div class="mt-8 flex gap-4 flex-wrap justify-center md:justify-start">
-<a href="https://wa.me/971565342725" target="_blank">
-  <button class="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-xl font-bold shadow-lg hover:scale-105 transition">
-    Join Now
-  </button>
-</a>
-
-        <button class="bg-white border-2 border-blue-500 text-blue-600 px-6 py-3 rounded-xl font-bold hover:bg-blue-50 transition">
-          Explore Sports
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- RIGHT VISUAL -->
-    <div class="relative">
-
-      <img 
-        src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200&auto=format&fit=crop"
-        class="rounded-3xl shadow-2xl w-full h-[430px] object-cover border-4 border-white"
-      />
-
-      <!-- Floating Card 1 -->
-      <div class="absolute -top-6 -left-6 bg-white shadow-xl rounded-2xl px-4 py-3 flex items-center gap-3 border-l-4 border-green-500">
-        <div class="text-2xl">⚽</div>
-        <div>
-          <p class="text-sm font-bold text-gray-900">Smart Matching</p>
-          <p class="text-xs text-gray-500">Find players instantly</p>
-        </div>
-      </div>
-
-      <!-- Floating Card 2 -->
-      <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-green-500 to-blue-500 text-white shadow-xl rounded-2xl px-4 py-3">
-        <p class="text-sm font-bold">Live Sports Network</p>
-        <p class="text-xs opacity-90">Play. Connect. Grow.</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- About -->
-<section class="w-full py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white">
-
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-    <!-- 🔹 IMAGE LEFT SIDE -->
-    <div class="relative order-1 md:order-1" data-aos="fade-right">
-
-      <img src="/images/about.jpeg"
-           class="rounded-2xl shadow-2xl w-full h-[380px] object-cover border border-[#1f2937]">
-
-      <!-- glow effect -->
-      <div class="absolute -bottom-5 -left-5 w-full h-full bg-[#4CAF50]/25 rounded-2xl blur-2xl"></div>
-
-      <!-- small floating badge -->
-      <div class="absolute top-4 left-4 bg-black/60 border border-[#4CAF50] text-[#4CAF50] px-3 py-1 text-xs rounded-full">
-        Connect • Play • Enjoy
-      </div>
-
-    </div>
-
-    <!-- 🔹 TEXT RIGHT SIDE -->
-    <div class="order-2 md:order-2" data-aos="fade-left">
-
-      <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-        About <span class="text-[#4CAF50]">ZenFit.ae</span>
-      </h2>
-
-      <p class="text-gray-300 leading-relaxed mb-5" data-aos="fade-up" data-aos-delay="100">
-        ZenFit.ae is built by sports enthusiasts who understood a simple problem — 
-        people love to play, but often struggle to find teammates or nearby games.
-      </p>
-
-      <p class="text-gray-400 leading-relaxed mb-5" data-aos="fade-up" data-aos-delay="200">
-        What started as a personal challenge was transformed into a smart solution. 
-        ZenFit.ae connects players, communities, and sports venues on a single platform, 
-        making it effortless to discover and join games anytime.
-      </p>
-
-      <p class="text-gray-400 leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="300">
-        Our mission is simple — to make sports more accessible, social, and exciting. 
-        We aim to bring people together through real-world play and build strong local sports communities.
-      </p>
-
-      <!-- 🔹 HIGHLIGHTS -->
-      <div class="flex flex-wrap gap-3" data-aos="zoom-in" data-aos-delay="400">
-
-        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
-          Find Players
-        </span>
-
-        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
-          Book Venues
-        </span>
-
-        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
-          Join Matches
-        </span>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- 🔹 SPORTS SECTION (MATCHING YOUR WEBSITE STYLE) -->
-<section id="sports" class="w-full font-sans px-4 md:px-10 py-10">
-
-  <!-- Header -->
-  <div class="bg-gradient-to-r from-[#4CAF50] to-[#3FA34D] py-5 shadow-md rounded-xl">
-    <h2 class="text-center text-[#102A1C] font-extrabold text-xl tracking-[0.25em] uppercase">
-      Sports We Organise
-    </h2>
-  </div>
-
-  <!-- Container -->
-  <div class="flex flex-col md:flex-row mt-6 rounded-2xl overflow-hidden shadow-lg">
-
-    <!-- CARD1 -->
-   <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-
-  <img src="/images/basketball.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Basketball</h3>
-  </div>
-
-  <!-- Bottom Button -->
-  <div class="absolute bottom-4 w-full flex justify-center">
-    <button 
-      onclick="window.open('basketball.html', '_blank')"
-      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
-      Explore →
-    </button>
-  </div>
-
-</div>
-
-    <!-- CARD2 -->
- <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-
-  <img src="/images/vollyball.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Volleyball</h3>
-  </div>
-
-  <!-- Bottom Button -->
-  <div class="absolute bottom-4 w-full flex justify-center">
-    <button 
-      onclick="window.open('vollyball.html', '_blank')"
-      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
-      Explore →
-    </button>
-  </div>
-
-</div>
-
-
-
-    <!-- CARD3 -->
-    <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-
-  <img src="/images/football.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Football</h3>
-  </div>
-
-  <!-- Bottom Button -->
-  <div class="absolute bottom-4 w-full flex justify-center">
-    <button 
-      onclick="window.open('football.html', '_blank')"
-      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
-      Explore →
-    </button>
-  </div>
-
-</div>
-
-    <!-- CARD4 -->
-  <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-
-  <img src="/images/badminton1.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Badminton</h3>
-  </div>
-
-  <!-- Bottom Button -->
-  <div class="absolute bottom-4 w-full flex justify-center">
-    <button 
-      onclick="window.open('badminton.html', '_blank')"
-      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
-      Explore →
-    </button>
-  </div>
-
-</div>
-
-    <!-- CARD5 -->
-  <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-
-  <img src="/images/padeltennis.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center text-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">
-      Padel<br>Tennis
-    </h3>
-  </div>
-
-  <!-- Bottom Button -->
-  <div class="absolute bottom-4 w-full flex justify-center">
-    <button 
-      onclick="window.open('paddeltennis.html', '_blank')"
-      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
-      Explore →
-    </button>
-  </div>
-
-</div>
-
-    <!-- CARD6 -->
-   <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden">
-
-  <img src="/images/cricketcard.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Cricket</h3>
-  </div>
-
-  <!-- Bottom Button -->
-  <div class="absolute bottom-4 w-full flex justify-center">
-    <button 
-      onclick="window.open('cricket.html', '_blank')"
-      class="text-white text-sm md:text-base font-semibold hover:text-[#4CAF50] transition duration-300">
-      Explore →
-    </button>
-  </div>
-
-</div>
-
-  </div>
-</section>
-
-
 <!-- slider -->
 <section id="communities" class="w-full py-16 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white">
 
@@ -649,7 +493,7 @@
 </section>
 
 <!-- why us -->
-<section class="w-full py-24 bg-gradient-to-b from-[#f8fbff] via-white to-[#f1fdf5]">
+<section id="why" class="w-full py-24 bg-gradient-to-b from-[#f8fbff] via-white to-[#f1fdf5]">
 
   <div class="max-w-7xl mx-auto px-6">
 
@@ -741,7 +585,6 @@
   </div>
 
 </section>
-
 
 <!-- testimonials -->
 <section class="w-full py-20 relative overflow-hidden bg-gradient-to-br from-[#0b0f0e] via-[#0f1714] to-black text-white">
@@ -1009,7 +852,7 @@
   });
 </script>
 
-<a href="https://wa.me/971565342725" target="_blank"
+<a href="https://wa.me/971565342725?text=Hi%20ZenFit.ae,%20I%20would%20like%20to%20join%20your%20sports%20community.%20Please%20share%20the%20details%20to%20get%20started." target="_blank"
    class="fixed bottom-6 right-6 z-50 group">
 
   <div class="flex items-center gap-2">

@@ -45,17 +45,19 @@
 <body class="font-sans">
 
 <!-- 🔹 NAVBAR -->
-<nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center text-white 
-            bg-black/60 backdrop-blur-lg border-b border-white/10">
+<nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center
+            bg-white border-b border-white/10">
 
-  <!-- Logo -->
-  <h1 class="text-2xl font-bold tracking-wide">ZenFit.ae</h1>
+    <!-- Logo -->
+<a href="/">
+  <img src="/images/zenfitlogo1.png" alt="ZenFit.ae Logo" class="h-10 w-auto">
+</a>
 
   <!-- Desktop Menu -->
-  <div class="hidden md:flex space-x-8">
-    <a href="/index.html" class="hover:text-yellow-300 transition">Home</a>
-    <a href="#venue-section" class="hover:text-yellow-300 transition">Venues</a>
-    <a href="#contact" class="hover:text-yellow-300 transition">
+  <div class="hidden md:flex space-x-8 text-lg">
+    <a href="/index.html" class="hover:scale-110 transition">Home</a>
+    <a href="#venue-section" class="hover:scale-110 transition">Venues</a>
+    <a href="#contact" class="hover:scale-110 transition">
       Contact
     </a>
   </div>
@@ -221,247 +223,254 @@
     <!-- (ALL YOUR CARDS REMAIN EXACTLY SAME BELOW) -->
 
 
-    <!-- CARD 1 -->
-    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
-      <div class="relative">
-        <img src="/images/card1.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
-        <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
-          Bookable
-        </span>
-      </div>
-
-      <div class="p-5">
-        <div class="flex justify-between items-start mb-1">
-          <h3 class="font-semibold text-gray-800 text-sm leading-snug">
-            Zen Star Sports Oxford School
-          </h3>
-          <div class="flex items-center text-sm text-gray-600 whitespace-nowrap">
-            <span class="text-yellow-500 mr-1">★</span>4.80 (5)
-          </div>
-        </div>
-
-        <p class="text-xs text-gray-500 mb-3">Muhaisnah 4 (~15.2 km)</p>
-
-        <div class="mb-4 text-lg text-gray-600">⚽</div>
-
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-amber-100 text-gray-800 px-3 py-1 rounded-full text-xs font-medium">
-            AED175/hour 7a side Football
-          </span>
-          <span class="bg-amber-100 text-gray-800 px-3 py-1 rounded-full text-xs font-medium">
-            Player bring own kit
-          </span>
-        </div>
-<a href="https://wa.me/971551425574" target="_blank">
-  <button class="w-full mt-4 bg-amber-600 to-orange-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition">
-    Book a Venue
-  </button>
-</a>
-      </div>
+   <a href="https://wa.me/971551425574" target="_blank" class="block">
+  
+  <!-- CARD 1 -->
+  <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition lg:pb-8 duration-300 overflow-hidden group cursor-pointer">
+    
+    <div class="relative">
+      <img src="/images/card1.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
+      <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
+        Bookable
+      </span>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
-      <div class="relative">
-        <img src="/images/card2.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
-        <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
-          Bookable
-        </span>
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-1">
+        <h3 class="font-semibold text-gray-800 text-sm leading-snug">
+          Zen Star Sports Oxford School
+        </h3>
+        <div class="flex items-center text-sm text-gray-600 whitespace-nowrap">
+          <span class="text-yellow-500 mr-1">★</span>4.80 (5)
+        </div>
       </div>
 
-      <div class="p-5">
-        <div class="flex justify-between items-start mb-1">
-          <h3 class="font-semibold text-gray-800 text-sm">
-            Zen Star Sports @Port Rashid
-          </h3>
-          <div class="flex items-center text-sm text-gray-600">
-            <span class="text-yellow-500 mr-1">★</span>2.33 (3)
-          </div>
-        </div>
+      <p class="text-xs text-gray-500 mb-3">Muhaisnah 4 (~15.2 km)</p>
 
-        <p class="text-xs text-gray-500 mb-3">Bur Dubai (~17.2 km)</p>
+      <div class="mb-4 text-lg text-gray-600">⚽</div>
 
-        <div class="mb-4 text-lg text-gray-600">
-          🏸 🏀 <span class="text-xs text-gray-500">+ 2 more</span>
-        </div>
-
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-amber-100 text-gray-800 px-3 py-1 rounded-full text-xs font-medium">
+          AED175/hour 7a side Football
+        </span>
         <span class="bg-amber-100 text-gray-800 px-3 py-1 rounded-full text-xs font-medium">
           Player bring own kit
         </span>
-
-    <a href="https://wa.me/971551425574" target="_blank">
-  <button class="w-full mt-4 bg-amber-600 to-orange-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition">
-    Book a Venue
-  </button>
-</a>
       </div>
+
     </div>
 
-    <!-- CARD 3 -->
-    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
-      <div class="relative">
-        <img src="/images/card3.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
-        <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
-          Bookable
+  </div>
+
+</a>
+
+   <a href="https://wa.me/971551425574" target="_blank" class="block">
+
+  <!-- CARD 2 -->
+  <div class="bg-white rounded-2xl shadow-md lg:pb-8 hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer">
+
+    <div class="relative">
+      <img src="/images/card2.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
+      <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
+        Bookable
+      </span>
+    </div>
+
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-1">
+        <h3 class="font-semibold text-gray-800 text-sm">
+          Zen Star Sports @Port Rashid
+        </h3>
+        <div class="flex items-center text-sm text-gray-600">
+          <span class="text-yellow-500 mr-1">★</span>2.33 (3)
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500 mb-3">Bur Dubai (~17.2 km)</p>
+
+      <div class="mb-4 text-lg text-gray-600">
+        🏸 🏀 <span class="text-xs text-gray-500">+ 2 more</span>
+      </div>
+
+      <span class="bg-amber-100 text-gray-800 px-3 py-1 rounded-full text-xs font-medium">
+        Player bring own kit
+      </span>
+
+    </div>
+
+  </div>
+
+</a>
+
+<a href="https://wa.me/97507742871" target="_blank" class="block">
+
+  <!-- CARD 3 -->
+  <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer">
+
+    <div class="relative">
+      <img src="/images/card3.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
+      <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
+        Bookable
+      </span>
+    </div>
+
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-1">
+        <h3 class="font-semibold text-gray-800 text-sm">
+          Zen Star Sports, Glendale Intern...
+        </h3>
+        <div class="flex items-center text-sm text-gray-600">
+          <span class="text-yellow-500 mr-1">★</span>2.07 (29)
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500 mb-3">Oud Metha (~11.7 km)</p>
+
+      <div class="mb-4 text-lg text-gray-600">🏸</div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
+          Indoor Non-A/c Badminton @AED40/hr
+        </span>
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
+          Close to Oud Metha Metro Station
+        </span>
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
+          Offer - AED40/hr
         </span>
       </div>
 
-      <div class="p-5">
-        <div class="flex justify-between items-start mb-1">
-          <h3 class="font-semibold text-gray-800 text-sm">
-            Zen Star Sports, Glendale Intern...
-          </h3>
-          <div class="flex items-center text-sm text-gray-600">
-            <span class="text-yellow-500 mr-1">★</span>2.07 (29)
-          </div>
-        </div>
-
-        <p class="text-xs text-gray-500 mb-3">Oud Metha (~11.7 km)</p>
-
-        <div class="mb-4 text-lg text-gray-600">🏸</div>
-
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
-            Indoor Non-A/c Badminton @AED40/hr
-          </span>
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
-            Close to Oud Metha Metro Station
-          </span>
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
-            Offer - AED40/hr
-          </span>
-        </div>
-
- <a href="https://wa.me/97507742871" target="_blank">
-  <button class="w-full mt-4 bg-amber-600 to-orange-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition">
-    Book a Venue
-  </button>
-</a>
-      </div>
     </div>
 
-    <!-- CARD 4 -->
-    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
-      <div class="relative">
-        <img src="/images/card4.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
-        <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
-          Bookable
+  </div>
+
+</a>
+
+    <a href="https://wa.me/97507742871" target="_blank" class="block">
+
+  <!-- CARD 4 -->
+  <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer">
+
+    <div class="relative">
+      <img src="/images/card4.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
+      <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
+        Bookable
+      </span>
+    </div>
+
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-1">
+        <h3 class="font-semibold text-gray-800 text-sm">
+          Zen Star Sports, Apple Internatio...
+        </h3>
+        <div class="flex items-center text-sm text-gray-600">
+          <span class="text-yellow-500 mr-1">★</span>3.50 (46)
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500 mb-3">Al Karama (~13.4 km)</p>
+
+      <div class="mb-4 text-lg text-gray-600">🏸 ⚽</div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
+          Indoor Non-A/c Badminton 4 courts
+        </span>
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
+          Close to ADCB Metro Station
         </span>
       </div>
 
-      <div class="p-5">
-        <div class="flex justify-between items-start mb-1">
-          <h3 class="font-semibold text-gray-800 text-sm">
-            Zen Star Sports, Apple Internatio...
-          </h3>
-          <div class="flex items-center text-sm text-gray-600">
-            <span class="text-yellow-500 mr-1">★</span>3.50 (46)
-          </div>
-        </div>
-
-        <p class="text-xs text-gray-500 mb-3">Al Karama (~13.4 km)</p>
-
-        <div class="mb-4 text-lg text-gray-600">🏸 ⚽</div>
-
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
-            Indoor Non-A/c Badminton 4 courts
-          </span>
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">
-            Close to ADCB Metro Station
-          </span>
-        </div>
-
-   <a href="https://wa.me/97507742871" target="_blank">
-  <button class="w-full mt-4 bg-amber-600 to-orange-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition">
-    Book a Venue
-  </button>
-</a>
-      </div>
     </div>
 
-    <!-- CARD 5 -->
-    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
-      <div class="relative">
-        <img src="/images/card5.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
-        <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
-          Bookable
-        </span>
-      </div>
+  </div>
 
-      <div class="p-5">
-        <div class="flex justify-between items-start mb-1">
-          <h3 class="font-semibold text-gray-800 text-sm">
-            Zen Star Sports Nibras School (...
-          </h3>
-          <div class="flex items-center text-sm text-gray-600">
-            <span class="text-yellow-500 mr-1">★</span>4.42 (31)
-          </div>
-        </div>
-
-        <p class="text-xs text-gray-500 mb-3">DIP 1 (~26.2 km)</p>
-
-        <div class="mb-4 text-lg text-gray-600">
-          🏸 ⚽ <span class="text-xs text-gray-500">+ 1 more</span>
-        </div>
-
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Indoor Badminton</span>
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Indoor Basketball</span>
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Indoor Volleyball</span>
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Players bring own Kit</span>
-        </div>
-
-     <a href="https://wa.me/971565342725" target="_blank">
-  <button class="w-full mt-4 bg-amber-600 to-orange-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition">
-    Book a Venue
-  </button>
 </a>
-      </div>
+
+<a href="https://wa.me/971565342725" target="_blank" class="block">
+
+  <!-- CARD 5 -->
+  <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer">
+
+    <div class="relative">
+      <img src="/images/card5.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
+      <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
+        Bookable
+      </span>
     </div>
 
-    <!-- CARD 6 -->
-    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group">
-      <div class="relative">
-        <img src="/images/card6.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
-        <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
-          Bookable
-        </span>
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-1">
+        <h3 class="font-semibold text-gray-800 text-sm">
+          Zen Star Sports Nibras School (...
+        </h3>
+        <div class="flex items-center text-sm text-gray-600">
+          <span class="text-yellow-500 mr-1">★</span>4.42 (31)
+        </div>
       </div>
 
-      <div class="p-5">
-        <div class="flex justify-between items-start mb-1">
-          <h3 class="font-semibold text-gray-800 text-sm">
-            Zen Star AC court Badminton Ap...
-          </h3>
-          <div class="flex items-center text-sm text-gray-600">
-            <span class="text-yellow-500 mr-1">★</span>2.00 (3)
-          </div>
-        </div>
+      <p class="text-xs text-gray-500 mb-3">DIP 1 (~26.2 km)</p>
 
-        <p class="text-xs text-gray-500 mb-3">Al Karama (~13.4 km)</p>
-
-        <div class="mb-4 text-lg text-gray-600">🏸</div>
-
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Indoor A/c Badminton</span>
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Close to ADCB Metro Station</span>
-          <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Player bring own kit</span>
-        </div>
-
-   <a href="https://wa.me/971565342725" target="_blank">
-  <button class="w-full mt-4 bg-amber-600 to-orange-600 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:scale-105 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] transition">
-    Book a Venue
-  </button>
-</a>
+      <div class="mb-4 text-lg text-gray-600">
+        🏸 ⚽ <span class="text-xs text-gray-500">+ 1 more</span>
       </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Indoor Badminton</span>
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Indoor Basketball</span>
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Indoor Volleyball</span>
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Players bring own Kit</span>
+      </div>
+
     </div>
+
+  </div>
+
+</a>
+
+<a href="https://wa.me/971565342725" target="_blank" class="block">
+
+  <!-- CARD 6 -->
+  <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer">
+
+    <div class="relative">
+      <img src="/images/card6.jpg" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
+      <span class="absolute bottom-3 right-3 bg-amber-600 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">
+        Bookable
+      </span>
+    </div>
+
+    <div class="p-5">
+      <div class="flex justify-between items-start mb-1">
+        <h3 class="font-semibold text-gray-800 text-sm">
+          Zen Star AC court Badminton Ap...
+        </h3>
+        <div class="flex items-center text-sm text-gray-600">
+          <span class="text-yellow-500 mr-1">★</span>2.00 (3)
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500 mb-3">Al Karama (~13.4 km)</p>
+
+      <div class="mb-4 text-lg text-gray-600">🏸</div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Indoor A/c Badminton</span>
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Close to ADCB Metro Station</span>
+        <span class="bg-amber-100 px-3 py-1 rounded-full text-xs font-medium">Player bring own kit</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</a>
 
   </div>
 </section>
