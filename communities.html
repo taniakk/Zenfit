@@ -20,50 +20,53 @@
 
 
 <!-- 🔹 NAVBAR -->
-<nav class="w-full fixed top-0 z-50 bg-white text-black shadow-lg border-b border-white/10">
+<!-- 🔹 NAVBAR -->
+<nav class="w-full fixed top-0 z-50 backdrop-blur-xl bg-white/70 text-black shadow-md border-b border-white/20 transition-all duration-300">
 
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 
-     <!-- Logo -->
-<a href="/">
-  <img src="/images/zenfitlogo1.png" alt="ZenFit.ae Logo" class="h-10 w-auto">
-</a>
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2">
+      <img src="/images/zenfitlogo1.png" alt="ZenFit.ae Logo" class="h-10 w-auto">
+    </a>
 
     <!-- DESKTOP MENU -->
-    <div class="hidden md:flex items-center gap-8 ">
+    <div class="hidden md:flex items-center gap-8">
 
-      <a href="/communities.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+      <!-- LINKS -->
+      <a href="/index.html" class="relative font-medium group">
         Home
-        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <a href="#why" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
-        Why us
-        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+      <a href="/communities.html" class="relative font-medium group">
+        Community
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <a href="/venueBooking.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+      <a href="/venueBooking.html" class="relative font-medium group">
         Venues
-        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <a href="#contact" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+      <a href="#contact" class="relative font-medium group">
         Contact
-        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
 
+      <!-- CTA -->
       <a href="https://wa.me/971565342725" target="_blank">
-  <button class="relative bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
-                     hover:scale-105 transition duration-300 shadow-lg 
-                     hover:shadow-[0_0_20px_rgba(76,175,80,0.6)]">
-        Book Now
-  </button>
-</a>
+        <button class="bg-gradient-to-r from-emerald-500 to-green-600 px-6 py-2.5 rounded-full font-semibold text-white
+                       shadow-lg hover:scale-105 transition duration-300
+                       hover:shadow-[0_0_25px_rgba(34,197,94,0.5)]">
+          Book Now
+        </button>
+      </a>
 
     </div>
 
     <!-- MOBILE ICON -->
-    <button id="menu-btn" class="md:hidden text-3xl text-[#4CAF50] transition">
+    <button id="menu-btn" class="md:hidden text-3xl text-emerald-500 transition-transform duration-300 hover:scale-110">
       ☰
     </button>
 
@@ -71,239 +74,288 @@
 
   <!-- MOBILE MENU -->
   <div id="mobile-menu" 
-       class="hidden md:hidden fixed top-[72px] left-0 w-full bg-black/90 backdrop-blur-xl px-6 py-6 space-y-5 text-center text-white shadow-lg">
+       class="hidden md:hidden fixed top-[70px] left-0 w-full bg-white/80 backdrop-blur-2xl px-6 py-8 space-y-6 text-center shadow-xl transition-all duration-300">
 
-    <a href="/communities.html" class="block text-white hover:text-[#4CAF50] transition">Home</a>
-    <a href="#why" class="block hover:text-[#4CAF50] transition">Why us</a>
-    <a href="/venueBooking.html" class="block hover:text-[#4CAF50] transition">Venues</a>
-    <a href="#contact" class="block hover:text-[#4CAF50] transition">Contact</a>
+    <!-- LINKS -->
+    <a href="/index.html" class="block text-gray-800 text-lg font-medium hover:text-emerald-500 transition">
+      Home
+    </a>
 
-    <button class="w-[60%] bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
-                   hover:scale-105 transition duration-300 shadow-lg">
-      Book Now
-    </button>
+    <a href="#why" class="block text-gray-800 text-lg font-medium hover:text-emerald-500 transition">
+      Why us
+    </a>
+
+    <a href="/venueBooking.html" class="block text-gray-800 text-lg font-medium hover:text-emerald-500 transition">
+      Venues
+    </a>
+
+    <a href="#contact" class="block text-gray-800 text-lg font-medium hover:text-emerald-500 transition">
+      Contact
+    </a>
+
+    <!-- CTA -->
+    <a href="https://wa.me/971565342725" target="_blank" class="flex justify-center">
+      <button class="w-[70%] bg-gradient-to-r from-emerald-500 to-green-600 text-white py-3 rounded-full font-semibold
+                     shadow-lg hover:scale-105 transition duration-300">
+        Book Now
+      </button>
+    </a>
 
   </div>
 
 </nav>
 
-<!-- JS -->
 <script>
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
 
   let isOpen = false;
 
-  btn.addEventListener("click", () => {
+  // TOGGLE MENU
+  menuBtn.addEventListener("click", () => {
     isOpen = !isOpen;
-    menu.classList.toggle("hidden");
-    btn.textContent = isOpen ? "✕" : "☰";
+    mobileMenu.classList.toggle("hidden");
+    menuBtn.textContent = isOpen ? "✕" : "☰";
   });
 
-  // Auto close on scroll
+  // CLOSE MENU WHEN CLICKING LINK
+  document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuBtn.textContent = "☰";
+      isOpen = false;
+    });
+  });
+
+  // AUTO CLOSE ON SCROLL
   window.addEventListener("scroll", () => {
     if (isOpen) {
-      menu.classList.add("hidden");
-      btn.textContent = "☰";
+      mobileMenu.classList.add("hidden");
+      menuBtn.textContent = "☰";
       isOpen = false;
     }
   });
 </script>
 
 <!-- 🔹 SPORTS SECTION (MATCHING YOUR WEBSITE STYLE) -->
-<section id="sports" class="w-full mt-10 font-sans px-4 md:px-10 py-10">
+<section id="sports" class="w-full py-16 px-4 mt-6 md:px-10 bg-gradient-to-b from-white via-gray-50 to-white">
 
-  <!-- Header -->
-  <div class="bg-gradient-to-r from-[#4CAF50] to-[#3FA34D] py-5 shadow-md rounded-xl">
-    <h2 class="text-center text-[#102A1C] font-extrabold text-xl tracking-[0.25em] uppercase">
+  <!-- HEADER -->
+  <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+
+    <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
       Sports We Organise
     </h2>
-  </div>
 
-  <!-- Container -->
-  <div class="flex flex-col md:flex-row mt-6 rounded-2xl overflow-hidden shadow-lg">
+    <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-green-600 mx-auto mt-4 rounded-full"></div>
 
-    <!-- CARD1 -->
-<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
-
-  <!-- CLICKABLE OVERLAY -->
-  <a href="basketball.html" target="_blank" class="absolute inset-0 z-20"></a>
-
-  <img src="/images/basketball.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Basketball</h3>
-  </div>
-
-  <!-- Bottom Button REMOVED -->
-
-</div>
-
-    <!-- CARD2 -->
-<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10 cursor-pointer">
-
-  <!-- CLICKABLE OVERLAY -->
-  <a href="vollyball.html" target="_blank" class="absolute inset-0 z-20"></a>
-
-  <img src="/images/vollyball.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Volleyball</h3>
-  </div>
-
-  <!-- Bottom Button REMOVED -->
-
-</div>
-
-    <!-- CARD3 -->
- <div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10 cursor-pointer">
-
-  <!-- CLICKABLE OVERLAY -->
-  <a href="football.html" target="_blank" class="absolute inset-0 z-20"></a>
-
-  <img src="/images/football.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Football</h3>
-  </div>
-
-  <!-- Bottom Button REMOVED -->
-
-</div>
-
-    <!-- CARD4 -->
-<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10 cursor-pointer">
-
-  <!-- CLICKABLE OVERLAY -->
-  <a href="badminton.html" target="_blank" class="absolute inset-0 z-20"></a>
-
-  <img src="/images/badminton1.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Badminton</h3>
-  </div>
-
-  <!-- Bottom Button REMOVED -->
-
-</div>
-
-    <!-- CARD5 -->
-<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden border-b md:border-b-0 md:border-r border-white/10 cursor-pointer">
-
-  <!-- CLICKABLE OVERLAY -->
-  <a href="paddeltennis.html" target="_blank" class="absolute inset-0 z-20"></a>
-
-  <img src="/images/padeltennis.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center text-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">
-      Padel<br>Tennis
-    </h3>
-  </div>
-
-  <!-- Bottom Button REMOVED -->
-
-</div>
-
-    <!-- CARD6 -->
-<div class="relative w-full h-[180px] md:h-[520px] md:flex-1 group overflow-hidden cursor-pointer">
-
-  <!-- CLICKABLE OVERLAY -->
-  <a href="cricket.html" target="_blank" class="absolute inset-0 z-20"></a>
-
-  <img src="/images/cricketcard.jpg"
-    class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
-
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-
-  <!-- Center Title -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <h3 class="text-white text-xl md:text-3xl font-black italic">Cricket</h3>
-  </div>
-
-  <!-- Bottom Button REMOVED -->
-
-</div>
+    <p class="text-gray-500 mt-4 text-sm md:text-base">
+      Explore a wide range of sports communities and weekly games designed for all skill levels
+    </p>
 
   </div>
-</section>
 
-<!-- About -->
-<section class="w-full py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white">
+  <!-- CARDS CONTAINER -->
+  <div class="flex flex-col md:flex-row rounded-3xl overflow-hidden shadow-xl">
 
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <!-- COMMON CARD STYLE -->
+    <!-- CARD 1 -->
+    <div class="relative w-full h-[220px] md:h-[520px] md:flex-1 group overflow-hidden"
+         data-aos="fade-up" data-aos-delay="100">
 
-    <!-- 🔹 IMAGE LEFT SIDE -->
-    <div class="relative order-1 md:order-1" data-aos="fade-right">
+      <a href="basketball.html" target="_blank" class="absolute inset-0 z-20"></a>
 
-      <img src="/images/about.jpeg"
-           class="rounded-2xl shadow-2xl w-full h-[380px] object-cover border border-[#1f2937]">
+      <img src="/images/basketball.jpg"
+        class="absolute inset-0 w-full h-full object-cover md:object-cover object-center
+               transition duration-700 group-hover:scale-110">
 
-      <!-- glow effect -->
-      <div class="absolute -bottom-5 -left-5 w-full h-full bg-[#4CAF50]/25 rounded-2xl blur-2xl"></div>
+      <!-- DARK OVERLAY -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
 
-      <!-- small floating badge -->
-      <div class="absolute top-4 left-4 bg-black/60 border border-[#4CAF50] text-[#4CAF50] px-3 py-1 text-xs rounded-full">
-        Connect • Play • Enjoy
+      <!-- TITLE -->
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h3 class="text-white text-xl md:text-3xl font-black tracking-wide">
+          Basketball
+        </h3>
       </div>
 
     </div>
 
-    <!-- 🔹 TEXT RIGHT SIDE -->
-    <div class="order-2 md:order-2" data-aos="fade-left">
+    <!-- CARD 2 -->
+    <div class="relative w-full h-[220px] md:h-[520px] md:flex-1 group overflow-hidden"
+         data-aos="fade-up" data-aos-delay="150">
 
-      <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-        About <span class="text-[#4CAF50]">ZenFit.ae</span>
+      <a href="vollyball.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+      <img src="/images/vollyball.jpg"
+        class="absolute inset-0 w-full h-full object-cover object-center
+               transition duration-700 group-hover:scale-110">
+
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h3 class="text-white text-xl md:text-3xl font-black">
+          Volleyball
+        </h3>
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="relative w-full h-[220px] md:h-[520px] md:flex-1 group overflow-hidden"
+         data-aos="fade-up" data-aos-delay="200">
+
+      <a href="football.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+      <img src="/images/football.jpg"
+        class="absolute inset-0 w-full h-full object-cover object-center
+               transition duration-700 group-hover:scale-110">
+
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h3 class="text-white text-xl md:text-3xl font-black">
+          Football
+        </h3>
+      </div>
+
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="relative w-full h-[220px] md:h-[520px] md:flex-1 group overflow-hidden"
+         data-aos="fade-up" data-aos-delay="250">
+
+      <a href="badminton.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+      <img src="/images/badminton1.jpg"
+        class="absolute inset-0 w-full h-full object-cover object-center
+               transition duration-700 group-hover:scale-110">
+
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h3 class="text-white text-xl md:text-3xl font-black">
+          Badminton
+        </h3>
+      </div>
+
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="relative w-full h-[220px] md:h-[520px] md:flex-1 group overflow-hidden"
+         data-aos="fade-up" data-aos-delay="300">
+
+      <a href="paddeltennis.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+      <img src="/images/padeltennis.jpg"
+        class="absolute inset-0 w-full h-full object-cover object-center
+               transition duration-700 group-hover:scale-110">
+
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      <div class="absolute inset-0 flex items-center justify-center text-center">
+        <h3 class="text-white text-xl md:text-3xl font-black leading-tight">
+          Padel Tennis
+        </h3>
+      </div>
+
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="relative w-full h-[220px] md:h-[520px] md:flex-1 group overflow-hidden"
+         data-aos="fade-up" data-aos-delay="350">
+
+      <a href="cricket.html" target="_blank" class="absolute inset-0 z-20"></a>
+
+      <img src="/images/cricketcard.jpg"
+        class="absolute inset-0 w-full h-full object-cover object-center
+               transition duration-700 group-hover:scale-110">
+
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h3 class="text-white text-xl md:text-3xl font-black">
+          Cricket
+        </h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- About -->
+<section class="w-full py-24 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white relative overflow-hidden">
+
+  <!-- 🌟 BACKGROUND GLOW -->
+  <div class="absolute w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] top-[-100px] left-[-100px]"></div>
+  <div class="absolute w-[350px] h-[350px] bg-green-400/10 rounded-full blur-[120px] bottom-[-100px] right-[-100px]"></div>
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center relative z-10">
+
+    <!-- 🔹 IMAGE SIDE -->
+    <div class="relative" data-aos="fade-right">
+
+      <!-- IMAGE -->
+      <img src="/images/about.jpeg"
+           class="rounded-3xl shadow-2xl w-full h-[400px] object-cover border border-white/10">
+
+      <!-- GLASS OVERLAY CARD -->
+      <div class="absolute -bottom-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 
+                  px-4 py-3 rounded-xl shadow-lg">
+        <p class="text-sm text-white font-medium">
+          ⚡ 1500+ Players Weekly
+        </p>
+      </div>
+
+      <!-- SOFT GLOW -->
+      <div class="absolute inset-0 rounded-3xl border border-emerald-500/20 pointer-events-none"></div>
+
+    </div>
+
+    <!-- 🔹 TEXT SIDE -->
+    <div data-aos="fade-left">
+
+      <!-- TITLE -->
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight">
+        About 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-500">
+          ZenFit.ae
+        </span>
       </h2>
 
-      <p class="text-gray-300 leading-relaxed mb-5" data-aos="fade-up" data-aos-delay="100">
+      <!-- DESCRIPTION -->
+      <p class="text-gray-300 leading-relaxed mb-5 text-sm md:text-base" data-aos="fade-up" data-aos-delay="100">
         ZenFit.ae is built by sports enthusiasts who understood a simple problem — 
         people love to play, but often struggle to find teammates or nearby games.
       </p>
 
-      <p class="text-gray-400 leading-relaxed mb-5" data-aos="fade-up" data-aos-delay="200">
-        What started as a personal challenge was transformed into a smart solution. 
-        ZenFit.ae connects players, communities, and sports venues on a single platform, 
-        making it effortless to discover and join games anytime.
+      <p class="text-gray-400 leading-relaxed mb-5 text-sm md:text-base" data-aos="fade-up" data-aos-delay="200">
+        What started as a personal challenge became a smart platform that connects players, 
+        communities, and venues—making it effortless to discover and join games anytime.
       </p>
 
-      <p class="text-gray-400 leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="300">
-        Our mission is simple — to make sports more accessible, social, and exciting. 
-        We aim to bring people together through real-world play and build strong local sports communities.
+      <p class="text-gray-400 leading-relaxed mb-8 text-sm md:text-base" data-aos="fade-up" data-aos-delay="300">
+        Our mission is simple — to make sports more accessible, social, and exciting, 
+        while building strong real-world communities.
       </p>
 
-      <!-- 🔹 HIGHLIGHTS -->
+      <!-- 🔹 FEATURE TAGS -->
       <div class="flex flex-wrap gap-3" data-aos="zoom-in" data-aos-delay="400">
 
-        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
+        <span class="px-4 py-2 text-sm bg-white/5 backdrop-blur-md border border-white/10 rounded-full 
+                     hover:bg-emerald-500/20 hover:border-emerald-400 transition">
           Find Players
         </span>
 
-        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
+        <span class="px-4 py-2 text-sm bg-white/5 backdrop-blur-md border border-white/10 rounded-full 
+                     hover:bg-emerald-500/20 hover:border-emerald-400 transition">
           Book Venues
         </span>
 
-        <span class="px-4 py-2 text-sm bg-[#0f1f18] border border-[#4CAF50] text-[#4CAF50] rounded-full">
+        <span class="px-4 py-2 text-sm bg-white/5 backdrop-blur-md border border-white/10 rounded-full 
+                     hover:bg-emerald-500/20 hover:border-emerald-400 transition">
           Join Matches
         </span>
 
@@ -331,93 +383,115 @@
     </div>
 
     <!-- EVENTS -->
-    <div class="grid md:grid-cols-3 gap-8">
+  <!-- EVENTS -->
+<div class="grid md:grid-cols-3 gap-8">
 
-      <!-- 🏸 CARD -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
-           data-aos="fade-up">
+  <!-- 🏸 CARD 1 -->
+  <div class="relative bg-white/70 backdrop-blur-xl border border-gray-200/60 rounded-3xl p-6 
+              shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 group"
+       data-aos="fade-up">
 
-        <span class="text-sm font-semibold text-green-600">WEDNESDAY</span>
+    <!-- TOP BADGE -->
+    <span class="text-xs font-semibold tracking-wide text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+      WEDNESDAY
+    </span>
 
-        <h3 class="text-xl font-bold mt-2 text-gray-900">
-          Ladies Badminton
-        </h3>
+    <!-- TITLE -->
+    <h3 class="text-xl font-bold mt-3 text-gray-900 group-hover:text-emerald-600 transition">
+      Ladies Badminton
+    </h3>
 
-        <p class="text-sm text-gray-500 mt-1">
-          8:00 – 9:00 PM · Apple School, Al Karama
-        </p>
+    <!-- INFO -->
+    <p class="text-sm text-gray-500 mt-1">
+      8:00 – 9:00 PM · Apple School, Al Karama
+    </p>
 
-        <div class="flex flex-wrap gap-2 mt-4 text-xs">
-          <span class="bg-gray-100 px-3 py-1 rounded-full">Women Only</span>
-          <span class="bg-gray-100 px-3 py-1 rounded-full">All Levels</span>
-          <span class="bg-gray-100 px-3 py-1 rounded-full">Free</span>
-        </div>
-
-     <button onclick="scrollToForm()" 
-  class="mt-6 w-full py-2 rounded-lg border border-gray-300 
-         text-gray-800 hover:border-green-600 hover:text-green-700 transition">
-  Join Session
-</button>
-
-      </div>
-
-      <!-- 🏸 CARD -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
-           data-aos="fade-up" data-aos-delay="100">
-
-        <span class="text-sm font-semibold text-green-600">WEDNESDAY</span>
-
-        <h3 class="text-xl font-bold mt-2 text-gray-900">
-          Mixed Doubles Badminton
-        </h3>
-
-        <p class="text-sm text-gray-500 mt-1">
-          8:00 – 10:00 PM · Venue shared via DM
-        </p>
-
-        <div class="flex flex-wrap gap-2 mt-4 text-xs">
-          <span class="bg-gray-100 px-3 py-1 rounded-full">Open to All</span>
-          <span class="bg-gray-100 px-3 py-1 rounded-full">Rotational Play</span>
-          <span class="bg-gray-100 px-3 py-1 rounded-full">Social</span>
-        </div>
-
-       <button onclick="scrollToForm()" 
-  class="mt-6 w-full py-2 rounded-lg border border-gray-300 
-         text-gray-800 hover:border-green-600 hover:text-green-700 transition">
-  Get Details
-</button>
-
-      </div>
-
-      <!-- 🏏 CARD -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
-           data-aos="fade-up" data-aos-delay="200">
-
-        <span class="text-sm font-semibold text-green-600">SATURDAY</span>
-
-        <h3 class="text-xl font-bold mt-2 text-gray-900">
-          Turf Cricket
-        </h3>
-
-        <p class="text-sm text-gray-500 mt-1">
-          8:00 – 10:00 PM · Port Rashid, Maritime City
-        </p>
-
-        <div class="flex flex-wrap gap-2 mt-4 text-xs">
-          <span class="bg-gray-100 px-3 py-1 rounded-full">All Genders</span>
-          <span class="bg-gray-100 px-3 py-1 rounded-full">All Levels</span>
-          <span class="bg-gray-100 px-3 py-1 rounded-full">Free</span>
-        </div>
-
-       <button onclick="scrollToForm()" 
-  class="mt-6 w-full py-2 rounded-lg border border-gray-300 
-         text-gray-800 hover:border-green-600 hover:text-green-700 transition">
-  Join Cricket
-</button>
-
-      </div>
-
+    <!-- TAGS -->
+    <div class="flex flex-wrap gap-2 mt-5 text-xs">
+      <span class="bg-gray-100/80 px-3 py-1 rounded-full">Women Only</span>
+      <span class="bg-gray-100/80 px-3 py-1 rounded-full">All Levels</span>
+      <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">Free</span>
     </div>
+
+    <!-- BUTTON -->
+    <button onclick="scrollToForm()" 
+      class="mt-6 w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 text-white font-semibold
+             shadow-md hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:scale-[1.02] transition">
+      Join Session
+    </button>
+
+    <!-- GLOW EFFECT -->
+    <div class="absolute inset-0 rounded-3xl border border-emerald-500/0 group-hover:border-emerald-400/30 transition"></div>
+
+  </div>
+
+  <!-- 🏸 CARD 2 -->
+  <div class="relative bg-white/70 backdrop-blur-xl border border-gray-200/60 rounded-3xl p-6 
+              shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 group"
+       data-aos="fade-up" data-aos-delay="100">
+
+    <span class="text-xs font-semibold tracking-wide text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+      WEDNESDAY
+    </span>
+
+    <h3 class="text-xl font-bold mt-3 text-gray-900 group-hover:text-emerald-600 transition">
+      Mixed Doubles Badminton
+    </h3>
+
+    <p class="text-sm text-gray-500 mt-1">
+      8:00 – 10:00 PM · Venue shared via DM
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-5 text-xs">
+      <span class="bg-gray-100/80 px-3 py-1 rounded-full">Open to All</span>
+      <span class="bg-gray-100/80 px-3 py-1 rounded-full">Rotational Play</span>
+      <span class="bg-gray-100/80 px-3 py-1 rounded-full">Social</span>
+    </div>
+
+    <button onclick="scrollToForm()" 
+      class="mt-6 w-full py-3 rounded-xl border border-gray-300 text-gray-800 
+             hover:border-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 transition">
+      Get Details
+    </button>
+
+    <div class="absolute inset-0 rounded-3xl border border-emerald-500/0 group-hover:border-emerald-400/30 transition"></div>
+
+  </div>
+
+  <!-- 🏏 CARD 3 -->
+  <div class="relative bg-white/70 backdrop-blur-xl border border-gray-200/60 rounded-3xl p-6 
+              shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500 group"
+       data-aos="fade-up" data-aos-delay="200">
+
+    <span class="text-xs font-semibold tracking-wide text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+      SATURDAY
+    </span>
+
+    <h3 class="text-xl font-bold mt-3 text-gray-900 group-hover:text-emerald-600 transition">
+      Turf Cricket
+    </h3>
+
+    <p class="text-sm text-gray-500 mt-1">
+      8:00 – 10:00 PM · Port Rashid, Maritime City
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-5 text-xs">
+      <span class="bg-gray-100/80 px-3 py-1 rounded-full">All Genders</span>
+      <span class="bg-gray-100/80 px-3 py-1 rounded-full">All Levels</span>
+      <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full">Free</span>
+    </div>
+
+    <button onclick="scrollToForm()" 
+      class="mt-6 w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 text-white font-semibold
+             shadow-md hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:scale-[1.02] transition">
+      Join Cricket
+    </button>
+
+    <div class="absolute inset-0 rounded-3xl border border-emerald-500/0 group-hover:border-emerald-400/30 transition"></div>
+
+  </div>
+
+</div>
 
     <!-- CTA -->
     <div class="text-center mt-16" data-aos="fade-up">
@@ -434,149 +508,172 @@
 </section>
 
 <!-- slider -->
-<section id="communities" class="w-full py-16 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white">
+<section id="communities" class="w-full py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black relative overflow-hidden">
+
+  <!-- 🌟 BACKGROUND GLOW -->
+  <div class="absolute w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] top-[-100px] left-[-100px]"></div>
+  <div class="absolute w-[350px] h-[350px] bg-green-400/10 rounded-full blur-[120px] bottom-[-100px] right-[-100px]"></div>
 
   <!-- 🔹 HEADING -->
-  <div class="max-w-7xl mx-auto px-6 text-center mb-10">
-    <h2 class="text-3xl md:text-4xl font-bold">
-      Our <span class="text-[#4CAF50]">Communities</span>
+  <div class="max-w-6xl mx-auto px-6 text-center mb-12 relative z-10" data-aos="fade-up">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+      Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-500">Communities</span>
     </h2>
-    <p class="text-gray-400 mt-3 text-sm md:text-base">
-      Join active sports communities, connect with players, and enjoy the game together.
-    </p>
   </div>
 
   <!-- 🔹 SLIDER -->
-  <div class="relative max-w-5xl mx-auto px-6">
+  <div class="max-w-5xl mx-auto px-6 relative">
 
-    <!-- Images Wrapper -->
-    <div id="slider" class="overflow-hidden rounded-2xl shadow-2xl">
+    <div class="overflow-hidden rounded-3xl shadow-2xl">
 
-      <div class="flex transition-transform duration-700 ease-in-out" id="slides">
+      <div id="slides" class="flex transition-transform duration-700 ease-in-out">
 
-        <!-- Slide 1 -->
-        <img src="/images/community1.jpeg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[450px]">
+        <!-- SLIDE -->
+        <img src="/images/community1.jpeg"
+             class="w-full flex-shrink-0 h-[260px] md:h-[450px] object-cover object-center">
 
-        <!-- Slide 2 -->
-        <img src="/images/community2.jpeg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[450px]">
+        <img src="/images/community2.jpeg"
+             class="w-full flex-shrink-0 h-[260px] md:h-[450px] object-cover object-center">
 
-        <!-- Slide 3 -->
-        <img src="/images/community3.jpeg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[450px]">
+        <img src="/images/community3.jpeg"
+             class="w-full flex-shrink-0 h-[260px] md:h-[450px] object-cover object-center">
 
-        <!-- Slide 4 -->
-        <img src="/images/community4.jpeg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[450px]">
+        <img src="/images/community4.jpeg"
+             class="w-full flex-shrink-0 h-[260px] md:h-[450px] object-cover object-center">
 
       </div>
+
     </div>
 
-    <!-- 🔹 LEFT BUTTON -->
-    <button onclick="prevSlide()"
-      class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-[#4CAF50] text-white p-3 rounded-full transition">
-      ❮
-    </button>
-
-    <!-- 🔹 RIGHT BUTTON -->
-    <button onclick="nextSlide()"
-      class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-[#4CAF50] text-white p-3 rounded-full transition">
-      ❯
-    </button>
-
-    <!-- 🔹 DOTS -->
-    <div class="flex justify-center mt-6 gap-2">
-      <span class="w-2 h-2 bg-[#4CAF50] rounded-full"></span>
-      <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
-      <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
-      <span class="w-2 h-2 bg-gray-600 rounded-full"></span>
+    <!-- 🔹 MINIMAL DOTS -->
+    <div class="flex justify-center mt-6 gap-3">
+      <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full"></span>
+      <span class="w-2.5 h-2.5 bg-white/30 rounded-full"></span>
+      <span class="w-2.5 h-2.5 bg-white/30 rounded-full"></span>
+      <span class="w-2.5 h-2.5 bg-white/30 rounded-full"></span>
     </div>
 
   </div>
+
 </section>
 
 <!-- why us -->
-<section id="why" class="w-full py-24 bg-gradient-to-b from-[#f8fbff] via-white to-[#f1fdf5]">
+<section id="why" class="w-full py-28 bg-gradient-to-b from-[#f8fbff] via-white to-[#f1fdf5] relative overflow-hidden">
 
-  <div class="max-w-7xl mx-auto px-6">
+  <!-- 🌟 SOFT BACKGROUND GLOW -->
+  <div class="absolute w-[400px] h-[400px] bg-emerald-400/10 rounded-full blur-[120px] top-[-120px] left-[-120px]"></div>
+  <div class="absolute w-[350px] h-[350px] bg-green-400/10 rounded-full blur-[120px] bottom-[-120px] right-[-120px]"></div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
 
     <!-- 🔹 HEADING -->
     <div class="text-center mb-20" data-aos="fade-up">
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
-        Why <span class="text-[#4CAF50]">Zenfit.ae</span> Stands Out
+      <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+        Why 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-green-600">
+          ZenFit
+        </span>
+        Stands Out
       </h2>
-      <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
-        More than just playing — it’s about connection, growth, and real experiences.
+
+      <p class="text-gray-600 mt-5 max-w-2xl mx-auto text-base md:text-lg">
+        Not just sports — a complete ecosystem where players connect, stay consistent, and grow together.
       </p>
     </div>
 
     <!-- 🔹 CARDS -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
       <!-- CARD 1 -->
       <div data-aos="fade-up" data-aos-delay="100"
-        class="relative group bg-white rounded-3xl p-8 shadow-lg hover:shadow-[0_20px_60px_rgba(76,175,80,0.25)] transition duration-300">
+        class="group relative bg-white/70 backdrop-blur-xl border border-gray-200/60 
+               rounded-3xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-500">
 
-        <div class="absolute -top-5 -left-5 w-20 h-20 bg-[#4CAF50]/20 rounded-full blur-2xl group-hover:scale-125 transition"></div>
+        <div class="text-emerald-500 text-4xl mb-5">👥</div>
 
-        <div class="text-[#4CAF50] text-4xl mb-5">👥</div>
-
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">
-          Strong Community
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+          Active Community
         </h3>
 
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Connect with active players and be part of a growing sports-driven community.
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          Join a growing network of players across multiple sports and skill levels.
         </p>
+
+        <!-- MICRO DETAIL -->
+        <p class="text-xs text-gray-400">
+          1500+ players every week
+        </p>
+
+        <!-- BORDER GLOW -->
+        <div class="absolute inset-0 rounded-3xl border border-emerald-500/0 group-hover:border-emerald-400/30 transition"></div>
 
       </div>
 
-      <!-- CARD 2 -->
+      <!-- CARD 2 (PRIMARY) -->
       <div data-aos="fade-up" data-aos-delay="200"
-        class="relative group bg-gradient-to-br from-[#4CAF50] to-green-400 text-white rounded-3xl p-8 shadow-xl hover:scale-105 transition duration-300">
+        class="group relative bg-gradient-to-br from-emerald-500 to-green-600 text-white 
+               rounded-3xl p-8 shadow-xl hover:shadow-[0_20px_60px_rgba(34,197,94,0.4)] 
+               hover:-translate-y-2 transition duration-500">
 
         <div class="text-4xl mb-5">⚡</div>
 
-        <h3 class="text-xl font-semibold mb-2">
-          Fitness Made Fun
+        <h3 class="text-lg font-semibold mb-2">
+          Fitness That Sticks
         </h3>
 
-        <p class="text-sm text-white/90 leading-relaxed">
-          Stay active naturally by playing sports instead of following boring routines.
+        <p class="text-sm text-white/90 leading-relaxed mb-4">
+          No boring routines—stay consistent through fun, competitive sports.
+        </p>
+
+        <p class="text-xs text-white/70">
+          Play weekly. Stay fit naturally.
         </p>
 
       </div>
 
       <!-- CARD 3 -->
       <div data-aos="fade-up" data-aos-delay="300"
-        class="relative group bg-white rounded-3xl p-8 shadow-lg hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition duration-300">
+        class="group relative bg-white/70 backdrop-blur-xl border border-gray-200/60 
+               rounded-3xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-500">
 
-        <div class="absolute -bottom-5 -right-5 w-20 h-20 bg-blue-200/30 rounded-full blur-2xl"></div>
+        <div class="text-emerald-500 text-4xl mb-5">🤝</div>
 
-        <div class="text-blue-500 text-4xl mb-5">🤝</div>
-
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">
           Real Connections
         </h3>
 
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Meet new people, build teams, and create meaningful friendships.
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          Meet like-minded players and build genuine friendships beyond the game.
         </p>
+
+        <p class="text-xs text-gray-400">
+          Social + competitive vibe
+        </p>
+
+        <div class="absolute inset-0 rounded-3xl border border-emerald-500/0 group-hover:border-emerald-400/30 transition"></div>
 
       </div>
 
       <!-- CARD 4 -->
       <div data-aos="fade-up" data-aos-delay="400"
-        class="relative group bg-white rounded-3xl p-8 shadow-lg hover:shadow-[0_20px_60px_rgba(76,175,80,0.25)] transition duration-300">
+        class="group relative bg-white/70 backdrop-blur-xl border border-gray-200/60 
+               rounded-3xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-500">
 
-        <div class="absolute top-0 right-0 w-24 h-24 bg-purple-200/30 rounded-full blur-2xl"></div>
+        <div class="text-emerald-500 text-4xl mb-5">📈</div>
 
-        <div class="text-purple-500 text-4xl mb-5">📊</div>
-
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">
-          Track Progress
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+          Continuous Growth
         </h3>
 
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Monitor your performance and improve consistently with insights.
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          Improve your skills, track progress, and become a better player over time.
         </p>
+
+        <p class="text-xs text-gray-400">
+          Skill + consistency focused
+        </p>
+
+        <div class="absolute inset-0 rounded-3xl border border-emerald-500/0 group-hover:border-emerald-400/30 transition"></div>
 
       </div>
 
@@ -587,82 +684,115 @@
 </section>
 
 <!-- testimonials -->
-<section class="w-full py-20 relative overflow-hidden bg-gradient-to-br from-[#0b0f0e] via-[#0f1714] to-black text-white">
+<section class="w-full py-24 relative overflow-hidden bg-gradient-to-br from-[#0b0f0e] via-[#0f1714] to-black text-white">
 
-  <!-- GREEN GLOW -->
-  <div class="absolute top-0 left-0 w-72 h-72 bg-[#4CAF50]/20 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#4CAF50]/20 rounded-full blur-3xl"></div>
+  <!-- SOFT BACKGROUND GLOW -->
+  <div class="absolute top-0 left-0 w-80 h-80 bg-[#4CAF50]/10 rounded-full blur-[120px]"></div>
+  <div class="absolute bottom-0 right-0 w-80 h-80 bg-[#4CAF50]/10 rounded-full blur-[120px]"></div>
 
   <div class="max-w-6xl mx-auto px-6 relative z-10">
 
     <!-- HEADING -->
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight">
         Trusted by <span class="text-[#4CAF50]">Players Like You</span>
       </h2>
       <p class="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">
-        Real stories from people who joined, played, and stayed.
+        Real experiences from players who joined, played, and stayed consistent.
       </p>
     </div>
 
     <!-- GRID -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- CARD -->
-      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(76,175,80,0.3)] transition">
+      <!-- CARD 1 -->
+      <div data-aos="fade-up"
+        class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 
+               hover:-translate-y-2 hover:border-[#4CAF50]/40 transition duration-300">
 
-        <div class="flex justify-between mb-3">
-          <div class="text-yellow-400">★★★★★</div>
+        <!-- TOP -->
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex text-yellow-400 text-sm">★★★★★</div>
           <span class="text-xs text-[#4CAF50]">✔ Verified</span>
         </div>
 
-        <p class="text-gray-300 text-sm">
-          I joined alone but found a full cricket team within minutes. The experience feels very natural.
+        <!-- TEXT -->
+        <p class="text-gray-300 text-sm leading-relaxed">
+          I joined alone but found a full cricket team within minutes. The experience feels natural and well organized.
         </p>
 
-        <div class="mt-5 border-t border-white/10 pt-3">
-          <h4 class="font-semibold">Rahul Sharma</h4>
-          <p class="text-xs text-gray-400">Amateur Cricketer • Ludhiana</p>
-        </div>
+        <!-- USER -->
+        <div class="mt-6 flex items-center gap-3 border-t border-white/10 pt-4">
 
+          <img src="https://i.pravatar.cc/40?img=12"
+               class="w-10 h-10 rounded-full object-cover border border-white/20">
+
+          <div>
+            <h4 class="font-semibold text-sm">Rahul Sharma</h4>
+            <p class="text-xs text-gray-400 flex items-center gap-1">
+              <span>Amateur Cricketer</span> • <span>Ludhiana</span>
+            </p>
+          </div>
+
+        </div>
       </div>
 
-      <!-- CARD -->
-      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(76,175,80,0.3)] transition">
+      <!-- CARD 2 -->
+      <div data-aos="fade-up" data-aos-delay="100"
+        class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 
+               hover:-translate-y-2 hover:border-[#4CAF50]/40 transition duration-300">
 
-        <div class="flex justify-between mb-3">
-          <div class="text-yellow-400">★★★★★</div>
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex text-yellow-400 text-sm">★★★★★</div>
           <span class="text-xs text-[#4CAF50]">✔ Verified</span>
         </div>
 
-        <p class="text-gray-300 text-sm">
-          The best part is how easily I can find nearby games. I’ve started playing regularly now.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          The best part is how easily I can find nearby games. I’ve started playing regularly and made great friends.
         </p>
 
-        <div class="mt-5 border-t border-white/10 pt-3">
-          <h4 class="font-semibold">Simran Kaur</h4>
-          <p class="text-xs text-gray-400">Badminton Player • Amritsar</p>
-        </div>
+        <div class="mt-6 flex items-center gap-3 border-t border-white/10 pt-4">
 
+          <img src="https://i.pravatar.cc/40?img=5"
+               class="w-10 h-10 rounded-full object-cover border border-white/20">
+
+          <div>
+            <h4 class="font-semibold text-sm">Simran Kaur</h4>
+            <p class="text-xs text-gray-400">
+              Badminton Player • Amritsar
+            </p>
+          </div>
+
+        </div>
       </div>
 
-      <!-- CARD -->
-      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-[0_0_30px_rgba(76,175,80,0.3)] transition">
+      <!-- CARD 3 -->
+      <div data-aos="fade-up" data-aos-delay="200"
+        class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 
+               hover:-translate-y-2 hover:border-[#4CAF50]/40 transition duration-300">
 
-        <div class="flex justify-between mb-3">
-          <div class="text-yellow-400">★★★★☆</div>
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex text-yellow-400 text-sm">★★★★☆</div>
           <span class="text-xs text-[#4CAF50]">✔ Verified</span>
         </div>
 
-        <p class="text-gray-300 text-sm">
-          I like how it connects players with similar skill levels. Games feel more competitive and fun.
+        <p class="text-gray-300 text-sm leading-relaxed">
+          I like how it connects players with similar skill levels. Games feel more competitive and engaging.
         </p>
 
-        <div class="mt-5 border-t border-white/10 pt-3">
-          <h4 class="font-semibold">Aman Verma</h4>
-          <p class="text-xs text-gray-400">Football Enthusiast • Jalandhar</p>
-        </div>
+        <div class="mt-6 flex items-center gap-3 border-t border-white/10 pt-4">
 
+          <img src="https://i.pravatar.cc/40?img=8"
+               class="w-10 h-10 rounded-full object-cover border border-white/20">
+
+          <div>
+            <h4 class="font-semibold text-sm">Aman Verma</h4>
+            <p class="text-xs text-gray-400">
+              Football Enthusiast • Jalandhar
+            </p>
+          </div>
+
+        </div>
       </div>
 
     </div>
@@ -672,60 +802,85 @@
 
 <!-- contact -->
 <section id="contact"
-  class="w-full py-24 flex justify-center items-center bg-cover bg-center relative"
+  class="w-full py-28 flex justify-center items-center bg-cover bg-center relative"
   style="background-image: url('/images/contactbg.jpg');"
 >
 
-  <!-- 🔹 OVERLAY -->
-  <div class="absolute inset-0 bg-black/40"></div>
+  <!-- 🔹 DARK OVERLAY (STRONGER FOR READABILITY) -->
+  <div class="absolute inset-0 bg-black/70"></div>
 
-  <!-- 🔹 FORM -->
+  <!-- 🔹 SOFT GREEN GLOW -->
+  <div class="absolute top-0 left-0 w-72 h-72 bg-[#4CAF50]/20 rounded-full blur-[120px]"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#4CAF50]/20 rounded-full blur-[120px]"></div>
+
+  <!-- 🔹 FORM CONTAINER -->
   <div class="w-full max-w-xl relative z-10 px-6">
 
-    <div class="bg-black/40 backdrop-blur-md rounded-3xl p-10 shadow-2xl">
+    <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
 
       <!-- HEADING -->
-      <div class="text-center mb-8 ">
-        <h2 class="text-3xl md:text-4xl font-bold text-white">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
           Get in <span class="text-[#4CAF50]">Touch</span>
         </h2>
-        <p class="text-white mt-2 text-sm">
+        <p class="text-gray-300 mt-2 text-sm">
           We usually respond within a few hours
         </p>
       </div>
 
       <!-- FORM -->
-      <form class="space-y-5 ">
+      <form class="space-y-5">
 
+        <!-- NAME -->
         <input type="text" placeholder="Your Name" required
-          class="w-full  px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#4CAF50]">
+          class="w-full px-4 py-3 rounded-xl bg-white/10 text-white placeholder-gray-400 
+                 border border-white/20 focus:outline-none focus:border-[#4CAF50] 
+                 focus:bg-white/15 transition">
 
+        <!-- EMAIL -->
         <input type="email" placeholder="Email Address" required
-          class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#4CAF50]">
+          class="w-full px-4 py-3 rounded-xl bg-white/10 text-white placeholder-gray-400 
+                 border border-white/20 focus:outline-none focus:border-[#4CAF50] 
+                 focus:bg-white/15 transition">
 
-        <!-- 🔹 NEW SPORTS INPUT -->
+        <!-- SPORT -->
         <select required
-          class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#4CAF50] text-gray-600">
-          <option value="">Select Sport Interested In</option>
-          <option>Football</option>
-          <option>Cricket</option>
-          <option>Badminton</option>
-          <option>Basketball</option>
-          <option>Padel Tennis</option>
-          <option>Volleyball</option>
+          class="w-full px-4 py-3 rounded-xl bg-white/10 text-gray-300 
+                 border border-white/20 focus:outline-none focus:border-[#4CAF50] 
+                 focus:bg-white/15 transition">
+
+          <option value="" class="text-black">Select Sport Interested In</option>
+          <option class="text-black">Football</option>
+          <option class="text-black">Cricket</option>
+          <option class="text-black">Badminton</option>
+          <option class="text-black">Basketball</option>
+          <option class="text-black">Padel Tennis</option>
+          <option class="text-black">Volleyball</option>
         </select>
 
+        <!-- MESSAGE -->
         <textarea rows="4" placeholder="Your Message" required
-          class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#4CAF50]"></textarea>
+          class="w-full px-4 py-3 rounded-xl bg-white/10 text-white placeholder-gray-400 
+                 border border-white/20 focus:outline-none focus:border-[#4CAF50] 
+                 focus:bg-white/15 transition"></textarea>
 
-        <a href="https://wa.me/971565342725" target="_blank">
+        <!-- CTA BUTTON -->
+        <a href="https://wa.me/971565342725" target="_blank" class="block">
           <button
-            class="w-full mt-4 bg-gradient-to-r from-[#4CAF50] to-green-400 py-3 rounded-xl font-semibold text-white hover:scale-[1.02] transition">
+            class="w-full mt-4 bg-gradient-to-r from-[#4CAF50] to-green-400 py-3 rounded-xl 
+                   font-semibold text-white tracking-wide 
+                   hover:scale-[1.03] transition duration-300 
+                   shadow-lg hover:shadow-[0_0_30px_rgba(76,175,80,0.5)]">
             Send Message →
           </button>
         </a>
 
       </form>
+
+      <!-- TRUST LINE -->
+      <p class="text-center text-xs text-gray-400 mt-6">
+        🔒 Your details are safe with us
+      </p>
 
     </div>
 
@@ -734,70 +889,88 @@
 </section>
 
 
-<footer class="bg-gradient-to-br from-[#0b0f0e] via-[#0f1714] to-black text-gray-300 pt-16 pb-8">
+<!-- 🔹 FOOTER -->
+<footer class="bg-gray-950 text-gray-300  relative overflow-hidden">
 
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+  <!-- SUBTLE GLOW -->
+  <div class="absolute w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] top-[-100px] left-[-100px]"></div>
+  <div class="absolute w-[350px] h-[350px] bg-orange-500/10 rounded-full blur-[120px] bottom-[-100px] right-[-100px]"></div>
 
-    <!-- 🔹 BRAND -->
-    <div>
-      <h2 class="text-2xl font-bold text-white mb-3">
-        Zenfit.ae
-      </h2>
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Connecting players, building communities, and making sports more accessible for everyone.
-      </p>
-    </div>
+  <div class="max-w-7xl mx-auto px-6 py-16 relative z-10">
 
-    <!-- 🔹 NAVIGATION -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Explore</h3>
-      <ul class="space-y-2 text-sm">
-        <li>
-          <a href="#home" class="hover:text-[#4CAF50] transition">Home</a>
-        </li>
-        <li>
-          <a href="#communities" class="hover:text-[#4CAF50] transition">Communities</a>
-        </li>
-        <li>
-          <a href="https://wa.me/971565342725" target="_blank" class="hover:text-[#4CAF50] transition">
-  Contact
-</a>
-        </li>
-      </ul>
-    </div>
+    <div class="grid md:grid-cols-3 gap-12">
 
-    <!-- 🔹 SOCIAL -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Connect</h3>
+      <!-- 🔹 BRAND -->
+      <div>
 
-      <p class="text-gray-400 text-sm mb-4">
-        Follow us on social media
-      </p>
+        <!-- LOGO FIX (LIGHT CARD) -->
+        <div class="inline-block bg-white px-4 py-3 rounded-2xl shadow-md">
+          <img src="images/zenfitlogo1.png" alt="ZenFit Logo" class="h-10 w-auto">
+        </div>
 
-      <div class="flex gap-5 text-xl">
+        <p class="text-sm text-gray-400 mt-5 leading-relaxed max-w-sm">
+          Discover and book top-rated sports venues. Play your favorite games anytime, anywhere with ZenFit communities.
+        </p>
 
-        <!-- Instagram -->
-        <a href="https://instagram.com/yourusername" target="_blank"
-          class="hover:text-[#4CAF50] transition duration-300">
-          <i class="fab fa-instagram"></i>
-        </a>
+        <!-- SOCIALS -->
+        <div class="flex gap-4 mt-6">
 
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"
-          class="hover:text-[#4CAF50] transition duration-300">
-          <i class="fab fa-linkedin"></i>
-        </a>
+          <a href="https://www.instagram.com/_zenfit.ae_/" target="_blank"
+             class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10
+                    hover:bg-emerald-500 hover:scale-110 transition">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/company/zenfit-ae/" target="_blank"
+             class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10
+                    hover:bg-emerald-500 hover:scale-110 transition">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8h4V24h-4V8zm7.5 0h3.6v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.7 2.6 4.7 6v10h-4v-8.9c0-2.1 0-4.8-3-4.8s-3.4 2.3-3.4 4.6V24h-4V8z"/>
+            </svg>
+          </a>
+
+        </div>
 
       </div>
+
+      <!-- 🔹 EXPLORE -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Explore</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#home" class="hover:text-emerald-400 transition">Home</a></li>
+          <li><a href="#venue-section" class="hover:text-emerald-400 transition">Venues</a></li>
+          <li><a href="#contact" class="hover:text-emerald-400 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 COMPANY -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Company</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-emerald-400 transition">About Us</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition">Careers</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition">Contact</a></li>
+        </ul>
+      </div>
+
     </div>
 
-  </div>
+    <!-- BOTTOM -->
+    <div class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
 
-  <!-- 🔹 BOTTOM -->
-  <div class="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-500">
-    <p>
-      © 2026 <span class="text-white font-medium">Zenfit.ae</span>. All rights reserved.
-    </p>
+      <p>© 2026 ZenFit.ae. All rights reserved.</p>
+
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-emerald-400 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-emerald-400 transition">Terms of Service</a>
+      </div>
+
+    </div>
+
   </div>
 
 </footer>
