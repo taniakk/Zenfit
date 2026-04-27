@@ -22,20 +22,19 @@
 
 <body class="bg-black text-white">
 
-<!-- 🔹 NAVBAR -->
+<!--  NAVBAR -->
 <nav class="w-full fixed top-0 z-50 backdrop-blur-xl bg-white/70 text-black shadow-md border-b border-white/20 transition-all duration-300">
 
   <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 
-    <!-- Logo -->
     <a href="/" class="flex items-center gap-2">
       <img src="/images/zenfitlogo1.png" alt="ZenFit.ae Logo" class="h-10 w-auto">
     </a>
 
-    <!-- DESKTOP MENU -->
+   
     <div class="hidden md:flex items-center gap-8">
 
-      <!-- LINKS -->
+    
       <a href="/index.html" class="relative font-medium group">
         Home
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
@@ -56,7 +55,7 @@
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <!-- CTA -->
+     
       <a href="https://wa.me/971565342725" target="_blank">
         <button class="bg-gradient-to-r from-emerald-500 to-green-600 px-6 py-2.5 rounded-full font-semibold text-white
                        shadow-lg hover:scale-105 transition duration-300
@@ -67,14 +66,14 @@
 
     </div>
 
-    <!-- MOBILE ICON -->
+    
     <button id="menu-btn" class="md:hidden text-3xl text-emerald-500 transition-transform duration-300 hover:scale-110">
       ☰
     </button>
 
   </div>
 
-  <!-- MOBILE MENU -->
+  
   <div id="mobile-menu" 
        class="hidden md:hidden fixed top-[70px] left-0 w-full bg-white/80 backdrop-blur-2xl px-6 py-8 space-y-6 text-center shadow-xl transition-all duration-300">
 
@@ -95,7 +94,7 @@
       Contact
     </a>
 
-    <!-- CTA -->
+    
     <a href="https://wa.me/971565342725" target="_blank" class="flex justify-center">
       <button class="w-[70%] bg-gradient-to-r from-emerald-500 to-green-600 text-white py-3 rounded-full font-semibold
                      shadow-lg hover:scale-105 transition duration-300">
@@ -113,14 +112,14 @@
 
   let isOpen = false;
 
-  // TOGGLE MENU
+ 
   menuBtn.addEventListener("click", () => {
     isOpen = !isOpen;
     mobileMenu.classList.toggle("hidden");
     menuBtn.textContent = isOpen ? "✕" : "☰";
   });
 
-  // CLOSE MENU WHEN CLICKING LINK
+
   document.querySelectorAll("#mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
       mobileMenu.classList.add("hidden");
@@ -129,7 +128,7 @@
     });
   });
 
-  // AUTO CLOSE ON SCROLL
+ 
   window.addEventListener("scroll", () => {
     if (isOpen) {
       mobileMenu.classList.add("hidden");
@@ -139,7 +138,6 @@
   });
 </script>
 
-<!-- BUTTON STYLE -->
 <style>
 .book-btn {
   position: relative;
@@ -171,7 +169,7 @@
 }
 </style>
 
-  <!-- 🔹 HERO -->
+  <!--  HERO -->
   <section class="h-[100vh] flex items-center justify-center relative">
 
     <img src="/images/vollyballcard2.jpg"
@@ -192,7 +190,6 @@
     </div>
   </section>
 
-<!-- intro -->
 <section class="py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white">
 
   <div class="max-w-5xl mx-auto px-6 text-center">
@@ -224,7 +221,7 @@
 
 </section>
 
- <!-- 🔹 IMAGE GRID -->
+ <!--  IMAGE GRID -->
 <section class="py-16 bg-gradient-to-b from-[#f9fafb] via-[#eef7f0] to-[#f9fafb] rounded-3xl">
 
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6">
@@ -254,8 +251,8 @@
 </section>
 
 
-<!-- 🔹 JOIN COMMUNITY STEPS -->
-<section class="py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black">
+<!--  JOIN COMMUNITY STEPS -->
+<section class="py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black"> 
 
   <div class="max-w-6xl mx-auto px-6 text-center mb-14">
     <h2 class="text-3xl md:text-4xl font-bold mb-4">
@@ -268,7 +265,8 @@
 
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
 
-    <!-- STEP 1 -->
+   
+    
     <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#4CAF50] transition">
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
         1
@@ -279,7 +277,8 @@
       </p>
     </div>
 
-    <!-- STEP 2 -->
+   
+    
     <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#4CAF50] transition">
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
         2
@@ -290,7 +289,8 @@
       </p>
     </div>
 
-    <!-- STEP 3 -->
+   
+    
     <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#4CAF50] transition">
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
         3
@@ -301,7 +301,8 @@
       </p>
     </div>
 
-    <!-- STEP 4 -->
+    
+    
     <div class="relative bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-[#4CAF50] transition">
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
         4
