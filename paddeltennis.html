@@ -26,45 +26,52 @@
 <body class="bg-black text-white overflow-x-hidden">
 
 <!-- 🔹 NAVBAR -->
-<nav class="w-full fixed top-0 z-50 bg-black/60 backdrop-blur-xl text-white shadow-lg border-b border-white/10">
+<nav class="w-full fixed top-0 z-50 backdrop-blur-xl bg-white/70 text-black shadow-md border-b border-white/20 transition-all duration-300">
 
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 
-    <!-- LOGO -->
-    <h1 class="text-2xl font-bold tracking-wide">
-      ZenFit.ae
-    </h1>
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2">
+      <img src="/images/zenfitlogo1.png" alt="ZenFit.ae Logo" class="h-10 w-auto">
+    </a>
 
     <!-- DESKTOP MENU -->
-    <div class="hidden md:flex items-center gap-8 text-sm">
+    <div class="hidden md:flex items-center gap-8">
 
-      <a href="/communities.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+      <!-- LINKS -->
+      <a href="/index.html" class="relative font-medium group">
         Home
-        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <a href="/venueBooking.html" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+      <a href="/communities.html" class="relative font-medium group">
+        Community
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+
+      <a href="/venueBooking.html" class="relative font-medium group">
         Venues
-        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <a href="#" class="hover:text-[#4CAF50] transition duration-300 font-medium relative group">
+      <a href="#contact" class="relative font-medium group">
         Contact
-        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#4CAF50] transition-all duration-300 group-hover:w-full"></span>
+        <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
       </a>
 
+      <!-- CTA -->
       <a href="https://wa.me/971565342725" target="_blank">
-  <button class="relative bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
-                     hover:scale-105 transition duration-300 shadow-lg 
-                     hover:shadow-[0_0_20px_rgba(76,175,80,0.6)]">
-        Book Now
-  </button>
-</a>
+        <button class="bg-gradient-to-r from-emerald-500 to-green-600 px-6 py-2.5 rounded-full font-semibold text-white
+                       shadow-lg hover:scale-105 transition duration-300
+                       hover:shadow-[0_0_25px_rgba(34,197,94,0.5)]">
+          Book Now
+        </button>
+      </a>
 
     </div>
 
     <!-- MOBILE ICON -->
-    <button id="menu-btn" class="md:hidden text-3xl text-[#4CAF50] transition">
+    <button id="menu-btn" class="md:hidden text-3xl text-emerald-500 transition-transform duration-300 hover:scale-110">
       ☰
     </button>
 
@@ -72,42 +79,100 @@
 
   <!-- MOBILE MENU -->
   <div id="mobile-menu" 
-       class="hidden md:hidden fixed top-[72px] left-0 w-full bg-black/90 backdrop-blur-xl px-6 py-6 space-y-5 text-center shadow-lg">
+       class="hidden md:hidden fixed top-[70px] left-0 w-full bg-white/80 backdrop-blur-2xl px-6 py-8 space-y-6 text-center shadow-xl transition-all duration-300">
 
-    <a href="/communities.html" class="block text-white hover:text-[#4CAF50] transition">Home</a>
-    <a href="#" class="block hover:text-[#4CAF50] transition">Venues</a>
-    <a href="#" class="block hover:text-[#4CAF50] transition">Contact</a>
+    <!-- LINKS -->
+    <a href="/index.html" class="block text-gray-800 text-lg font-medium hover:text-emerald-500 transition">
+      Home
+    </a>
 
-    <button class="w-full bg-gradient-to-r from-[#4CAF50] to-green-400 px-5 py-2 rounded-lg font-semibold 
-                   hover:scale-105 transition duration-300 shadow-lg">
-      Book Now
-    </button>
+    <a href="/communities.html" class="block text-gray-800 text-lg font-medium hover:text-emerald-500 transition">
+      Community
+    </a>
+
+    <a href="/venueBooking.html" class="block text-gray-800 text-lg font-medium hover:text-emerald-500 transition">
+      Venues
+    </a>
+
+    <a href="#contact" class="block text-gray-800 text-lg font-medium hover:text-emerald-500 transition">
+      Contact
+    </a>
+
+    <!-- CTA -->
+    <a href="https://wa.me/971565342725" target="_blank" class="flex justify-center">
+      <button class="w-[70%] bg-gradient-to-r from-emerald-500 to-green-600 text-white py-3 rounded-full font-semibold
+                     shadow-lg hover:scale-105 transition duration-300">
+        Book Now
+      </button>
+    </a>
 
   </div>
 
 </nav>
-<!-- JS -->
+
 <script>
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
 
   let isOpen = false;
 
-  btn.addEventListener("click", () => {
+  // TOGGLE MENU
+  menuBtn.addEventListener("click", () => {
     isOpen = !isOpen;
-    menu.classList.toggle("hidden");
-    btn.textContent = isOpen ? "✕" : "☰";
+    mobileMenu.classList.toggle("hidden");
+    menuBtn.textContent = isOpen ? "✕" : "☰";
   });
 
-  // Auto close on scroll
+  // CLOSE MENU WHEN CLICKING LINK
+  document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuBtn.textContent = "☰";
+      isOpen = false;
+    });
+  });
+
+  // AUTO CLOSE ON SCROLL
   window.addEventListener("scroll", () => {
     if (isOpen) {
-      menu.classList.add("hidden");
-      btn.textContent = "☰";
+      mobileMenu.classList.add("hidden");
+      menuBtn.textContent = "☰";
       isOpen = false;
     }
   });
 </script>
+
+<!-- BUTTON STYLE -->
+<style>
+.book-btn {
+  position: relative;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(270deg, #2563eb, #3b82f6, #f97316, #fb923c);
+  background-size: 300% 300%;
+
+  animation: gradientMove 5s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.4);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.book-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.6);
+}
+</style>
 
 <!-- 🔹 HERO -->
 <section class="h-[100vh] flex items-center justify-center relative overflow-hidden">
@@ -211,10 +276,10 @@
 
   <div class="max-w-6xl mx-auto px-6 text-center mb-14">
     <h2 class="text-3xl md:text-4xl font-bold mb-4">
-      How to Join the <span class="text-[#4CAF50]">ZenFit Community</span>
+      How to Join the <span class="text-[#4CAF50]">ZenFit.ae Community</span>
     </h2>
     <p class="text-gray-400 max-w-2xl mx-auto">
-      Getting started is simple. Follow these steps and start playing instantly.
+      A simple and streamlined process to get you started with ZenFit.
     </p>
   </div>
 
@@ -225,9 +290,9 @@
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
         1
       </div>
-      <h3 class="mt-6 text-lg font-semibold mb-2">Create Your Profile</h3>
+      <h3 class="mt-6 text-lg font-semibold mb-2">Submit Your Application</h3>
       <p class="text-gray-400 text-sm">
-        Sign up and set your preferences, skill level, and favorite sports.
+        Fill out our Google Form with your details, preferences, and requirements.
       </p>
     </div>
 
@@ -236,9 +301,9 @@
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
         2
       </div>
-      <h3 class="mt-6 text-lg font-semibold mb-2">Explore Matches</h3>
+      <h3 class="mt-6 text-lg font-semibold mb-2">Initial Consultation</h3>
       <p class="text-gray-400 text-sm">
-        Browse available padel tennis sessions near you and pick your slot.
+        Our team will review your submission and get in touch to understand your needs.
       </p>
     </div>
 
@@ -247,9 +312,9 @@
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
         3
       </div>
-      <h3 class="mt-6 text-lg font-semibold mb-2">Join & Connect</h3>
+      <h3 class="mt-6 text-lg font-semibold mb-2">Customized Proposal</h3>
       <p class="text-gray-400 text-sm">
-        Join games as an individual or team and connect with players.
+        We create a tailored plan and proposal based on your goals and preferences.
       </p>
     </div>
 
@@ -258,16 +323,15 @@
       <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#4CAF50] text-black font-bold w-10 h-10 flex items-center justify-center rounded-full shadow-lg">
         4
       </div>
-      <h3 class="mt-6 text-lg font-semibold mb-2">Play & Improve</h3>
+      <h3 class="mt-6 text-lg font-semibold mb-2">Confirmation & Onboarding</h3>
       <p class="text-gray-400 text-sm">
-        Enjoy matches, track performance, and grow your skills.
+        We connect with you to finalize details, refine the plan, and get you started.
       </p>
     </div>
 
   </div>
 
 </section>
-
 
 <!-- 🔹 CTA -->
 <section class="py-20 px-10 lg:px-0 text-center bg-gradient-to-r from-green-50 via-white to-green-50 rounded-3xl">
@@ -288,68 +352,88 @@
 
 </section>
 
-<footer class="bg-gradient-to-br from-[#0b0f0e] via-[#0f1714] to-black text-gray-300 pt-16 pb-8">
+<!-- 🔹 FOOTER -->
+<footer class="bg-gray-950 text-gray-300  relative overflow-hidden">
 
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+  <!-- SUBTLE GLOW -->
+  <div class="absolute w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] top-[-100px] left-[-100px]"></div>
+  <div class="absolute w-[350px] h-[350px] bg-orange-500/10 rounded-full blur-[120px] bottom-[-100px] right-[-100px]"></div>
 
-    <!-- 🔹 BRAND -->
-    <div>
-      <h2 class="text-2xl font-bold text-white mb-3">
-        Zenfit<span class="text-[#4CAF50]">.ae</span>
-      </h2>
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Connecting players, building communities, and making sports more accessible for everyone.
-      </p>
-    </div>
+  <div class="max-w-7xl mx-auto px-6 py-16 relative z-10">
 
-    <!-- 🔹 NAVIGATION -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Explore</h3>
-      <ul class="space-y-2 text-sm">
-        <li>
-          <a href="#home" class="hover:text-[#4CAF50] transition">Home</a>
-        </li>
-        <li>
-          <a href="/communities.html" class="hover:text-[#4CAF50] transition">Communities</a>
-        </li>
-        <li>
-          <a href="#contact" class="hover:text-[#4CAF50] transition">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <div class="grid md:grid-cols-3 gap-12">
 
-    <!-- 🔹 SOCIAL -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Connect</h3>
+      <!-- 🔹 BRAND -->
+      <div>
 
-      <p class="text-gray-400 text-sm mb-4">
-        Follow us on social media
-      </p>
+        <!-- LOGO FIX (LIGHT CARD) -->
+        <div class="inline-block bg-white px-4 py-3 rounded-2xl shadow-md">
+          <img src="images/zenfitlogo1.png" alt="ZenFit Logo" class="h-10 w-auto">
+        </div>
 
-      <div class="flex gap-5 text-xl">
+        <p class="text-sm text-gray-400 mt-5 leading-relaxed max-w-sm">
+          Discover and book top-rated sports venues. Play your favorite games anytime, anywhere with ZenFit communities.
+        </p>
 
-        <!-- Instagram -->
-        <a href="https://instagram.com/yourusername" target="_blank"
-          class="hover:text-[#4CAF50] transition duration-300">
-          <i class="fab fa-instagram"></i>
-        </a>
+        <!-- SOCIALS -->
+        <div class="flex gap-4 mt-6">
 
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"
-          class="hover:text-[#4CAF50] transition duration-300">
-          <i class="fab fa-linkedin"></i>
-        </a>
+          <a href="https://www.instagram.com/_zenfit.ae_/" target="_blank"
+             class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10
+                    hover:bg-emerald-500 hover:scale-110 transition">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/company/zenfit-ae/" target="_blank"
+             class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10
+                    hover:bg-emerald-500 hover:scale-110 transition">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8h4V24h-4V8zm7.5 0h3.6v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.7 2.6 4.7 6v10h-4v-8.9c0-2.1 0-4.8-3-4.8s-3.4 2.3-3.4 4.6V24h-4V8z"/>
+            </svg>
+          </a>
+
+        </div>
 
       </div>
+
+      <!-- 🔹 EXPLORE -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Explore</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#home" class="hover:text-emerald-400 transition">Home</a></li>
+          <li><a href="#venue-section" class="hover:text-emerald-400 transition">Venues</a></li>
+          <li><a href="#contact" class="hover:text-emerald-400 transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 COMPANY -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Company</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-emerald-400 transition">About Us</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition">Careers</a></li>
+          <li><a href="#" class="hover:text-emerald-400 transition">Contact</a></li>
+        </ul>
+      </div>
+
     </div>
 
-  </div>
+    <!-- BOTTOM -->
+    <div class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
 
-  <!-- 🔹 BOTTOM -->
-  <div class="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-500">
-    <p>
-      © 2026 <span class="text-white font-medium">Zenfit.ae</span>. All rights reserved.
-    </p>
+      <p>© 2026 ZenFit.ae. All rights reserved.</p>
+
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a href="#" class="hover:text-emerald-400 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-emerald-400 transition">Terms of Service</a>
+      </div>
+
+    </div>
+
   </div>
 
 </footer>
