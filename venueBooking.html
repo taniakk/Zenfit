@@ -206,71 +206,6 @@
 
 </script>
 
-<!--  HERO SECTION -->
-<section id="home" class="hero-bg min-h-[90vh] md:h-screen relative flex items-center justify-center text-center text-white overflow-hidden px-4">
-
-
-
- 
-  <div class="absolute inset-0 bg-black/70 md:bg-black/60"></div>
-
-  
-  <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-black/40 to-orange-500/20"></div>
-
-
-  <div class="relative z-10 max-w-3xl w-full">
-
-  
-    <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
-
-      Book Sports Venues  
-      <span class="text-emerald-400 block sm:inline">
-        Anytime, Anywhere
-      </span>
-
-    </h1>
-
-  
-    <p class="mt-4 md:mt-6 text-base sm:text-lg text-white/80 leading-relaxed">
-
-      Discover and book premium venues for football, cricket, badminton, and more. 
-      Play your favorite sport with flexible timings and ease.
-
-    </p>
-
-   
-    <div class="mt-6 md:mt-8 flex flex-col sm:flex-row justify-center gap-4">
-
-  
-      <a href="#venue-section"
-        class="px-6 py-3 rounded-full bg-gradient-to-r from-emerald-500 to-green-600 font-semibold
-               shadow-lg hover:scale-105 hover:shadow-[0_0_25px_rgba(34,197,94,0.4)] transition">
-
-        Explore Venues
-
-      </a>
-
-   
-      <a href="#players"
-        class="px-6 py-3 rounded-full border border-white/30 text-white font-semibold
-               hover:bg-white/10 hover:scale-105 transition">
-
-        Find Players
-
-      </a>
-
-    </div>
-
-  </div>
-
-  <div class="absolute bottom-4 right-4 md:bottom-10 md:right-10 bg-white/90 text-black px-4 py-2 md:px-5 md:py-3 rounded-xl shadow-xl text-xs md:text-sm font-semibold">
-
-    📍 100+ Premium Venues Nearby
-
-  </div>
-
-</section>
-
 
 <!-- venue -->
 <section id="venue-section" class="bg-gradient-to-b from-gray-50 via-white to-gray-100 py-16 px-6">
@@ -532,7 +467,7 @@
 </style>
 
 <!-- contact form -->
-<section id="contact" class="py-24 bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden">
+<!-- <section id="contact" class="py-24 bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden">
 
 
   <div class="absolute w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] top-[-100px] left-[-100px]"></div>
@@ -630,7 +565,7 @@
 
   </div>
 
-</section>
+</section> -->
 
 <!-- 🔹 FOOTER -->
 <footer class="bg-black text-gray-400 pt-16 pb-10">
@@ -695,11 +630,21 @@
   <div class="max-w-7xl mx-auto px-6 mt-12 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
     <!-- Social -->
-    <div class="flex gap-5 text-lg">
-      <a href="#" class="hover:text-white">Instagram</a>
-      <a href="#" class="hover:text-white">LinkedIn</a>
-      <a href="https://wa.me/971565342725" class="hover:text-white">WhatsApp</a>
-    </div>
+<div class="flex items-center justify-center gap-6 text-lg">
+  
+  <a href="#" class="flex items-center justify-center text-2xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent hover:scale-110 transition duration-300">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="#" class="flex items-center justify-center text-2xl text-[#0A66C2] hover:scale-110 transition duration-300">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+  <a href="https://wa.me/971565342725" target="_blank" class="flex items-center justify-center text-2xl hover:scale-110 transition duration-300">
+    <i class="fa-brands fa-whatsapp text-[#25D366]"></i>
+  </a>
+
+</div>
 
     <!-- Copy -->
     <p class="text-sm text-gray-500">
@@ -711,22 +656,21 @@
 </footer>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/971565342725" target="_blank"
-   class="fixed bottom-6 right-6 z-50 group">
+<a href="https://wa.me/971565342725?text=Hi%20ZenFit.ae,%20I%20would%20like%20to%20join%20your%20sports%20community.%20Please%20share%20the%20details%20to%20get%20started." target="_blank"
+   class="fixed bottom-6 right-6 z-50">
 
   <div class="flex items-center gap-2">
 
-   
-    <span class="hidden group-hover:block bg-white text-gray-800 text-sm px-4 py-2 rounded-full shadow-lg transition">
-      Chat on WhatsApp
+    <!-- Text Bubble (Always Visible) -->
+    <span class="bg-white text-gray-800 text-sm px-4 py-2 rounded-full shadow-lg">
+      Have a question? Contact us
     </span>
 
-   
+    <!-- Icon -->
     <div class="w-14 h-14 flex items-center justify-center rounded-full 
-                bg-green-500
-                shadow-lg hover:scale-110 transition duration-300">
+                bg-green-500 shadow-lg hover:scale-110 transition duration-300">
 
-     
+      <!-- WhatsApp SVG -->
       <svg xmlns="http://www.w3.org/2000/svg" 
            viewBox="0 0 32 32" 
            fill="white" 
@@ -753,6 +697,5 @@
 
   </div>
 </a>
-
 </body>
 </html>

@@ -587,54 +587,63 @@
 </section>
 
 <!-- slider -->
-<section id="communities" class="w-full py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black relative overflow-hidden">
+<div class="max-w-6xl mx-auto px-6 relative flex flex-col md:flex-row items-center gap-6">
 
-  <!-- 🌟 BACKGROUND GLOW -->
-  <div class="absolute w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] top-[-100px] left-[-100px]"></div>
-  <div class="absolute w-[350px] h-[350px] bg-green-400/10 rounded-full blur-[120px] bottom-[-100px] right-[-100px]"></div>
+  <!-- 🔥 MAIN IMAGE (BACKGROUND STYLE) -->
+  <div class="relative w-full md:w-3/4 h-[260px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl">
 
-  <!-- 🔹 HEADING -->
-  <div class="max-w-6xl mx-auto px-6 text-center mb-12 relative z-10" data-aos="fade-up">
-    <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
-      Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-500">Communities</span>
-    </h2>
-  </div>
+    <img id="mainImage"
+         src="https://ik.imagekit.io/iuiy6mihw/slider1.jpeg?tr=w-1200,f-auto,q-auto"
+         class="w-full h-full object-cover transition duration-500">
 
-  <!-- 🔹 SLIDER -->
-  <div class="max-w-5xl mx-auto px-6 relative">
+    <!-- ⬅️➡️ ARROWS -->
+    <button onclick="prevSlide()" 
+      class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
+      ❮
+    </button>
 
-    <div class="overflow-hidden rounded-3xl shadow-2xl">
-
-      <div id="slides" class="flex transition-transform duration-700 ease-in-out">
-
-        <!-- SLIDE -->
-        <img src="https://ik.imagekit.io/iuiy6mihw/slider1.jpeg?tr=w-1200,f-auto,q-auto"
-     class="w-full flex-shrink-0 h-[260px] md:h-[450px] object-cover object-center">
-
-      <img src="https://ik.imagekit.io/iuiy6mihw/slider2.jpeg?tr=w-1200,f-auto,q-auto"
-     class="w-full flex-shrink-0 h-[260px] md:h-[450px] object-cover object-center">
-
-       <img src="https://ik.imagekit.io/iuiy6mihw/slider1.jpeg?tr=w-1200,f-auto,q-auto"
-     class="w-full flex-shrink-0 h-[260px] md:h-[450px] object-cover object-center">
-
-<img src="https://ik.imagekit.io/iuiy6mihw/slider2.jpeg?tr=w-1200,f-auto,q-auto"
-     class="w-full flex-shrink-0 h-[260px] md:h-[450px] object-cover object-center">
-
-      </div>
-
-    </div>
-
-    <!-- 🔹 MINIMAL DOTS -->
-    <div class="flex justify-center mt-6 gap-3">
-      <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full"></span>
-      <span class="w-2.5 h-2.5 bg-white/30 rounded-full"></span>
-      <span class="w-2.5 h-2.5 bg-white/30 rounded-full"></span>
-      <span class="w-2.5 h-2.5 bg-white/30 rounded-full"></span>
-    </div>
+    <button onclick="nextSlide()" 
+      class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
+      ❯
+    </button>
 
   </div>
 
-</section>
+  <!-- 📸 RIGHT SIDE THUMBNAILS -->
+<div class="flex md:flex-col gap-3 md:w-1/4">
+
+  <!-- 1 -->
+  <img onclick="setImage(0)"
+    src="https://ik.imagekit.io/iuiy6mihw/slider1.jpeg?tr=w-1200,f-auto,q-auto"
+    class="w-24 h-16 md:w-full md:h-24 object-cover rounded-xl cursor-pointer hover:scale-105 transition border border-white/20">
+
+  <!-- 2 -->
+  <img onclick="setImage(1)"
+    src="https://ik.imagekit.io/iuiy6mihw/55244017495_412cc0e035_b.jpg?tr=w-1200,f-auto,q-auto"
+    class="w-24 h-16 md:w-full md:h-24 object-cover rounded-xl cursor-pointer hover:scale-105 transition border border-white/20">
+
+  <!-- 3 -->
+  <img onclick="setImage(2)"
+    src="https://ik.imagekit.io/iuiy6mihw/zenfit.ae.jpg?tr=w-1200,f-auto,q-auto"
+    class="w-24 h-16 md:w-full md:h-24 object-cover rounded-xl cursor-pointer hover:scale-105 transition border border-white/20">
+
+  <!-- 4 (with overlay) -->
+  <div class="relative">
+    <img onclick="setImage(3)"
+      src="https://ik.imagekit.io/iuiy6mihw/slider2.jpeg?tr=w-1200,f-auto,q-auto"
+      class="w-24 h-16 md:w-full md:h-24 object-cover rounded-xl cursor-pointer">
+
+    <!-- 🔥 +More Overlay -->
+    <div class="absolute inset-0 bg-black/60 rounded-xl flex items-center justify-center">
+      <span class="text-white font-semibold text-sm md:text-lg">
+        +2 more
+      </span>
+    </div>
+  </div>
+
+</div>
+
+</div>
 
 <!-- why us -->
 <section id="why" class="w-full py-28 bg-gradient-to-b from-white via-[#f9fbff] to-[#f3f7f4] relative overflow-hidden">
@@ -772,105 +781,80 @@
 
 
 <!-- testimonials -->
-<section class="w-full py-24 relative overflow-hidden bg-gradient-to-br from-[#0b0f0e] via-[#0f1714] to-black text-white">
+<section class="py-24 px-6 bg-white">
 
-  <!-- BACKGROUND GLOW -->
-  <div class="absolute top-0 left-0 w-80 h-80 bg-[#4CAF50]/10 rounded-full blur-[120px]"></div>
-  <div class="absolute bottom-0 right-0 w-80 h-80 bg-[#4CAF50]/10 rounded-full blur-[120px]"></div>
+  <div class="max-w-7xl mx-auto text-center">
 
-  <div class="max-w-6xl mx-auto px-6 relative z-10">
+    <!-- 🌟 Heading -->
+    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">
+      Real Players. Real Experiences.
+    </h2>
 
-    <!-- HEADING -->
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold tracking-tight">
-        What People Say About <span class="text-[#4CAF50]">ZenFit.ae</span>
-      </h2>
-      <p class="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">
-        Players across Dubai trust ZenFit to discover, join, and enjoy sports seamlessly.
-      </p>
-    </div>
+    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+      Hear from our community members who turned games into friendships.
+    </p>
 
-    <!-- GRID -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- 💬 Testimonials -->
+    <div class="mt-16 grid md:grid-cols-3 gap-8">
 
-      <!-- CARD 1 -->
-      <div class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:-translate-y-2 hover:border-[#4CAF50]/40 transition duration-300">
+      <!-- ⭐ Card 1 -->
+      <div class="rounded-2xl p-6 text-left 
+                  bg-gradient-to-br from-[#020617] via-[#111827] to-[#022c22]
+                  text-white shadow-xl hover:scale-105 
+                  transition duration-300">
 
-        <div class="flex items-center justify-between mb-4">
-          <div class="flex text-yellow-400 text-sm">★★★★★</div>
-          <span class="text-xs text-[#4CAF50]">✔ Verified</span>
-        </div>
-
-        <p class="text-gray-300 text-sm leading-relaxed">
-          ZenFit.ae made it incredibly easy to book football sessions in Dubai. Everything is smooth and well managed.
+        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+          “Great meeting you all today — I really enjoyed playing together.  
+          It was my first session, but it felt like I’ve been part of the group for years.  
+          Everyone was friendly and supportive, and the team spirit was amazing!”
         </p>
 
-        <div class="mt-6 flex items-center gap-3 border-t border-white/10 pt-4">
-          <img src="https://i.pravatar.cc/40?img=12"
-               class="w-10 h-10 rounded-full object-cover border border-white/20">
-
-          <div>
-            <h4 class="font-semibold text-sm">Ahmed R.</h4>
-            <p class="text-xs text-gray-400">
-              Football Player • Dubai Marina
-            </p>
-          </div>
+        <div class="mt-6">
+          <p class="text-emerald-400 font-semibold">Usman Ansari</p>
         </div>
+
       </div>
 
-      <!-- CARD 2 -->
-      <div class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:-translate-y-2 hover:border-[#4CAF50]/40 transition duration-300">
+      <!-- ⭐ Card 2 -->
+      <div class="rounded-2xl p-6 text-left 
+                  bg-gradient-to-br from-[#020617] via-[#111827] to-[#022c22]
+                  text-white shadow-xl hover:scale-105 
+                  transition duration-300">
 
-        <div class="flex items-center justify-between mb-4">
-          <div class="flex text-yellow-400 text-sm">★★★★★</div>
-          <span class="text-xs text-[#4CAF50]">✔ Verified</span>
-        </div>
-
-        <p class="text-gray-300 text-sm leading-relaxed">
-          I joined ZenFit.ae as an individual and quickly found a group to play with. The community is active and friendly.
+        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+          “I came today for the first time but couldn’t play.  
+          Still, I really enjoyed watching the game.  
+          I’ll definitely join the next match — excited to play again after a long time!”
         </p>
 
-        <div class="mt-6 flex items-center gap-3 border-t border-white/10 pt-4">
-          <img src="https://i.pravatar.cc/40?img=5"
-               class="w-10 h-10 rounded-full object-cover border border-white/20">
-
-          <div>
-            <h4 class="font-semibold text-sm">Sarah K.</h4>
-            <p class="text-xs text-gray-400">
-              Badminton Player • JVC
-            </p>
-          </div>
+        <div class="mt-6">
+          <p class="text-emerald-400 font-semibold">Ravi (Dubai)</p>
         </div>
+
       </div>
 
-      <!-- CARD 3 -->
-      <div class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:-translate-y-2 hover:border-[#4CAF50]/40 transition duration-300">
+      <!-- ⭐ Card 3 -->
+      <div class="rounded-2xl p-6 text-left 
+                  bg-gradient-to-br from-[#020617] via-[#111827] to-[#022c22]
+                  text-white shadow-xl hover:scale-105 
+                  transition duration-300">
 
-        <div class="flex items-center justify-between mb-4">
-          <div class="flex text-yellow-400 text-sm">★★★★☆</div>
-          <span class="text-xs text-[#4CAF50]">✔ Verified</span>
-        </div>
-
-        <p class="text-gray-300 text-sm leading-relaxed">
-          ZenFit.ae connects players with similar skill levels, making every match competitive and enjoyable.
+        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+          “Thanks everyone!  
+          It was my first cricket game in the UAE and honestly it was amazing and fun.  
+          Looking forward to many more matches!”
         </p>
 
-        <div class="mt-6 flex items-center gap-3 border-t border-white/10 pt-4">
-          <img src="https://i.pravatar.cc/40?img=8"
-               class="w-10 h-10 rounded-full object-cover border border-white/20">
-
-          <div>
-            <h4 class="font-semibold text-sm">Daniel M.</h4>
-            <p class="text-xs text-gray-400">
-              Football Enthusiast • Business Bay
-            </p>
-          </div>
+        <div class="mt-6">
+          <p class="text-emerald-400 font-semibold">Ashwar Ali</p>
         </div>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
 
@@ -934,14 +918,24 @@
   </div>
 
   <!-- SOCIAL + COPYRIGHT -->
-  <div class="max-w-7xl mx-auto px-6 mt-12 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+   <div class="max-w-7xl mx-auto px-6 mt-12 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
     <!-- Social -->
-    <div class="flex gap-5 text-lg">
-      <a href="#" class="hover:text-white">Instagram</a>
-      <a href="#" class="hover:text-white">LinkedIn</a>
-      <a href="https://wa.me/971565342725" class="hover:text-white">WhatsApp</a>
-    </div>
+<div class="flex items-center justify-center gap-6 text-lg">
+  
+  <a href="#" class="flex items-center justify-center text-2xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent hover:scale-110 transition duration-300">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="#" class="flex items-center justify-center text-2xl text-[#0A66C2] hover:scale-110 transition duration-300">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+  <a href="https://wa.me/971565342725" target="_blank" class="flex items-center justify-center text-2xl hover:scale-110 transition duration-300">
+    <i class="fa-brands fa-whatsapp text-[#25D366]"></i>
+  </a>
+
+</div>
 
     <!-- Copy -->
     <p class="text-sm text-gray-500">
@@ -976,6 +970,57 @@
   setInterval(nextSlide, 4000);
 </script>
 
+<script>
+const images = [
+  "https://ik.imagekit.io/iuiy6mihw/slider1.jpeg?tr=w-1200,f-auto,q-auto",
+  "https://ik.imagekit.io/iuiy6mihw/slider2.jpeg?tr=w-1200,f-auto,q-auto",
+  "https://ik.imagekit.io/iuiy6mihw/zenfit.ae.jpg?tr=w-1200,f-auto,q-auto",
+  "https://ik.imagekit.io/iuiy6mihw/slider3.jpg?tr=w-1200,f-auto,q-auto",
+  "https://ik.imagekit.io/iuiy6mihw/55244022425_94fb761969_b.jpg?updatedAt=1777889664013",
+  "https://ik.imagekit.io/iuiy6mihw/heropage.jpeg?updatedAt=1777546353460"
+];
+
+let current = 0;
+const mainImage = document.getElementById("mainImage");
+
+// Smooth change
+function setImage(index) {
+  mainImage.style.opacity = "0";
+
+  setTimeout(() => {
+    current = index;
+    mainImage.src = images[current];
+    mainImage.style.opacity = "1";
+  }, 300);
+}
+
+// Next
+function nextSlide() {
+  current = (current + 1) % images.length;
+  setImage(current);
+}
+
+// Prev
+function prevSlide() {
+  current = (current - 1 + images.length) % images.length;
+  setImage(current);
+}
+
+// 🔁 AUTO SLIDE (continuous)
+let autoSlide = setInterval(nextSlide, 2000);
+
+// ⏸ Pause on hover
+const sliderContainer = mainImage.parentElement;
+
+sliderContainer.addEventListener("mouseenter", () => {
+  clearInterval(autoSlide);
+});
+
+sliderContainer.addEventListener("mouseleave", () => {
+  autoSlide = setInterval(nextSlide, 3000);
+});
+</script>
+
 
 <script>
   const navbar = document.getElementById("navbar");
@@ -1003,19 +1048,18 @@
 </script>
 
 <a href="https://wa.me/971565342725?text=Hi%20ZenFit.ae,%20I%20would%20like%20to%20join%20your%20sports%20community.%20Please%20share%20the%20details%20to%20get%20started." target="_blank"
-   class="fixed bottom-6 right-6 z-50 group">
+   class="fixed bottom-6 right-6 z-50">
 
   <div class="flex items-center gap-2">
 
-    <!-- Text Bubble -->
-    <span class="hidden group-hover:block bg-white text-gray-800 text-sm px-4 py-2 rounded-full shadow-lg transition">
-      Chat on WhatsApp
+    <!-- Text Bubble (Always Visible) -->
+    <span class="bg-white text-gray-800 text-sm px-4 py-2 rounded-full shadow-lg">
+      Have a question? Contact us
     </span>
 
     <!-- Icon -->
     <div class="w-14 h-14 flex items-center justify-center rounded-full 
-                bg-green-500
-                shadow-lg hover:scale-110 transition duration-300">
+                bg-green-500 shadow-lg hover:scale-110 transition duration-300">
 
       <!-- WhatsApp SVG -->
       <svg xmlns="http://www.w3.org/2000/svg" 
