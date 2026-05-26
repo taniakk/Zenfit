@@ -269,10 +269,10 @@ p {
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#8BCF5B] transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      <!-- <a href="/communities.html" class="relative text-white/80 hover:text-white transition group">
-        Our Communities
+      <a href="/gallery.html" class="relative text-white/80 hover:text-white transition group">
+        Gallery
         <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#8BCF5B] transition-all duration-300 group-hover:w-full"></span>
-      </a> -->
+      </a>
 
       <a href="/runClub.html" class="relative text-white/80 hover:text-white transition group">
         Run Club
@@ -343,7 +343,7 @@ p {
 
       <a href="venueBooking.html" class="text-white/80 hover:text-[#8BCF5B] transition">Venue</a>
 
-      <!-- <a href="/communities.html" class="text-white/80 hover:text-[#8BCF5B] transition">Our Communities</a> -->
+      <a href="/gallery.html" class="text-white/80 hover:text-[#8BCF5B] transition">Gallery</a>
 
       <a href="/runClub.html" class="text-white/80 hover:text-[#8BCF5B] transition">Run Club</a>
 
@@ -360,6 +360,26 @@ p {
 
 </header>
 
+<!-- MOBILE TOGGLE SCRIPT -->
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  let isOpen = false;
+
+  btn.addEventListener("click", () => {
+    isOpen = !isOpen;
+    menu.classList.toggle("hidden", !isOpen);
+  });
+
+  // CLOSE NAVBAR ON SCROLL (smooth + reliable)
+  window.addEventListener("scroll", () => {
+    if (isOpen) {
+      menu.classList.add("hidden");
+      isOpen = false;
+    }
+  }, { passive: true });
+</script>
 
 
 <!-- 🌟 UAE SPORTS HERO -->

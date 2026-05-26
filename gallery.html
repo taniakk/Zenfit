@@ -1,31 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZenFit Cricket</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- Tailwind -->
+  <title>ZenFit Premium Gallery</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
 
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
     }
+
+    body{
+      background:#07110B;
+      overflow-x:hidden;
+      color:white;
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar{
+      width:8px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+      background:#10b981;
+      border-radius:20px;
+    }
+
+    /* MASONRY */
+    .gallery{
+      columns:4 280px;
+      column-gap:18px;
+    }
+
+    .gallery-item{
+      position:relative;
+      overflow:hidden;
+      border-radius:30px;
+      margin-bottom:18px;
+      break-inside:avoid;
+      background:#111;
+      cursor:pointer;
+      box-shadow:
+      0 10px 35px rgba(0,0,0,0.35);
+    }
+
+    /* IMAGE */
+    .gallery-item img{
+      width:100%;
+      display:block;
+      transition:0.7s ease;
+    }
+
+    /* HOVER */
+    .gallery-item:hover img{
+      transform:scale(1.07);
+    }
+
+    .gallery-item:hover{
+      transform:translateY(-5px);
+      transition:0.4s ease;
+    }
+
+    /* OVERLAY */
+    .gallery-item::after{
+      content:"";
+      position:absolute;
+      inset:0;
+
+      background:
+      linear-gradient(
+      to top,
+      rgba(0,0,0,0.35),
+      transparent 60%);
+    }
+
+    /* PREMIUM BORDER */
+    .gallery-item::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:30px;
+      padding:1px;
+
+      background:
+      linear-gradient(
+      135deg,
+      rgba(16,185,129,0.8),
+      rgba(255,255,255,0.05),
+      transparent,
+      rgba(16,185,129,0.3));
+
+      -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+
+      -webkit-mask-composite:xor;
+      mask-composite:exclude;
+
+      pointer-events:none;
+    }
+
+
+/* FIX ALIGNMENT ISSUE */
+.gallery{
+  column-count: 4;
+  column-gap: 18px;
+}
+
+@media(max-width: 1024px){
+  .gallery{ column-count: 3; }
+}
+
+@media(max-width: 768px){
+  .gallery{ column-count: 2; }
+}
+
+@media(max-width: 480px){
+  .gallery{ column-count: 1; }
+}
+
+/* FORCE CLEAN IMAGE FLOW */
+.gallery-item{
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* FIX IMAGE CONSISTENCY */
+.gallery-item img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FULLSCREEN LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* NAVIGATION BUTTONS */
+.lightbox-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(139, 207, 91, 0.7);
+  border: none;
+  color: white;
+  font-size: 40px;
+  padding: 20px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  z-index: 101;
+}
+
+.lightbox-btn:hover {
+  background: rgba(139, 207, 91, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: rgba(139, 207, 91, 0.7);
+  border: none;
+  color: white;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 102;
+}
+
+.close-btn:hover {
+  background: rgba(139, 207, 91, 0.9);
+  transform: rotate(90deg) scale(1.1);
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width: 768px) {
+  .lightbox-btn {
+    padding: 15px 18px;
+    font-size: 28px;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .close-btn {
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
   </style>
 </head>
 
-<body class="bg-black text-white overflow-x-hidden">
+<body>
 
-<!-- ✨ PREMIUM TOP RIBBON -->
+    <!-- ✨ PREMIUM TOP RIBBON -->
 <div class="fixed top-0 left-0 w-full z-[60]
             bg-[#050A07]/95 backdrop-blur-2xl
             border-b border-[#8BCF5B]/10 overflow-hidden">
@@ -218,7 +475,7 @@
 
       <a href="venueBooking.html" class="text-white/80 hover:text-[#8BCF5B] transition">Venue</a>
 
-      <a href="/gallery.html" class="text-white/80 hover:text-[#8BCF5B] transition">Gallery</a>
+      <!-- <a href="/communities.html" class="text-white/80 hover:text-[#8BCF5B] transition">Our Communities</a> -->
 
       <a href="/runClub.html" class="text-white/80 hover:text-[#8BCF5B] transition">Run Club</a>
 
@@ -256,124 +513,145 @@
   }, { passive: true });
 
 </script>
-<!-- 🔹 HERO -->
-<section class="h-[100vh] flex items-center justify-center relative overflow-hidden">
 
-  <!-- Background Image -->
-<img 
-  src="https://ik.imagekit.io/iuiy6mihw/six.jpeg?tr=w-1920,q-70,f-auto"
-  class="absolute inset-0 w-full h-full object-cover 
-         opacity-50 md:opacity-40 scale-110"
-  alt="Cricket Background"
-  loading="lazy"
->
+  <!-- GREEN GLOW -->
+  <div class="fixed top-[-180px] left-[-120px] w-[420px] h-[420px] bg-emerald-500/20 blur-[140px] rounded-full"></div>
 
-  <!-- Dark Gradient (consistent with other heroes) -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black"></div>
+  <div class="fixed bottom-[-180px] right-[-120px] w-[420px] h-[420px] bg-green-400/20 blur-[140px] rounded-full"></div>
 
-  <!-- CONTENT -->
-  <div class="relative text-center px-6" data-aos="fade-up">
+  <!-- HERO -->
+  <section class="relative py-24 text-center px-6">
 
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
-      Cricket at 
-      <span class="text-[#4CAF50]">
-        ZenFit.ae
-      </span>
+    <p class="uppercase tracking-[6px] text-emerald-300 mt-4 text-sm font-semibold">
+      ZENFIT.AE
+    </p>
+
+    <h1 class="mt-6 text-5xl md:text-7xl font-black">
+      Athletes Gallery
     </h1>
 
-    <p class="text-gray-300 max-w-xl mx-auto mb-6 text-lg">
-      Step onto the field, hit powerful shots, take crucial wickets, and experience the thrill of real cricket matches.
-    </p>
+    <div class="w-32 h-[3px] bg-emerald-400 mx-auto mt-7 rounded-full"></div>
 
-      <a href="https://forms.gle/fTyNk8o1jApzGy82A" target="_blank">
-  <button class="bg-gradient-to-r from-[#4CAF50] to-green-400 px-8 py-3 rounded-full 
-                 hover:scale-110 transition duration-300 shadow-xl 
-                 hover:shadow-[0_0_20px_rgba(76,175,80,0.5)]">
-    Join a Community →
-  </button>
-</a>
+  </section>
 
+  <!-- GALLERY -->
+  <section class="relative max-w-7xl mx-auto px-5 pb-24 z-10">
+
+    <div class="gallery">
+
+      <!-- IMAGE 1 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/three.jpeg?updatedAt=1778895645782">
+      </div>
+
+      <!-- IMAGE 2 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/five.jpeg?updatedAt=1778895645792">
+      </div>
+
+      <!-- IMAGE 3 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/two.jpeg?updatedAt=1778895645802">
+      </div>
+
+      <!-- IMAGE 4 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/one.jpeg?updatedAt=1778895645714">
+      </div>
+
+      <!-- IMAGE 5 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/slider3.jpg?updatedAt=1778496291112">
+      </div>
+
+      <!-- IMAGE 6 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/aboutus.jpeg?updatedAt=1777545980347">
+      </div>
+
+      <!-- IMAGE 7 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/four.jpeg?updatedAt=1778895645694">
+      </div>
+
+      <!-- IMAGE 8 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/55244017495_412cc0e035_b.jpg?updatedAt=1777889664024">
+      </div>
+
+      <!-- IMAGE 9 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/55243862029_c30f795e11_b.jpg?updatedAt=1777889664040">
+      </div>
+
+      <!-- IMAGE 10 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/slider1.jpeg?updatedAt=1777438765684">
+      </div>
+
+      <!-- IMAGE 11 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/community1.jpeg?updatedAt=1777298806060">
+      </div>
+
+      <!-- IMAGE 12 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/zenfit2.jpeg?updatedAt=1777298804747">
+      </div>
+
+      <!-- IMAGE 13 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/55244022425_94fb761969_b.jpg?updatedAt=1777889664013">
+      </div>
+
+      <!-- IMAGE 14 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/zenfitImg5.jpeg">
+      </div>
+
+      <!-- IMAGE 15 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/zenfitImg4.jpeg">
+      </div>
+
+      <!-- IMAGE 16 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/zenfitImg3.jpeg">
+      </div>
+
+      <!-- IMAGE 17 -->
+      <!-- <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/zenfitImg6.jpeg">
+      </div> -->
+
+      <!-- IMAGE 18 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/zenfitImg6.jpeg">
+      </div>
+
+      <!-- IMAGE 19 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/zenfitImg2.jpeg">
+      </div>
+
+      <!-- IMAGE 20 -->
+      <div class="gallery-item">
+        <img src="https://ik.imagekit.io/iuiy6mihw/zenfitImg1.jpeg">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FULLSCREEN LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="" alt="Fullscreen Image" class="lightbox-image">
+      <button class="lightbox-btn prev-btn" id="prev-btn">❮</button>
+      <button class="lightbox-btn next-btn" id="next-btn">❯</button>
+      <button class="close-btn" id="close-btn">✕</button>
+    </div>
   </div>
-
-</section>
-
-<!-- 🔹 IMAGE GRID -->
-<section class="py-16 bg-gradient-to-b from-[#f9fafb] via-[#eef7f0] to-[#f9fafb] rounded-3xl">
-
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6">
-
- <img 
-  src="https://ik.imagekit.io/iuiy6mihw/cricketcard1.jpg?tr=w-600,h-300,q-80,f-auto"
-  class="rounded-2xl h-52 object-cover w-full 
-         hover:scale-105 transition duration-500 ease-in-out
-         shadow-md hover:shadow-[0_12px_35px_rgba(0,0,0,0.25)]"
-  alt="Cricket Training"
-  loading="lazy"
->
-
-    <img 
-  src="https://ik.imagekit.io/iuiy6mihw/cricketcard2.jpg?tr=w-600,h-300,q-80,f-auto"
-  class="rounded-2xl h-52 object-cover w-full 
-         hover:scale-105 transition duration-500 ease-in-out
-         shadow-md hover:shadow-[0_12px_35px_rgba(0,0,0,0.25)]"
-  alt="Cricket Coaching"
-  loading="lazy"
->
-<img 
-  src="https://ik.imagekit.io/iuiy6mihw/cricketcard3.jpg?tr=w-600,h-300,q-80,f-auto"
-  class="rounded-2xl h-52 object-cover w-full 
-         hover:scale-105 transition duration-500 ease-in-out
-         shadow-md hover:shadow-[0_12px_35px_rgba(0,0,0,0.25)]"
-  alt="Cricket Practice"
-  loading="lazy"
->
-
-<img 
-  src="https://ik.imagekit.io/iuiy6mihw/cricketcard4.jpg?tr=w-600,h-300,q-80,f-auto"
-  class="rounded-2xl h-52 object-cover w-full 
-         hover:scale-105 transition duration-500 ease-in-out
-         shadow-md hover:shadow-[0_12px_35px_rgba(0,0,0,0.25)]"
-  alt="Cricket Match"
-  loading="lazy"
->
-
-  </div>
-
-</section>
-
-<!-- intro -->
-<section class="py-20 bg-gradient-to-b from-black via-[#0b0f0e] to-black text-white">
-
-  <div class="max-w-5xl mx-auto px-6 text-center">
-
-    <h2 class="text-3xl md:text-4xl font-bold mb-6">
-      Play Cricket in Your City with <span class="text-[#4CAF50]">ZenFit.ae</span>
-    </h2>
-
-    <p class="text-gray-300 leading-relaxed text-lg mb-6">
-      From powerful sixes to precise bowling, cricket is more than just a sport — 
-      it’s strategy, teamwork, and passion. At ZenFit.ae, we bring that excitement to life 
-      by connecting you with players in your city who share the same love for the game.
-    </p>
-
-    <p class="text-gray-400 leading-relaxed text-lg mb-6">
-      Whether you're looking for competitive matches or friendly weekend games,
-      ZenFit.ae helps you experience real cricket — organized matches, team play,
-      and thrilling moments on the field.
-    </p>
-
-    <p class="text-gray-400 leading-relaxed text-lg">
-      Finding the right teammates and grounds can be challenging. That’s where we come in.
-      With a growing and active community, ZenFit makes it easy to discover matches,
-      build your team, and enjoy cricket the way it’s meant to be played.
-    </p>
-
-  </div>
-
-</section>
-
-
-
 
 <!-- 🔹 FOOTER -->
 <footer class="bg-black text-gray-400 pt-16 pb-10">
@@ -471,17 +749,7 @@
 
 </footer>
 
-
-<!-- AOS INIT -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
-
-<a href="https://wa.me/971565342725?text=Hi%20ZenFit.ae,%20I%20would%20like%20to%20join%20your%20sports%20community.%20Please%20share%20the%20details%20to%20get%20started." target="_blank"
+  <a href="https://wa.me/971565342725?text=Hi%20ZenFit.ae,%20I%20would%20like%20to%20join%20your%20sports%20community.%20Please%20share%20the%20details%20to%20get%20started." target="_blank"
    class="fixed bottom-6 right-6 z-50">
 
   <div class="flex items-center gap-2">
@@ -522,6 +790,80 @@
 
   </div>
 </a>
+
+<script>
+  // Lightbox functionality
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const closeBtn = document.getElementById('close-btn');
+  
+  let currentIndex = 0;
+  const imageArray = Array.from(galleryItems).map(item => item.querySelector('img').src);
+
+  // Open lightbox when gallery item is clicked
+  galleryItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      currentIndex = index;
+      openLightbox();
+    });
+    item.style.cursor = 'pointer';
+  });
+
+  // Open lightbox function
+  function openLightbox() {
+    lightboxImage.src = imageArray[currentIndex];
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Close lightbox function
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Close button click
+  closeBtn.addEventListener('click', closeLightbox);
+
+  // Close when clicking outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  // Previous button
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + imageArray.length) % imageArray.length;
+    lightboxImage.src = imageArray[currentIndex];
+  });
+
+  // Next button
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % imageArray.length;
+    lightboxImage.src = imageArray[currentIndex];
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    
+    if (e.key === 'ArrowLeft') {
+      currentIndex = (currentIndex - 1 + imageArray.length) % imageArray.length;
+      lightboxImage.src = imageArray[currentIndex];
+    } else if (e.key === 'ArrowRight') {
+      currentIndex = (currentIndex + 1) % imageArray.length;
+      lightboxImage.src = imageArray[currentIndex];
+    } else if (e.key === 'Escape') {
+      closeLightbox();
+    }
+  });
+</script>
 
 </body>
 </html>
