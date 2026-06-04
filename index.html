@@ -965,18 +965,23 @@ p {
 
 .slider-wrapper{
   position: relative;
-  overflow: hidden;
   width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 80px;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .slider-track{
   display: flex;
   gap: 32px;
-  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  width: max-content;
+  animation: infiniteScroll 40s linear infinite;
   will-change: transform;
+}
+
+/* Pause on hover */
+.slider-wrapper:hover .slider-track{
+  animation-play-state: paused;
 }
 
 /* ==========================
@@ -984,13 +989,19 @@ p {
 ========================== */
 
 .slide{
-  flex: 0 0 calc((100% - 64px) / 3);
-  height: 500px;
-  border-radius: 28px;
-  overflow: hidden;
   position: relative;
+  width: 420px;
+  height: 520px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  overflow: hidden;
   text-decoration: none;
   background: #111;
+  transition: transform .4s ease;
+}
+
+.slide:hover{
+  transform: translateY(-8px);
 }
 
 .slide img{
@@ -998,11 +1009,11 @@ p {
   height:100%;
   object-fit:cover;
   display:block;
-  transition:transform .8s ease;
+  transition: transform .8s ease;
 }
 
 .slide:hover img{
-  transform:scale(1.08);
+  transform: scale(1.08);
 }
 
 /* ==========================
@@ -1015,8 +1026,8 @@ p {
   z-index:1;
   background:linear-gradient(
     to top,
-    rgba(0,0,0,.9) 0%,
-    rgba(0,0,0,.4) 50%,
+    rgba(0,0,0,.92) 0%,
+    rgba(0,0,0,.45) 45%,
     rgba(0,0,0,0) 100%
   );
 }
@@ -1049,9 +1060,9 @@ p {
 
 .slide-content{
   position:absolute;
-  left:30px;
-  right:30px;
-  bottom:30px;
+  left:28px;
+  right:28px;
+  bottom:28px;
   z-index:5;
 }
 
@@ -1059,19 +1070,19 @@ p {
   display:inline-block;
   padding:8px 14px;
   border-radius:999px;
-  background:rgba(255,255,255,.15);
-  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(12px);
   color:#fff;
   font-size:12px;
   font-weight:600;
-  text-transform:uppercase;
   letter-spacing:1px;
+  text-transform:uppercase;
 }
 
 .slide-content h3{
   margin-top:16px;
   color:#fff;
-  font-size:36px;
+  font-size:38px;
   font-weight:800;
   line-height:1;
 }
@@ -1084,40 +1095,17 @@ p {
 }
 
 /* ==========================
-   ARROWS
+   INFINITE ANIMATION
 ========================== */
 
-/* .slider-btn{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  width:58px;
-  height:58px;
-  border:none;
-  border-radius:50%;
-  cursor:pointer;
-  z-index:20;
-
-  background:rgba(255,255,255,.12);
-  backdrop-filter:blur(12px);
-
-  color:#fff;
-  font-size:24px;
-  transition:.3s ease;
+@keyframes infiniteScroll{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(calc(-50% - 16px));
+  }
 }
-
-.slider-btn:hover{
-  background:#8BCF5B;
-  color:#0B140D;
-}
-
-.left-btn{
-  left:15px;
-}
-
-.right-btn{
-  right:15px;
-} */
 
 /* ==========================
    TABLET
@@ -1126,7 +1114,8 @@ p {
 @media (max-width:1024px){
 
   .slide{
-    flex:0 0 calc((100% - 32px) / 2);
+    width:340px;
+    height:470px;
   }
 
   .slide-content h3{
@@ -1140,13 +1129,14 @@ p {
 
 @media (max-width:768px){
 
-  .slider-wrapper{
-    padding:0 20px;
+  .slider-track{
+    gap:20px;
+    animation-duration:30s;
   }
 
   .slide{
-    flex:0 0 100%;
-    height:420px;
+    width:280px;
+    height:400px;
   }
 
   .slide-content{
@@ -1155,59 +1145,26 @@ p {
     bottom:20px;
   }
 
-  .slide-content h3{
-    font-size:28px;
+  .slide-content span{
+    font-size:10px;
   }
 
-  .slider-btn{
-    width:48px;
-    height:48px;
-    font-size:20px;
+  .slide-content h3{
+    font-size:26px;
+  }
+
+  .slide-content p{
+    font-size:13px;
   }
 }
 </style>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-
   const track = document.getElementById("sliderTrack");
 
-  // Duplicate cards for seamless loop
+  // Duplicate cards once for seamless infinite loop
   track.innerHTML += track.innerHTML;
-
-  let position = 0;
-  let speed = 2;
-  let isPaused = false;
-
-  // Pause when hovering any card
-  track.addEventListener("mouseenter", () => {
-    isPaused = true;
-  });
-
-  track.addEventListener("mouseleave", () => {
-    isPaused = false;
-  });
-
-  function animate() {
-
-    if (!isPaused) {
-
-      position += speed;
-
-      const halfWidth = track.scrollWidth / 2;
-
-      if (position >= halfWidth) {
-        position = 0;
-      }
-
-      track.style.transform = `translateX(-${position}px)`;
-    }
-
-    requestAnimationFrame(animate);
-  }
-
-  animate();
-
 });
 </script>
 
