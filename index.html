@@ -1129,20 +1129,24 @@ p {
 
 @media (max-width:768px){
 
+  .slider-wrapper{
+    overflow:hidden;
+  }
+
   .slider-track{
-    gap:20px;
-    animation-duration:30s;
+    gap:16px;
+    animation: infiniteScrollMobile 45s linear infinite;
   }
 
   .slide{
-    width:280px;
-    height:400px;
+    width:240px;
+    height:340px;
   }
 
   .slide-content{
-    left:20px;
-    right:20px;
-    bottom:20px;
+    left:18px;
+    right:18px;
+    bottom:18px;
   }
 
   .slide-content span{
@@ -1150,11 +1154,21 @@ p {
   }
 
   .slide-content h3{
-    font-size:26px;
+    font-size:22px;
   }
 
   .slide-content p{
-    font-size:13px;
+    font-size:12px;
+    line-height:1.5;
+  }
+}
+
+@keyframes infiniteScrollMobile{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-50%);
   }
 }
 </style>
@@ -1163,8 +1177,10 @@ p {
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.getElementById("sliderTrack");
 
-  // Duplicate cards once for seamless infinite loop
-  track.innerHTML += track.innerHTML;
+  if (!track.dataset.cloned) {
+    track.innerHTML += track.innerHTML;
+    track.dataset.cloned = "true";
+  }
 });
 </script>
 
