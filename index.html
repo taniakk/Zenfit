@@ -272,16 +272,32 @@
     <div class="flex items-center justify-between h-full text-[11px] sm:text-xs">
 
       <!-- Left — Contact info -->
-      <div class="flex items-center gap-3 sm:gap-5">
-        <a href="tel:+971565342725" class="flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group">
+      <div class="flex items-center gap-3 sm:gap-4">
+
+        <!-- Phone -->
+        <a href="tel:+971582657975" class="flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group">
           <i class="fas fa-phone-alt text-accent-green text-[10px] group-hover:scale-110 transition-transform"></i>
-          <span class="font-medium tracking-wide">+971 56 534 2725</span>
+          <span class="font-medium tracking-wide">058 265 7975</span>
         </a>
-        <span class="hidden sm:block w-px h-3 bg-white/10"></span>
-        <a href="mailto:team@zenfit.ae" class="hidden sm:flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group">
+
+        <span class="hidden md:block w-px h-3 bg-white/10"></span>
+
+        <!-- Email -->
+        <a href="mailto:team@zenfit.ae" class="hidden md:flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group">
           <i class="fas fa-envelope text-accent-green text-[10px] group-hover:scale-110 transition-transform"></i>
           <span class="font-medium tracking-wide">team@zenfit.ae</span>
         </a>
+
+        <span class="hidden lg:block w-px h-3 bg-white/10"></span>
+
+        <!-- Address -->
+        <a href="https://maps.google.com/?q=Aspin+Commercial+Tower,+106+Sheikh+Zayed+Rd,+Dubai,+UAE"
+           target="_blank" rel="noopener"
+           class="hidden lg:flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group">
+          <i class="fas fa-map-marker-alt text-accent-green text-[10px] group-hover:scale-110 transition-transform"></i>
+          <span class="font-medium tracking-wide">Aspin Commercial Tower, 106 Sheikh Zayed Rd, Dubai</span>
+        </a>
+
       </div>
 
       <!-- Right — Social icons -->
@@ -296,7 +312,7 @@
            class="w-6 h-6 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-muted hover:text-accent-green hover:border-accent-green/40 hover:bg-accent-green/10 transition-all duration-200">
           <i class="fab fa-linkedin-in text-[11px]"></i>
         </a>
-        <a href="https://wa.me/971565342725" target="_blank" rel="noopener"
+        <a href="https://wa.me/971582657975" target="_blank" rel="noopener"
            aria-label="Chat on WhatsApp"
            class="w-6 h-6 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-muted hover:text-accent-green hover:border-accent-green/40 hover:bg-accent-green/10 transition-all duration-200">
           <i class="fab fa-whatsapp text-[11px]"></i>
@@ -311,7 +327,9 @@
 <header id="navbar" class="fixed top-10 left-0 right-0 z-50 py-4 transition-all duration-500 ease-premium">
   <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center">
-      <a href="/" class="flex items-center gap-2.5 group">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2.5 group shrink-0">
         <div class="w-9 h-9 rounded-lg bg-accent-green flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
           <span class="text-charcoal-deep font-black text-base">Z</span>
         </div>
@@ -323,59 +341,40 @@
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-1">
-        <a href="#sports" class="px-3.5 py-2 text-[13px] font-medium text-text-light hover:text-white rounded-md hover:bg-white/5 transition-all duration-200">Sports</a>
-        <a href="#venues" class="px-3.5 py-2 text-[13px] font-medium text-text-light hover:text-white rounded-md hover:bg-white/5 transition-all duration-200">Venues</a>
-        <a href="#communities" class="px-3.5 py-2 text-[13px] font-medium text-text-light hover:text-white rounded-md hover:bg-white/5 transition-all duration-200">Communities</a>
-        <a href="#games" class="px-3.5 py-2 text-[13px] font-medium text-text-light hover:text-white rounded-md hover:bg-white/5 transition-all duration-200">Games</a>
-        <a href="#events" class="px-3.5 py-2 text-[13px] font-medium text-text-light hover:text-white rounded-md hover:bg-white/5 transition-all duration-200">Events</a>
-        <a href="whatwedo.html" class="px-3.5 py-2 text-[13px] font-medium text-text-light hover:text-white rounded-md hover:bg-white/5 transition-all duration-200">What We Do</a>
-        <a href="#corporate" class="px-3.5 py-2 text-[13px] font-medium text-text-light hover:text-white rounded-md hover:bg-white/5 transition-all duration-200">Corporate</a>
-        <a href="aboutus.html" class="px-3.5 py-2 text-[13px] font-medium text-text-light hover:text-white rounded-md hover:bg-white/5 transition-all duration-200">About</a>
+      <!-- Desktop Nav — evenly spaced -->
+      <nav class="hidden lg:flex items-center gap-8 xl:gap-10">
+        <a href="/" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Home</a>
+        <a href="aboutus.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">About</a>
+        <a href="#events" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Events</a>
+        <a href="registrations.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Registrations</a>
+        <a href="whatwedo.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">What We Do</a>
+        <a href="#venues" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Our Venues</a>
+        <a href="/contact.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Contact</a>
       </nav>
 
-      <div class="flex items-center gap-3">
-        <button class="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-text-light hover:text-white hover:bg-white/10 transition-all duration-200">
-          <i class="fas fa-search text-[13px]"></i>
-        </button>
-        <a href="#" class="hidden sm:inline-flex items-center gap-2 bg-accent-green text-charcoal-deep text-[13px] font-bold px-5 py-2.5 rounded-full hover:bg-white transition-all duration-300">
-          Join Community
-        </a>
-        <button id="mobile-menu-btn" class="lg:hidden w-9 h-9 rounded-full flex items-center justify-center text-white hover:bg-white/10 transition-all duration-200 focus:outline-none" aria-label="Menu" aria-expanded="false">
-          <i id="menu-icon" class="fas fa-bars text-sm"></i>
-        </button>
-      </div>
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="lg:hidden w-9 h-9 rounded-full flex items-center justify-center text-white hover:bg-white/10 transition-all duration-200 focus:outline-none shrink-0" aria-label="Menu" aria-expanded="false">
+        <i id="menu-icon" class="fas fa-bars text-sm"></i>
+      </button>
     </div>
 
     <!-- MOBILE MENU PANEL -->
     <div id="mobile-menu" class="mobile-menu lg:hidden mt-4 rounded-2xl bg-[#1a1a1a]/95 backdrop-blur-xl border border-white/10 shadow-2xl">
       <nav class="flex flex-col p-4 space-y-1">
-        <a href="#sports" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Sports</a>
-        <a href="#venues" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Venues</a>
-        <a href="#communities" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Communities</a>
-        <a href="#games" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Games</a>
-        <a href="#events" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Events</a>
-        <a href="whatwedo.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-white rounded-xl bg-white/5 transition-all duration-200">What We Do</a>
-        <a href="#corporate" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Corporate</a>
+        <a href="/" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Home</a>
         <a href="aboutus.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">About</a>
-
-        <div class="pt-3 mt-2 border-t border-white/10 flex flex-col gap-3">
-          <button class="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-xl bg-white/5 text-text-light hover:text-white hover:bg-white/10 transition-all">
-            <i class="fas fa-search text-sm"></i> <span class="text-sm font-medium">Search</span>
-          </button>
-          <a href="#" class="flex items-center justify-center gap-2 bg-accent-green text-charcoal-deep text-[15px] font-bold px-5 py-3 rounded-full hover:bg-white transition-all duration-300 w-full">
-            Join Community
-          </a>
-        </div>
+        <a href="#events" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Events</a>
+        <a href="registrations.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Registrations</a>
+        <a href="whatwedo.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">What We Do</a>
+        <a href="#venues" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Our Venues</a>
+        <a href="/contact.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Contact</a>
       </nav>
     </div>
   </div>
 </header>
 
-<!-- Mobile menu styles & auto-close script -->
+<!-- Mobile menu styles -->
 <style>
-  /* REMOVED: body.menu-open { overflow: hidden; } — this was blocking scroll and preventing auto-close */
-
   .mobile-menu {
     transition: max-height 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
     max-height: 0;
@@ -420,13 +419,12 @@
     window.addEventListener('scroll', handleNavbarScroll, { passive: true });
     handleNavbarScroll();
 
-    // Open / close functions
+    // Open / close
     const openMenu = () => {
       mobileMenu.classList.add('open');
       menuIcon.classList.remove('fa-bars');
       menuIcon.classList.add('fa-times');
       menuBtn.setAttribute('aria-expanded', 'true');
-      // REMOVED: document.body.classList.add('menu-open');
     };
 
     const closeMenu = () => {
@@ -434,7 +432,6 @@
       menuIcon.classList.remove('fa-times');
       menuIcon.classList.add('fa-bars');
       menuBtn.setAttribute('aria-expanded', 'false');
-      // REMOVED: document.body.classList.remove('menu-open');
     };
 
     const toggleMenu = (e) => {
@@ -448,7 +445,7 @@
 
     menuBtn.addEventListener('click', toggleMenu);
 
-    // Auto-close on scroll (mobile) — now works because body scroll is not locked
+    // Auto-close on scroll (mobile)
     const handleAutoCloseOnScroll = () => {
       if (window.innerWidth < 1024 && mobileMenu.classList.contains('open')) {
         closeMenu();
@@ -481,19 +478,18 @@
       }
     });
 
-    // Prevent clicks inside menu from closing via outside handler
     mobileMenu.addEventListener('click', (e) => {
       e.stopPropagation();
     });
 
-    // Close on Escape key
+    // Close on Escape
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
         closeMenu();
       }
     });
 
-    // Reset state on page restore
+    // Reset state on restore
     window.addEventListener('pageshow', (event) => {
       if (event.persisted) {
         closeMenu();
@@ -526,16 +522,15 @@
         From indoor padel in Al Quoz to sunrise runs at Kite Beach. Find your sport, your venue, and your people — all in one place.
       </p>
 
-      <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 max-w-xl"
+      <!-- CTA buttons -->
+      <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3" 
            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <div class="relative flex-1">
-          <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-text-muted text-sm"></i>
-          <input type="text" placeholder="Search sports, venues, or communities..."
-                 class="w-full pl-11 pr-4 py-3.5 bg-white/10 backdrop-blur-sm border border-white/15 rounded-xl text-white placeholder-text-muted text-sm focus:outline-none focus:border-accent-green/50 focus:bg-white/15 transition-all duration-300">
-        </div>
-        <button class="bg-accent-green text-charcoal-deep font-bold px-7 py-3.5 rounded-xl hover:bg-white transition-all duration-300 text-sm whitespace-nowrap">
-          Explore
-        </button>
+        <a href="#venues" class="inline-flex items-center justify-center gap-2 bg-accent-green text-charcoal-deep font-bold px-7 py-3.5 rounded-xl hover:bg-white transition-all duration-300 text-sm whitespace-nowrap">
+          Explore Venues <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <a href="#events" class="inline-flex items-center justify-center gap-2 border border-white/25 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/10 transition-all duration-300 text-sm whitespace-nowrap">
+          Upcoming Events
+        </a>
       </div>
 
       <div class="flex flex-wrap gap-6 sm:gap-8 mt-10 sm:mt-12 lg:mt-14 pt-6 sm:pt-8 border-t border-white/10"
@@ -563,477 +558,289 @@
 <!-- ═══════════ SCROLLING CONTENT OVERLAY (OPENS) ═══════════ -->
 <div class="relative z-10 bg-bone">
 
-<!-- ═══════════ POPULAR SPORTS (blurred background image) ═══════════ -->
-<section id="sports" class="relative py-14 lg:py-20 overflow-hidden">
 
-  <!-- Blurred background image layer -->
-  <div class="absolute inset-0 bg-cover bg-center  scale-105"
-       style="background-image: url('/images/zenfitcommunity.jpeg');"></div>
-
-  <!-- Green tint overlay (keeps readability + original palette) -->
-  <div class="absolute inset-0 bg-gradient-to-br from-[#c8e6c9]/70 via-[#dcedc8]/65 to-[#e8f5e9]/70"></div>
-
-  <!-- Paint splash from LEFT → RIGHT (organic layered blobs) -->
+<!-- ═══════════ POPULAR SPORTS ═══════════ -->
+<section id="sports" class="relative py-20 lg:py-28 bg-bone overflow-hidden">
+  <!-- Single accent paint streak from left -->
   <div class="absolute inset-0 pointer-events-none" style="background:
-    radial-gradient(ellipse 90% 130% at 0% 50%, rgba(27,94,32,0.35) 0%, rgba(46,125,50,0.18) 32%, transparent 68%),
-    radial-gradient(ellipse 70% 110% at 8% 25%, rgba(56,142,60,0.25) 0%, transparent 58%),
-    radial-gradient(ellipse 60% 90% at 4% 80%, rgba(76,175,80,0.20) 0%, transparent 62%);
+    linear-gradient(90deg,
+      rgba(46,125,50,0.14) 0%,
+      rgba(76,175,80,0.07) 8%,
+      rgba(165,214,106,0.03) 22%,
+      transparent 40%);
   "></div>
 
-  <!-- Main paint streak left → right -->
-  <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(90deg,
-    rgba(27,94,32,0.30) 0%,
-    rgba(46,125,50,0.22) 6%,
-    rgba(56,142,60,0.15) 15%,
-    rgba(76,175,80,0.09) 26%,
-    rgba(165,214,106,0.06) 40%,
-    rgba(165,214,106,0.03) 55%,
-    rgba(165,214,106,0.01) 72%,
-    transparent 100%);
-  "></div>
+  <!-- Subtle dotted texture -->
+  <div class="absolute inset-0 pointer-events-none opacity-[0.28]" style="background-image: radial-gradient(rgba(11,21,16,0.06) 1px, transparent 1px); background-size: 22px 22px;"></div>
 
-  <!-- Paint splatter dots -->
-  <div class="absolute inset-0 pointer-events-none opacity-70" style="background:
-    radial-gradient(circle at 2% 18%, rgba(27,94,32,0.18) 0%, transparent 14%),
-    radial-gradient(circle at 6% 55%, rgba(46,125,50,0.14) 0%, transparent 11%),
-    radial-gradient(circle at 10% 88%, rgba(56,142,60,0.12) 0%, transparent 10%),
-    radial-gradient(circle at 14% 40%, rgba(76,175,80,0.10) 0%, transparent 8%),
-    radial-gradient(circle at 1% 70%, rgba(27,94,32,0.12) 0%, transparent 9%);
-  "></div>
-
-  <!-- Full-coverage green tint so NO white shows anywhere -->
-  <div class="absolute inset-0 pointer-events-none" style="background:
-    linear-gradient(180deg, rgba(200,230,201,0.20) 0%, rgba(200,230,201,0.10) 40%, rgba(232,245,233,0.25) 100%),
-    radial-gradient(ellipse 70% 70% at 100% 100%, rgba(76,175,80,0.10) 0%, transparent 65%),
-    radial-gradient(ellipse 70% 70% at 100% 0%, rgba(165,214,106,0.08) 0%, transparent 65%);
-  "></div>
-
-  <!-- Field grid -->
-  <div class="absolute inset-0 anim-mesh opacity-25 pointer-events-none"></div>
-
-  <!-- Radar pulses -->
-  <div class="absolute top-16 right-10 w-4 h-4 rounded-full bg-accent-green/20 anim-radar"></div>
-  <div class="absolute top-16 right-10 w-4 h-4 rounded-full bg-accent-green/20 anim-radar" style="animation-delay: 1.5s;"></div>
-  <div class="absolute bottom-16 left-10 w-4 h-4 rounded-full bg-accent-green/20 anim-radar" style="animation-delay: 0.8s;"></div>
-
-  <!-- CONTENT -->
   <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10">
+
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-14">
       <div data-aos="fade-right" data-aos-duration="800">
-        <p class="section-label mb-2" style="color: #2E7D32;">Most Played</p>
-        <h2 class="text-2xl md:text-[36px] font-black text-charcoal-deep tracking-tight leading-tight">Popular Sports<br>in Dubai</h2>
+        <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#2E7D32] mb-3"> Most Played</p>
+        <h2 class="text-3xl md:text-[44px] font-black text-charcoal-deep tracking-tight leading-tight">
+          Popular Sports<br>in Dubai
+        </h2>
       </div>
-      <p class="text-charcoal-deep/70 mt-4 md:mt-0 max-w-sm text-[14px] leading-relaxed"
+      <p class="text-text-muted mt-4 md:mt-0 max-w-sm text-[15px] leading-relaxed"
          data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
         From indoor courts to beachside runs. Find your sport and start playing across the city.
       </p>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-      <!-- Padel -->
-      <a href="#" class="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-300 text-center overflow-hidden card-lift"
+    <!-- Sports grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5">
+      <a href="#" class="group bg-bone-white rounded-2xl p-5 border border-charcoal-deep/8 card-lift text-center"
          data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-300 group-hover:scale-110">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-110 transition-all duration-300">
           <i class="fas fa-table-tennis"></i>
         </div>
-        <h3 class="mt-3 font-bold text-charcoal-deep text-[14px]">Padel</h3>
-        <p class="text-[11px] text-charcoal-deep/55 mt-1 font-medium">140+ courts</p>
+        <h3 class="mt-4 font-bold text-charcoal-deep text-sm">Padel</h3>
+        <p class="text-[11px] text-text-muted mt-1">140+ courts</p>
       </a>
-
-      <!-- Football -->
-      <a href="#" class="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-300 text-center overflow-hidden card-lift"
+      <a href="#" class="group bg-bone-white rounded-2xl p-5 border border-charcoal-deep/8 card-lift text-center"
          data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-300 group-hover:scale-110">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-110 transition-all duration-300">
           <i class="fas fa-futbol"></i>
         </div>
-        <h3 class="mt-3 font-bold text-charcoal-deep text-[14px]">Football</h3>
-        <p class="text-[11px] text-charcoal-deep/55 mt-1 font-medium">95+ pitches</p>
+        <h3 class="mt-4 font-bold text-charcoal-deep text-sm">Football</h3>
+        <p class="text-[11px] text-text-muted mt-1">95+ pitches</p>
       </a>
-
-      <!-- Running -->
-      <a href="#" class="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-300 text-center overflow-hidden card-lift"
+      <a href="#" class="group bg-bone-white rounded-2xl p-5 border border-charcoal-deep/8 card-lift text-center"
          data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-300 group-hover:scale-110">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-110 transition-all duration-300">
           <i class="fas fa-running"></i>
         </div>
-        <h3 class="mt-3 font-bold text-charcoal-deep text-[14px]">Running</h3>
-        <p class="text-[11px] text-charcoal-deep/55 mt-1 font-medium">18+ clubs</p>
+        <h3 class="mt-4 font-bold text-charcoal-deep text-sm">Running</h3>
+        <p class="text-[11px] text-text-muted mt-1">18+ clubs</p>
       </a>
-
-      <!-- Badminton -->
-      <a href="#" class="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-300 text-center overflow-hidden card-lift"
+      <a href="#" class="group bg-bone-white rounded-2xl p-5 border border-charcoal-deep/8 card-lift text-center"
          data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-300 group-hover:scale-110">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-110 transition-all duration-300">
           <i class="fas fa-feather-alt"></i>
         </div>
-        <h3 class="mt-3 font-bold text-charcoal-deep text-[14px]">Badminton</h3>
-        <p class="text-[11px] text-charcoal-deep/55 mt-1 font-medium">30+ courts</p>
+        <h3 class="mt-4 font-bold text-charcoal-deep text-sm">Badminton</h3>
+        <p class="text-[11px] text-text-muted mt-1">30+ courts</p>
       </a>
-
-      <!-- Volleyball -->
-      <a href="#" class="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-300 text-center overflow-hidden card-lift"
+      <a href="#" class="group bg-bone-white rounded-2xl p-5 border border-charcoal-deep/8 card-lift text-center"
          data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-300 group-hover:scale-110">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-110 transition-all duration-300">
           <i class="fas fa-volleyball"></i>
         </div>
-        <h3 class="mt-3 font-bold text-charcoal-deep text-[14px]">Volleyball</h3>
-        <p class="text-[11px] text-charcoal-deep/55 mt-1 font-medium">22+ courts</p>
+        <h3 class="mt-4 font-bold text-charcoal-deep text-sm">Volleyball</h3>
+        <p class="text-[11px] text-text-muted mt-1">22+ courts</p>
       </a>
-
-      <!-- Basketball -->
-      <a href="#" class="group relative bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-300 text-center overflow-hidden card-lift"
+      <a href="#" class="group bg-bone-white rounded-2xl p-5 border border-charcoal-deep/8 card-lift text-center"
          data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-300 group-hover:scale-110">
+        <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-110 transition-all duration-300">
           <i class="fas fa-basketball-ball"></i>
         </div>
-        <h3 class="mt-3 font-bold text-charcoal-deep text-[14px]">Basketball</h3>
-        <p class="text-[11px] text-charcoal-deep/55 mt-1 font-medium">35+ courts</p>
+        <h3 class="mt-4 font-bold text-charcoal-deep text-sm">Basketball</h3>
+        <p class="text-[11px] text-text-muted mt-1">35+ courts</p>
       </a>
     </div>
   </div>
 </section>
 
 
+<!-- ═══════════ EXPLORE VENUES ═══════════ -->
+<section id="venues" class="relative py-20 lg:py-28 bg-charcoal-deep overflow-hidden">
+  <!-- Floodlight sweeps -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-0 left-1/4 w-64 h-[800px] bg-gradient-to-b from-accent-sand/18 to-transparent anim-light-sweep"></div>
+    <div class="absolute top-0 right-1/4 w-64 h-[800px] bg-gradient-to-b from-accent-green/10 to-transparent anim-light-sweep" style="animation-delay: 4s;"></div>
+  </div>
+  <!-- Field grid -->
+  <div class="absolute inset-0 anim-field-grid opacity-30 pointer-events-none"></div>
 
-
-  <!-- ═══════════ EXPLORE VENUES ═══════════ -->
-  <section id="venues" class="relative py-20 lg:py-28 bg-charcoal-deep overflow-hidden">
-    <!-- Floodlight sweep animation -->
-    <div class="absolute inset-0 pointer-events-none overflow-hidden">
-      <div class="absolute top-0 left-1/4 w-64 h-[800px] bg-gradient-to-b from-accent-sand/20 to-transparent anim-light-sweep"></div>
-      <div class="absolute top-0 right-1/4 w-64 h-[800px] bg-gradient-to-b from-accent-green/10 to-transparent anim-light-sweep" style="animation-delay: 4s;"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-14">
+      <div data-aos="fade-right" data-aos-duration="800">
+        <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-accent-sand mb-3"> Venues</p>
+        <h2 class="text-3xl md:text-[44px] font-black text-white tracking-tight leading-tight">
+          Explore Premium<br>Venues
+        </h2>
+      </div>
+      <a href="#" class="mt-5 md:mt-0 inline-flex items-center gap-2 text-accent-green font-semibold text-sm hover:gap-3 transition-all duration-300"
+         data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+        All venues <i class="fas fa-arrow-right text-xs"></i>
+      </a>
     </div>
 
-    <!-- Field grid pattern -->
-    <div class="absolute inset-0 anim-field-grid opacity-40 pointer-events-none"></div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- Floating particles -->
-    <div class="particle" style="left: 15%; animation-delay: 1s; animation-duration: 20s;"></div>
-    <div class="particle" style="left: 55%; animation-delay: 5s; animation-duration: 18s;"></div>
-    <div class="particle" style="left: 80%; animation-delay: 9s; animation-duration: 22s;"></div>
-
-    <!-- Decorative bouncing ball -->
-    <div class="absolute top-32 right-16 w-3 h-3 rounded-full bg-accent-green/30 anim-ball-bounce pointer-events-none"></div>
-
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-14">
-        <div data-aos="fade-right" data-aos-duration="800">
-          <p class="section-label mb-3">Handpicked for You</p>
-          <h2 class="text-3xl md:text-[44px] font-black text-white tracking-tight leading-tight">Explore Premium<br>Venues</h2>
+      <!-- Venue 1 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
+           data-aos="fade-up" data-aos-duration="700">
+        <div class="relative h-52 img-zoom overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/card1.jpg?updatedAt=1777298803805" alt="Zen Star Sports Oxford School football pitch" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+            <span class="bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Football</span>
+            <span class="bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
+          </div>
         </div>
-        <a href="#" class="mt-5 md:mt-0 inline-flex items-center gap-2 text-accent-green font-semibold text-sm hover:gap-3 transition-all duration-300"
-           data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
-          6+ venues <i class="fas fa-arrow-right text-xs"></i>
-        </a>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-lg">Zen Star Sports Oxford School</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Muhaisnah 4 · 15.2 km</p>
+
+          <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
+            <div>
+              <span class="text-xl font-bold text-accent-green">AED 175</span>
+              <span class="text-text-muted text-xs">/hour</span>
+            </div>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
+          </div>
+        </div>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-        <!-- Venue 1 — Zen Star Sports Oxford School -->
-        <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
-             data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
-          <div class="relative h-56 img-zoom overflow-hidden">
-            <img src="https://ik.imagekit.io/iuiy6mihw/card1.jpg?updatedAt=1777298803805"
-                 alt="Zen Star Sports Oxford School football pitch in Muhaisnah 4 Dubai"
-                 class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Football</span>
-            <span class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
-          </div>
-          <div class="p-6">
-            <h3 class="font-bold text-white text-lg">Zen Star Sports Oxford School</h3>
-            <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Muhaisnah 4 (~15.2 km)</p>
-
-            <!-- Sport icons -->
-            <div class="flex items-center gap-2 mt-4">
-              <span class="w-7 h-7 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-light text-[12px]">
-                <i class="fas fa-futbol"></i>
-              </span>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="text-[11px] bg-accent-green/15 text-accent-green font-semibold px-2.5 py-1 rounded-md border border-accent-green/20">
-                AED 175/hour 7 a side Football
-              </span>
-              <span class="text-[11px] bg-white/5 text-text-light px-2.5 py-1 rounded-md border border-white/8">
-                Player bring own kit
-              </span>
-            </div>
-
-            <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
-              <div>
-                <span class="text-xl font-bold text-accent-green">AED 175</span>
-                <span class="text-text-muted text-xs">/hour</span>
-              </div>
-              <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
-            </div>
+      <!-- Venue 2 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
+           data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <div class="relative h-52 img-zoom overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/card2.jpg?updatedAt=1777298805855" alt="Zen Star Sports at Port Rashid" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+            <span class="bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Multi-Sport</span>
+            <span class="bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
           </div>
         </div>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-lg">Zen Star Sports @ Port Rashid</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Bur Dubai · 17.2 km</p>
 
-        <!-- Venue 2 — Zen Star Sports @ Port Rashid -->
-        <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
-             data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
-          <div class="relative h-56 img-zoom overflow-hidden">
-            <img src="https://ik.imagekit.io/iuiy6mihw/card2.jpg?updatedAt=1777298805855"
-                 alt="Zen Star Sports at Port Rashid football pitch Dubai"
-                 class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Multi-Sport</span>
-            <span class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
-          </div>
-          <div class="p-6">
-            <h3 class="font-bold text-white text-lg">Zen Star Sports @ Port Rashid</h3>
-            <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Bur Dubai (~17.2 km)</p>
-
-            <!-- Sport icons -->
-            <div class="flex items-center gap-2 mt-4">
-              <span class="w-7 h-7 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-light text-[12px]">
-                <i class="fas fa-table-tennis"></i>
-              </span>
-              <span class="w-7 h-7 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-light text-[12px]">
-                <i class="fas fa-basketball-ball"></i>
-              </span>
+          <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
+            <div>
+              <span class="text-xl font-bold text-accent-green">Bookable</span>
+              <span class="text-text-muted text-xs"> now</span>
             </div>
-
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="text-[11px] bg-white/5 text-text-light px-2.5 py-1 rounded-md border border-white/8">
-                Player bring own kit
-              </span>
-            </div>
-
-            <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
-              <div>
-                <span class="text-xl font-bold text-accent-green">Bookable</span>
-                <span class="text-text-muted text-xs"> now</span>
-              </div>
-              <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
-            </div>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
           </div>
         </div>
-
-        <!-- Venue 3 — Zen Star Sports Glendale -->
-        <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
-             data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-          <div class="relative h-56 img-zoom overflow-hidden">
-            <img src="https://ik.imagekit.io/iuiy6mihw/card3.jpg?updatedAt=1777298805998"
-                 alt="Zen Star Sports Glendale indoor badminton courts Oud Metha Dubai"
-                 class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Padel</span>
-            <span class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
-          </div>
-          <div class="p-6">
-            <h3 class="font-bold text-white text-lg">Zen Star Sports Glendale</h3>
-            <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Oud Metha (~11.7 km)</p>
-
-            <!-- Sport icons -->
-            <div class="flex items-center gap-2 mt-4">
-              <span class="w-7 h-7 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-light text-[12px]">
-                <i class="fas fa-table-tennis"></i>
-              </span>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="text-[11px] bg-accent-green/15 text-accent-green font-semibold px-2.5 py-1 rounded-md border border-accent-green/20">
-                AED 40/hr
-              </span>
-              <span class="text-[11px] bg-white/5 text-text-light px-2.5 py-1 rounded-md border border-white/8">
-                Near Metro
-              </span>
-            </div>
-
-            <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
-              <div>
-                <span class="text-xl font-bold text-accent-green">AED 40</span>
-                <span class="text-text-muted text-xs">/hour</span>
-              </div>
-              <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Venue 4 — Apple International Court -->
-        <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
-             data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
-          <div class="relative h-56 img-zoom overflow-hidden">
-            <img src="https://ik.imagekit.io/iuiy6mihw/card4.jpg?updatedAt=1777298806069"
-                 alt="Apple International Court football pitch Al Karama Dubai"
-                 class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Football</span>
-            <span class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
-          </div>
-          <div class="p-6">
-            <h3 class="font-bold text-white text-lg">Apple International Court</h3>
-            <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Al Karama</p>
-
-            <!-- Sport icons -->
-            <div class="flex items-center gap-2 mt-4">
-              <span class="w-7 h-7 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-light text-[12px]">
-                <i class="fas fa-futbol"></i>
-              </span>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="text-[11px] bg-white/5 text-text-light px-2.5 py-1 rounded-md border border-white/8">
-                Outdoor Court
-              </span>
-            </div>
-
-            <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
-              <div>
-                <span class="text-xl font-bold text-accent-green">Bookable</span>
-                <span class="text-text-muted text-xs"> now</span>
-              </div>
-              <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Venue 5 — Nibras School Venue -->
-        <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
-             data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
-          <div class="relative h-56 img-zoom overflow-hidden">
-            <img src="https://ik.imagekit.io/iuiy6mihw/card5.jpg?updatedAt=1777298806082"
-                 alt="Nibras School Venue indoor sports hall Dubai Investment Park"
-                 class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Indoor</span>
-            <span class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
-          </div>
-          <div class="p-6">
-            <h3 class="font-bold text-white text-lg">Nibras School Venue</h3>
-            <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> DIP 1</p>
-
-            <!-- Sport icons -->
-            <div class="flex items-center gap-2 mt-4">
-              <span class="w-7 h-7 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-light text-[12px]">
-                <i class="fas fa-table-tennis"></i>
-              </span>
-              <span class="w-7 h-7 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-light text-[12px]">
-                <i class="fas fa-futbol"></i>
-              </span>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="text-[11px] bg-white/5 text-text-light px-2.5 py-1 rounded-md border border-white/8">
-                Indoor Hall
-              </span>
-            </div>
-
-            <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
-              <div>
-                <span class="text-xl font-bold text-accent-green">Bookable</span>
-                <span class="text-text-muted text-xs"> now</span>
-              </div>
-              <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Venue 6 — AC Badminton Court -->
-        <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
-             data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-          <div class="relative h-56 img-zoom overflow-hidden">
-            <img src="https://ik.imagekit.io/iuiy6mihw/card6.jpg?updatedAt=1777298806819"
-                 alt="AC Badminton Court Al Karama Dubai indoor court"
-                 class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Badminton</span>
-            <span class="absolute top-4 right-4 bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
-          </div>
-          <div class="p-6">
-            <h3 class="font-bold text-white text-lg">AC Badminton Court</h3>
-            <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Al Karama</p>
-
-            <!-- Sport icons -->
-            <div class="flex items-center gap-2 mt-4">
-              <span class="w-7 h-7 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-light text-[12px]">
-                <i class="fas fa-table-tennis"></i>
-              </span>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mt-4">
-              <span class="text-[11px] bg-white/5 text-text-light px-2.5 py-1 rounded-md border border-white/8">
-                Indoor Court
-              </span>
-            </div>
-
-            <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
-              <div>
-                <span class="text-xl font-bold text-accent-green">Bookable</span>
-                <span class="text-text-muted text-xs"> now</span>
-              </div>
-              <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Venue 3 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
+           data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+        <div class="relative h-52 img-zoom overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/card3.jpg?updatedAt=1777298805998" alt="Zen Star Sports Glendale padel courts" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+            <span class="bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Padel</span>
+            <span class="bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-lg">Zen Star Sports Glendale</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Oud Metha · 11.7 km</p>
+
+          <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
+            <div>
+              <span class="text-xl font-bold text-accent-green">AED 40</span>
+              <span class="text-text-muted text-xs">/hour</span>
+            </div>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venue 4 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
+           data-aos="fade-up" data-aos-duration="700">
+        <div class="relative h-52 img-zoom overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/card4.jpg?updatedAt=1777298806069" alt="Apple International Court" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+            <span class="bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Football</span>
+            <span class="bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-lg">Apple International Court</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Al Karama</p>
+
+          <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
+            <div>
+              <span class="text-xl font-bold text-accent-green">Bookable</span>
+              <span class="text-text-muted text-xs"> now</span>
+            </div>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venue 5 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
+           data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <div class="relative h-52 img-zoom overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/card5.jpg?updatedAt=1777298806082" alt="Nibras School Venue" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+            <span class="bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Indoor</span>
+            <span class="bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-lg">Nibras School Venue</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> DIP 1</p>
+
+          <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
+            <div>
+              <span class="text-xl font-bold text-accent-green">Bookable</span>
+              <span class="text-text-muted text-xs"> now</span>
+            </div>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venue 6 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift"
+           data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+        <div class="relative h-52 img-zoom overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/card6.jpg?updatedAt=1777298806819" alt="AC Badminton Court" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/60 via-transparent to-transparent"></div>
+          <div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+            <span class="bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Badminton</span>
+            <span class="bg-white/10 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full"><i class="fas fa-star text-accent-sand mr-1"></i>5.0</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-lg">AC Badminton Court</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Al Karama</p>
+
+          <div class="flex justify-between items-center mt-5 pt-5 border-t border-white/8">
+            <div>
+              <span class="text-xl font-bold text-accent-green">Bookable</span>
+              <span class="text-text-muted text-xs"> now</span>
+            </div>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Book</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- ═══════════ JOIN COMMUNITIES ═══════════ -->
-<section id="communities" class="relative py-20 lg:py-28 overflow-hidden" style="background: linear-gradient(135deg, #c8e6c9 0%, #dcedc8 30%, #e8f5e9 65%, #e8f5e9 100%);">
+<section id="communities" class="relative py-20 lg:py-28 bg-bone-warm overflow-hidden">
+  <!-- Subtle top accent line -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#2E7D32]/40 to-transparent"></div>
 
-  <!-- ONE sports image covering the whole section — LIGHT blur only -->
-  <div class="absolute inset-0 bg-cover bg-center scale-105 pointer-events-none"
-       style="background-image: url('/images/zenfitcommunity.jpeg');
-              filter: blur(2px);"></div>
-
-  <!-- Green overlay to keep brand palette + readability -->
-  <div class="absolute inset-0 pointer-events-none" style="background:
-    linear-gradient(135deg, rgba(200,230,201,0.78) 0%, rgba(220,237,200,0.70) 30%, rgba(232,245,233,0.75) 65%, rgba(232,245,233,0.82) 100%);
-  "></div>
-
-  <!-- Paint splash from LEFT → RIGHT -->
-  <div class="absolute inset-0 pointer-events-none" style="background:
-    radial-gradient(ellipse 90% 130% at 0% 50%, rgba(27,94,32,0.35) 0%, rgba(46,125,50,0.18) 32%, transparent 68%),
-    radial-gradient(ellipse 70% 110% at 8% 25%, rgba(56,142,60,0.25) 0%, transparent 58%),
-    radial-gradient(ellipse 60% 90% at 4% 80%, rgba(76,175,80,0.20) 0%, transparent 62%);
-  "></div>
-
-  <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(90deg,
-    rgba(27,94,32,0.30) 0%,
-    rgba(46,125,50,0.22) 6%,
-    rgba(56,142,60,0.15) 15%,
-    rgba(76,175,80,0.09) 26%,
-    rgba(165,214,106,0.06) 40%,
-    rgba(165,214,106,0.03) 55%,
-    rgba(165,214,106,0.01) 72%,
-    transparent 100%);
-  "></div>
-
-  <!-- Full-coverage corner tint -->
-  <div class="absolute inset-0 pointer-events-none" style="background:
-    radial-gradient(ellipse 70% 70% at 100% 100%, rgba(76,175,80,0.12) 0%, transparent 65%),
-    radial-gradient(ellipse 70% 70% at 100% 0%, rgba(165,214,106,0.10) 0%, transparent 65%);
-  "></div>
-
-  <!-- Field grid -->
-  <div class="absolute inset-0 anim-mesh opacity-25 pointer-events-none"></div>
-
-  <!-- Running silhouette -->
-  <div class="absolute top-1/3 left-0 anim-runner pointer-events-none">
-    <i class="fas fa-running text-8xl text-[#2E7D32] opacity-20"></i>
-  </div>
-
-  <!-- Radar pulses -->
-  <div class="absolute bottom-10 right-20 w-4 h-4 rounded-full bg-[#2E7D32]/30 anim-radar"></div>
-  <div class="absolute top-20 right-32 w-3 h-3 rounded-full bg-[#388E3C]/30 anim-radar" style="animation-delay: 1.2s;"></div>
+  <!-- Single right-side glow -->
+  <div class="absolute -top-20 -right-20 w-[500px] h-[500px] rounded-full bg-accent-green/8 blur-3xl pointer-events-none"></div>
 
   <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
     <div class="text-center mb-14">
-      <p class="section-label mb-3" style="color: #2E7D32;" data-aos="fade-up" data-aos-duration="600">Find Your Tribe</p>
+      <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#2E7D32] mb-3"
+         data-aos="fade-up" data-aos-duration="600">Community</p>
       <h2 class="text-3xl md:text-[44px] font-black text-charcoal-deep tracking-tight"
-          data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Join Thriving<br><span style="background: linear-gradient(135deg, #1B5E20 0%, #4CAF50 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Communities</span></h2>
-      <p class="text-charcoal-deep/65 mt-4 max-w-lg mx-auto text-[15px] leading-relaxed"
+          data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        Join Thriving<br>Communities
+      </h2>
+      <p class="text-text-muted mt-4 max-w-lg mx-auto text-[15px] leading-relaxed"
          data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
         Connect with athletes across Dubai. All levels welcome, from beginners to seasoned competitors.
       </p>
@@ -1041,20 +848,18 @@
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-      <!-- 1. Cricket -->
-      <div class="group relative bg-white/85 backdrop-blur-sm rounded-2xl p-6 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-500 overflow-hidden card-lift"
-           data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
+      <!-- Cricket -->
+      <div class="group bg-bone-white rounded-2xl p-6 border border-charcoal-deep/8 card-lift"
+           data-aos="fade-up" data-aos-duration="700">
         <div class="flex items-center justify-between mb-4">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#A5D66A] to-[#4CAF50] flex items-center justify-center text-charcoal-deep text-lg shadow-[0_8px_20px_-6px_rgba(46,125,50,0.4)] group-hover:scale-110 transition-transform duration-300">
+          <div class="w-11 h-11 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-105 transition-all duration-300">
             <i class="fas fa-baseball-ball"></i>
           </div>
-          <span class="text-[11px] bg-[#2E7D32]/8 text-[#2E7D32] font-semibold px-3 py-1.5 rounded-full border border-[#2E7D32]/15">3,500 members</span>
+          <span class="text-[11px] bg-bone text-text-muted font-semibold px-3 py-1.5 rounded-full border border-charcoal-deep/8">3,500 members</span>
         </div>
         <h3 class="font-bold text-charcoal-deep text-lg">Dubai Cricket Collective</h3>
-        <p class="text-charcoal-deep/60 text-sm mt-2 leading-relaxed">Weekend tape-ball and hard-ball games across Dubai's top grounds. From casual nets to full league fixtures.</p>
-        <div class="flex items-center gap-4 mt-4 text-[11px] text-charcoal-deep/55">
+        <p class="text-text-muted text-sm mt-2 leading-relaxed">Weekend tape-ball and hard-ball games across Dubai's top grounds. From casual nets to full league fixtures.</p>
+        <div class="flex items-center gap-4 mt-4 text-[11px] text-text-muted">
           <span><i class="fas fa-calendar-alt text-[#2E7D32] mr-1"></i> Sat & Sun mornings</span>
         </div>
         <a href="#" class="mt-5 inline-flex items-center gap-2 text-[#2E7D32] font-semibold text-sm hover:gap-3 transition-all duration-300">
@@ -1062,20 +867,18 @@
         </a>
       </div>
 
-      <!-- 2. Football -->
-      <div class="group relative bg-white/85 backdrop-blur-sm rounded-2xl p-6 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-500 overflow-hidden card-lift"
+      <!-- Football -->
+      <div class="group bg-bone-white rounded-2xl p-6 border border-charcoal-deep/8 card-lift"
            data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
         <div class="flex items-center justify-between mb-4">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#A5D66A] to-[#4CAF50] flex items-center justify-center text-charcoal-deep text-lg shadow-[0_8px_20px_-6px_rgba(46,125,50,0.4)] group-hover:scale-110 transition-transform duration-300">
+          <div class="w-11 h-11 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-105 transition-all duration-300">
             <i class="fas fa-futbol"></i>
           </div>
-          <span class="text-[11px] bg-[#2E7D32]/8 text-[#2E7D32] font-semibold px-3 py-1.5 rounded-full border border-[#2E7D32]/15">5,200 members</span>
+          <span class="text-[11px] bg-bone text-text-muted font-semibold px-3 py-1.5 rounded-full border border-charcoal-deep/8">5,200 members</span>
         </div>
         <h3 class="font-bold text-charcoal-deep text-lg">Dubai Football Network</h3>
-        <p class="text-charcoal-deep/60 text-sm mt-2 leading-relaxed">Casual 5-a-side, 7-a-side, and full 11-a-side matches across the city. Weekly leagues and social kickabouts.</p>
-        <div class="flex items-center gap-4 mt-4 text-[11px] text-charcoal-deep/55">
+        <p class="text-text-muted text-sm mt-2 leading-relaxed">Casual 5-a-side, 7-a-side, and full 11-a-side matches across the city. Weekly leagues and social kickabouts.</p>
+        <div class="flex items-center gap-4 mt-4 text-[11px] text-text-muted">
           <span><i class="fas fa-calendar-alt text-[#2E7D32] mr-1"></i> Daily evening games</span>
         </div>
         <a href="#" class="mt-5 inline-flex items-center gap-2 text-[#2E7D32] font-semibold text-sm hover:gap-3 transition-all duration-300">
@@ -1083,20 +886,18 @@
         </a>
       </div>
 
-      <!-- 3. Badminton -->
-      <div class="group relative bg-white/85 backdrop-blur-sm rounded-2xl p-6 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-500 overflow-hidden card-lift"
+      <!-- Badminton -->
+      <div class="group bg-bone-white rounded-2xl p-6 border border-charcoal-deep/8 card-lift"
            data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
         <div class="flex items-center justify-between mb-4">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#A5D66A] to-[#4CAF50] flex items-center justify-center text-charcoal-deep text-lg shadow-[0_8px_20px_-6px_rgba(46,125,50,0.4)] group-hover:scale-110 transition-transform duration-300">
+          <div class="w-11 h-11 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-105 transition-all duration-300">
             <i class="fas fa-feather-alt"></i>
           </div>
-          <span class="text-[11px] bg-[#2E7D32]/8 text-[#2E7D32] font-semibold px-3 py-1.5 rounded-full border border-[#2E7D32]/15">2,800 members</span>
+          <span class="text-[11px] bg-bone text-text-muted font-semibold px-3 py-1.5 rounded-full border border-charcoal-deep/8">2,800 members</span>
         </div>
         <h3 class="font-bold text-charcoal-deep text-lg">Dubai Badminton Club</h3>
-        <p class="text-charcoal-deep/60 text-sm mt-2 leading-relaxed">Indoor court bookings, weekly socials, and friendly ladders for all levels. From beginner to advanced smashers.</p>
-        <div class="flex items-center gap-4 mt-4 text-[11px] text-charcoal-deep/55">
+        <p class="text-text-muted text-sm mt-2 leading-relaxed">Indoor court bookings, weekly socials, and friendly ladders for all levels. From beginner to advanced smashers.</p>
+        <div class="flex items-center gap-4 mt-4 text-[11px] text-text-muted">
           <span><i class="fas fa-calendar-alt text-[#2E7D32] mr-1"></i> Tue & Thu evenings</span>
         </div>
         <a href="#" class="mt-5 inline-flex items-center gap-2 text-[#2E7D32] font-semibold text-sm hover:gap-3 transition-all duration-300">
@@ -1104,20 +905,18 @@
         </a>
       </div>
 
-      <!-- 4. Volleyball -->
-      <div class="group relative bg-white/85 backdrop-blur-sm rounded-2xl p-6 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-500 overflow-hidden card-lift"
-           data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
+      <!-- Volleyball -->
+      <div class="group bg-bone-white rounded-2xl p-6 border border-charcoal-deep/8 card-lift"
+           data-aos="fade-up" data-aos-duration="700">
         <div class="flex items-center justify-between mb-4">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#A5D66A] to-[#4CAF50] flex items-center justify-center text-charcoal-deep text-lg shadow-[0_8px_20px_-6px_rgba(46,125,50,0.4)] group-hover:scale-110 transition-transform duration-300">
+          <div class="w-11 h-11 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-105 transition-all duration-300">
             <i class="fas fa-volleyball"></i>
           </div>
-          <span class="text-[11px] bg-[#2E7D32]/8 text-[#2E7D32] font-semibold px-3 py-1.5 rounded-full border border-[#2E7D32]/15">1,900 members</span>
+          <span class="text-[11px] bg-bone text-text-muted font-semibold px-3 py-1.5 rounded-full border border-charcoal-deep/8">1,900 members</span>
         </div>
         <h3 class="font-bold text-charcoal-deep text-lg">Dubai Beach Volleyball</h3>
-        <p class="text-charcoal-deep/60 text-sm mt-2 leading-relaxed">Beach and indoor volleyball meetups across Kite Beach and JBR. Social games every weekend, all levels welcome.</p>
-        <div class="flex items-center gap-4 mt-4 text-[11px] text-charcoal-deep/55">
+        <p class="text-text-muted text-sm mt-2 leading-relaxed">Beach and indoor volleyball meetups across Kite Beach and JBR. Social games every weekend, all levels welcome.</p>
+        <div class="flex items-center gap-4 mt-4 text-[11px] text-text-muted">
           <span><i class="fas fa-calendar-alt text-[#2E7D32] mr-1"></i> Fri & Sat sunset</span>
         </div>
         <a href="#" class="mt-5 inline-flex items-center gap-2 text-[#2E7D32] font-semibold text-sm hover:gap-3 transition-all duration-300">
@@ -1125,20 +924,18 @@
         </a>
       </div>
 
-      <!-- 5. Padel -->
-      <div class="group relative bg-white/85 backdrop-blur-sm rounded-2xl p-6 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-500 overflow-hidden card-lift"
+      <!-- Padel -->
+      <div class="group bg-bone-white rounded-2xl p-6 border border-charcoal-deep/8 card-lift"
            data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
         <div class="flex items-center justify-between mb-4">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#A5D66A] to-[#4CAF50] flex items-center justify-center text-charcoal-deep text-lg shadow-[0_8px_20px_-6px_rgba(46,125,50,0.4)] group-hover:scale-110 transition-transform duration-300">
+          <div class="w-11 h-11 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-105 transition-all duration-300">
             <i class="fas fa-table-tennis"></i>
           </div>
-          <span class="text-[11px] bg-[#2E7D32]/8 text-[#2E7D32] font-semibold px-3 py-1.5 rounded-full border border-[#2E7D32]/15">4,100 members</span>
+          <span class="text-[11px] bg-bone text-text-muted font-semibold px-3 py-1.5 rounded-full border border-charcoal-deep/8">4,100 members</span>
         </div>
         <h3 class="font-bold text-charcoal-deep text-lg">Padel Connect Dubai</h3>
-        <p class="text-charcoal-deep/60 text-sm mt-2 leading-relaxed">Find padel partners at your level, join weekly socials, and compete in monthly tournaments across the city's top clubs.</p>
-        <div class="flex items-center gap-4 mt-4 text-[11px] text-charcoal-deep/55">
+        <p class="text-text-muted text-sm mt-2 leading-relaxed">Find padel partners at your level, join weekly socials, and compete in monthly tournaments across the city's top clubs.</p>
+        <div class="flex items-center gap-4 mt-4 text-[11px] text-text-muted">
           <span><i class="fas fa-calendar-alt text-[#2E7D32] mr-1"></i> Daily games</span>
         </div>
         <a href="#" class="mt-5 inline-flex items-center gap-2 text-[#2E7D32] font-semibold text-sm hover:gap-3 transition-all duration-300">
@@ -1146,536 +943,644 @@
         </a>
       </div>
 
-      <!-- 6. Tennis -->
-      <div class="group relative bg-white/85 backdrop-blur-sm rounded-2xl p-6 border border-[#2E7D32]/15 shadow-[0_2px_12px_rgba(27,94,32,0.06)] hover:shadow-[0_12px_28px_rgba(27,94,32,0.18)] hover:-translate-y-1 hover:border-[#2E7D32]/40 hover:bg-white/95 transition-all duration-500 overflow-hidden card-lift"
+      <!-- Tennis -->
+      <div class="group bg-bone-white rounded-2xl p-6 border border-charcoal-deep/8 card-lift"
            data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#1B5E20] via-[#388E3C] to-[#A5D66A] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
         <div class="flex items-center justify-between mb-4">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#A5D66A] to-[#4CAF50] flex items-center justify-center text-charcoal-deep text-lg shadow-[0_8px_20px_-6px_rgba(46,125,50,0.4)] group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-table-tennis-paddle-ball"></i>
+          <div class="w-11 h-11 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg group-hover:bg-[#2E7D32] group-hover:scale-105 transition-all duration-300">
+            <i class="fas fa-table-tennis"></i>
           </div>
-          <span class="text-[11px] bg-[#2E7D32]/8 text-[#2E7D32] font-semibold px-3 py-1.5 rounded-full border border-[#2E7D32]/15">2,300 members</span>
+          <span class="text-[11px] bg-bone text-text-muted font-semibold px-3 py-1.5 rounded-full border border-charcoal-deep/8">2,300 members</span>
         </div>
         <h3 class="font-bold text-charcoal-deep text-lg">Dubai Tennis Society</h3>
-        <p class="text-charcoal-deep/60 text-sm mt-2 leading-relaxed">Court bookings, hitting partners, and weekend doubles ladders across Dubai's top tennis facilities. All levels.</p>
-        <div class="flex items-center gap-4 mt-4 text-[11px] text-charcoal-deep/55">
+        <p class="text-text-muted text-sm mt-2 leading-relaxed">Court bookings, hitting partners, and weekend doubles ladders across Dubai's top tennis facilities. All levels.</p>
+        <div class="flex items-center gap-4 mt-4 text-[11px] text-text-muted">
           <span><i class="fas fa-calendar-alt text-[#2E7D32] mr-1"></i> Weekend doubles</span>
         </div>
         <a href="#" class="mt-5 inline-flex items-center gap-2 text-[#2E7D32] font-semibold text-sm hover:gap-3 transition-all duration-300">
           Join Community <i class="fas fa-arrow-right text-[10px]"></i>
         </a>
       </div>
+
     </div>
   </div>
 </section>
 
-  <!-- ═══════════ UPCOMING GAMES ═══════════ -->
-  <section id="games" class="relative py-20 lg:py-28 bg-bone-warm overflow-hidden">
-    <!-- Padel net mesh pattern -->
-    <div class="absolute inset-0 anim-mesh opacity-50 pointer-events-none"></div>
+<!-- ═══════════ UPCOMING EVENTS ═══════════ -->
+<section id="events" class="relative py-20 lg:py-28 bg-charcoal-deep overflow-hidden">
+  <!-- Field grid -->
+  <div class="absolute inset-0 anim-field-grid opacity-30 pointer-events-none"></div>
 
-    <!-- Shuttlecock sway animation -->
-    <div class="absolute top-20 right-10 anim-shuttle pointer-events-none">
-      <i class="fas fa-feather-alt text-4xl text-charcoal-deep/5"></i>
+  <!-- Floodlight sweeps -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute -top-40 left-1/4 w-96 h-[900px] bg-gradient-to-b from-accent-sand/18 to-transparent blur-2xl anim-light-sweep"></div>
+    <div class="absolute -top-40 right-1/4 w-96 h-[900px] bg-gradient-to-b from-accent-green/12 to-transparent blur-2xl anim-light-sweep" style="animation-delay: 4s;"></div>
+  </div>
+
+  <!-- Ambient glow -->
+  <div class="absolute -bottom-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-accent-green/8 blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="max-w-3xl mb-14" data-aos="fade-up" data-aos-duration="800">
+      <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-accent-sand mb-3">Upcoming Events</p>
+      <h2 class="text-3xl md:text-[44px] font-black text-white tracking-tight leading-tight">
+        Discover events <br>happening <span class="text-accent-green">across Dubai.</span>
+      </h2>
+      <p class="text-text-light mt-5 text-[15px] leading-relaxed max-w-xl">
+        Tournaments, social games, community sessions, and sports experiences — all in one calendar.
+      </p>
     </div>
 
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <p class="section-label mb-3" data-aos="fade-up" data-aos-duration="600">Don't Miss Out</p>
-        <h2 class="text-3xl md:text-[44px] font-black text-charcoal-deep tracking-tight"
-            data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Upcoming Games</h2>
-        <p class="text-text-muted mt-4 max-w-lg mx-auto text-[15px] leading-relaxed"
-           data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-          Join a game this week. Filter by sport, level, and location across Dubai.
-        </p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-4">
-        <div class="bg-bone-white rounded-xl p-5 border border-charcoal-deep/8 card-lift flex items-center gap-5"
-             data-aos="fade-right" data-aos-duration="700" data-aos-delay="0">
-          <div class="w-16 h-16 rounded-xl bg-charcoal-deep flex flex-col items-center justify-center text-accent-green shrink-0">
-            <span class="text-[10px] font-bold uppercase tracking-wide">Fri</span>
-            <span class="text-xl font-black">07</span>
-            <span class="text-[9px] uppercase text-text-muted">PM</span>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-[10px] bg-accent-green/15 text-charcoal-deep font-bold px-2 py-0.5 rounded">Padel</span>
-              <span class="text-[10px] bg-bone text-text-muted font-medium px-2 py-0.5 rounded">Intermediate</span>
-            </div>
-            <h3 class="font-semibold text-charcoal-deep text-[15px]">Padel Night Social</h3>
-            <p class="text-text-muted text-xs mt-0.5"><i class="fas fa-map-marker-alt text-accent-green mr-1"></i> The Matcha Club, Al Quoz • 4 spots left</p>
-          </div>
-          <button class="bg-charcoal-deep text-accent-green font-bold px-5 py-2.5 rounded-lg text-xs hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300 whitespace-nowrap">Join</button>
-        </div>
-
-        <div class="bg-bone-white rounded-xl p-5 border border-charcoal-deep/8 card-lift flex items-center gap-5"
-             data-aos="fade-left" data-aos-duration="700" data-aos-delay="100">
-          <div class="w-16 h-16 rounded-xl bg-charcoal-deep flex flex-col items-center justify-center text-accent-green shrink-0">
-            <span class="text-[10px] font-bold uppercase tracking-wide">Sat</span>
-            <span class="text-xl font-black">08</span>
-            <span class="text-[9px] uppercase text-text-muted">AM</span>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-[10px] bg-accent-green/15 text-charcoal-deep font-bold px-2 py-0.5 rounded">Football</span>
-              <span class="text-[10px] bg-bone text-text-muted font-medium px-2 py-0.5 rounded">All Levels</span>
-            </div>
-            <h3 class="font-semibold text-charcoal-deep text-[15px]">7-a-side Morning Kickabout</h3>
-            <p class="text-text-muted text-xs mt-0.5"><i class="fas fa-map-marker-alt text-accent-green mr-1"></i> ISD Sports City • 6 spots left</p>
-          </div>
-          <button class="bg-charcoal-deep text-accent-green font-bold px-5 py-2.5 rounded-lg text-xs hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300 whitespace-nowrap">Join</button>
-        </div>
-
-        <div class="bg-bone-white rounded-xl p-5 border border-charcoal-deep/8 card-lift flex items-center gap-5"
-             data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
-          <div class="w-16 h-16 rounded-xl bg-charcoal-deep flex flex-col items-center justify-center text-accent-green shrink-0">
-            <span class="text-[10px] font-bold uppercase tracking-wide">Sun</span>
-            <span class="text-xl font-black">09</span>
-            <span class="text-[9px] uppercase text-text-muted">AM</span>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-[10px] bg-accent-green/15 text-charcoal-deep font-bold px-2 py-0.5 rounded">Running</span>
-              <span class="text-[10px] bg-bone text-text-muted font-medium px-2 py-0.5 rounded">Beginner</span>
-            </div>
-            <h3 class="font-semibold text-charcoal-deep text-[15px]">Sunrise Beach Run</h3>
-            <p class="text-text-muted text-xs mt-0.5"><i class="fas fa-map-marker-alt text-accent-green mr-1"></i> Kite Beach • 12 spots left</p>
-          </div>
-          <button class="bg-charcoal-deep text-accent-green font-bold px-5 py-2.5 rounded-lg text-xs hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300 whitespace-nowrap">Join</button>
-        </div>
-
-        <div class="bg-bone-white rounded-xl p-5 border border-charcoal-deep/8 card-lift flex items-center gap-5"
-             data-aos="fade-left" data-aos-duration="700" data-aos-delay="300">
-          <div class="w-16 h-16 rounded-xl bg-charcoal-deep flex flex-col items-center justify-center text-accent-green shrink-0">
-            <span class="text-[10px] font-bold uppercase tracking-wide">Mon</span>
-            <span class="text-xl font-black">10</span>
-            <span class="text-[9px] uppercase text-text-muted">PM</span>
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-[10px] bg-accent-green/15 text-charcoal-deep font-bold px-2 py-0.5 rounded">Basketball</span>
-              <span class="text-[10px] bg-bone text-text-muted font-medium px-2 py-0.5 rounded">Advanced</span>
-            </div>
-            <h3 class="font-semibold text-charcoal-deep text-[15px]">Night Hoops Session</h3>
-            <p class="text-text-muted text-xs mt-0.5"><i class="fas fa-map-marker-alt text-accent-green mr-1"></i> Business Bay • 3 spots left</p>
-          </div>
-          <button class="bg-charcoal-deep text-accent-green font-bold px-5 py-2.5 rounded-lg text-xs hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300 whitespace-nowrap">Join</button>
-        </div>
-      </div>
-
-      <div class="text-center mt-10" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-        <a href="#" class="text-charcoal-deep font-semibold text-sm hover:text-accent-green transition-colors inline-flex items-center gap-2">
-          Browse all upcoming games <i class="fas fa-arrow-right text-xs"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════ UPCOMING EVENTS ═══════════ -->
-  <section id="events" class="relative py-20 lg:py-28 bg-bone overflow-hidden">
-    <!-- Grass sway animation -->
-    <div class="absolute bottom-0 left-0 right-0 h-32 anim-grass origin-bottom pointer-events-none opacity-40"
-         style="background: linear-gradient(180deg, transparent, rgba(165, 214, 106, 0.08));"></div>
-
-    <!-- Radar pulses -->
-    <div class="absolute top-20 left-10 w-3 h-3 rounded-full bg-accent-green/30 anim-radar"></div>
-    <div class="absolute top-20 left-10 w-3 h-3 rounded-full bg-accent-green/30 anim-radar" style="animation-delay: 1.5s;"></div>
-
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <p class="section-label mb-3" data-aos="fade-up" data-aos-duration="600">Mark Your Calendar</p>
-        <h2 class="text-3xl md:text-[44px] font-black text-charcoal-deep tracking-tight"
-            data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Upcoming Events</h2>
-        <p class="text-text-muted mt-4 max-w-lg mx-auto text-[15px] leading-relaxed"
-           data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-          Dubai's biggest sports events, tournaments, and fitness challenges.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom"
-             data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
-          <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=80" alt="Dubai Fitness Challenge 30x30" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-accent-green text-charcoal-deep text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">Featured</span>
-          </div>
-          <div class="p-5">
-            <p class="text-accent-sand text-[10px] font-bold uppercase tracking-wider mb-2">Oct 25 – Nov 12</p>
-            <h3 class="font-bold text-charcoal-deep text-[15px]">Dubai Fitness Challenge</h3>
-            <p class="text-text-muted text-xs mt-2 leading-relaxed">30 days of fitness across the city. Free activities, community events, and prizes.</p>
-            <a href="#" class="mt-4 inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs hover:text-accent-green transition-colors group">
-              Register <i class="fas fa-arrow-right text-[9px] group-hover:translate-x-0.5 transition-transform"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom"
-             data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-          <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=500&auto=format&fit=crop&q=80" alt="Padel Masters Dubai tournament" class="w-full h-full object-cover">
-          </div>
-          <div class="p-5">
-            <p class="text-accent-sand text-[10px] font-bold uppercase tracking-wider mb-2">Nov 18 – 20</p>
-            <h3 class="font-bold text-charcoal-deep text-[15px]">Padel Masters Dubai</h3>
-            <p class="text-text-muted text-xs mt-2 leading-relaxed">The region's biggest padel tournament. AED 50,000 prize pool. Open to all levels.</p>
-            <a href="#" class="mt-4 inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs hover:text-accent-green transition-colors group">
-              Register <i class="fas fa-arrow-right text-[9px] group-hover:translate-x-0.5 transition-transform"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom"
-             data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-          <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500&auto=format&fit=crop&q=80" alt="Corporate Football League at ISD Sports City" class="w-full h-full object-cover">
-          </div>
-          <div class="p-5">
-            <p class="text-accent-sand text-[10px] font-bold uppercase tracking-wider mb-2">Dec 5</p>
-            <h3 class="font-bold text-charcoal-deep text-[15px]">Corporate Sports Gala</h3>
-            <p class="text-text-muted text-xs mt-2 leading-relaxed">Dubai's biggest corporate sports day. Team building, networking, and trophies.</p>
-            <a href="#" class="mt-4 inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs hover:text-accent-green transition-colors group">
-              Learn More <i class="fas fa-arrow-right text-[9px] group-hover:translate-x-0.5 transition-transform"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom"
-             data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-          <div class="relative h-44 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&auto=format&fit=crop&q=80" alt="Desert Yoga Retreat at Al Marmoom" class="w-full h-full object-cover">
-          </div>
-          <div class="p-5">
-            <p class="text-accent-sand text-[10px] font-bold uppercase tracking-wider mb-2">Dec 12</p>
-            <h3 class="font-bold text-charcoal-deep text-[15px]">Desert Yoga Retreat</h3>
-            <p class="text-text-muted text-xs mt-2 leading-relaxed">Sunrise yoga in Al Marmoom Desert. Includes breakfast and guided meditation.</p>
-            <a href="#" class="mt-4 inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs hover:text-accent-green transition-colors group">
-              Register <i class="fas fa-arrow-right text-[9px] group-hover:translate-x-0.5 transition-transform"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════ CORPORATE SPORTS ═══════════ -->
-  <section id="corporate" class="relative py-20 lg:py-28 bg-charcoal-deep overflow-hidden">
-    <!-- Field grid -->
-    <div class="absolute inset-0 anim-field-grid opacity-40 pointer-events-none"></div>
-
-    <!-- Floodlight sweeps -->
-    <div class="absolute inset-0 pointer-events-none overflow-hidden">
-      <div class="absolute top-0 left-1/3 w-80 h-[900px] bg-gradient-to-b from-accent-sand/15 to-transparent anim-light-sweep"></div>
-      <div class="absolute top-0 right-1/3 w-80 h-[900px] bg-gradient-to-b from-accent-green/10 to-transparent anim-light-sweep" style="animation-delay: 3s;"></div>
+    <!-- Event chips preview -->
+    <div class="flex flex-wrap gap-3 mb-14" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+      <span class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-text-light px-4 py-2 rounded-full text-[12px]">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span> Padel — Fri 7pm
+      </span>
+      <span class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-text-light px-4 py-2 rounded-full text-[12px]">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent-sand"></span> Football — Sat 8am
+      </span>
+      <span class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-text-light px-4 py-2 rounded-full text-[12px]">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent-green"></span> Run Club — Sun 6am
+      </span>
+      <span class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-text-light px-4 py-2 rounded-full text-[12px]">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent-sand"></span> Cricket — Sat 4pm
+      </span>
     </div>
 
-    <!-- Floating particles -->
-    <div class="particle" style="left: 30%; animation-delay: 2s; animation-duration: 21s;"></div>
-    <div class="particle" style="left: 70%; animation-delay: 7s; animation-duration: 17s;"></div>
+    <!-- Event cards grid -->
+    <div class="grid md:grid-cols-3 gap-5 mb-12">
 
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-14 items-center">
-        <div>
-          <p class="section-label mb-3" data-aos="fade-right" data-aos-duration="600">For Teams & Companies</p>
-          <h2 class="text-3xl md:text-[44px] font-black text-white tracking-tight leading-tight"
-              data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
-            Corporate <span class="text-accent-green">Sports</span><br>in Dubai
-          </h2>
-          <p class="text-text-light mt-6 text-[15px] leading-relaxed max-w-lg"
-             data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
-            Boost team morale, improve wellness, and build stronger connections with custom corporate sports programs. From weekly leagues to one-off tournaments — we handle everything.
+      <!-- Event 1 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift" data-aos="fade-up" data-aos-duration="700">
+        <div class="relative h-48 img-zoom overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600&auto=format&fit=crop&q=80" alt="Padel tournament Dubai" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
+          <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Padel</span>
+          <span class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+            <span class="text-white text-[11px] font-bold">Fri · 7:00 PM</span>
+            <span class="text-accent-green text-[11px] font-bold">4 spots left</span>
+          </span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-base">Padel Night Social</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> The Matcha Club, Al Quoz</p>
+          <div class="flex items-center justify-between mt-5 pt-5 border-t border-white/8">
+            <span class="text-[11px] text-text-muted uppercase tracking-wider">Intermediate</span>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <div class="relative h-48 img-zoom overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=600&auto=format&fit=crop&q=80" alt="Football game Dubai" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
+          <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Football</span>
+          <span class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+            <span class="text-white text-[11px] font-bold">Sat · 8:00 AM</span>
+            <span class="text-accent-green text-[11px] font-bold">6 spots left</span>
+          </span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-base">7-a-side Kickabout</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> ISD Sports City</p>
+          <div class="flex items-center justify-between mt-5 pt-5 border-t border-white/8">
+            <span class="text-[11px] text-text-muted uppercase tracking-wider">All Levels</span>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="group bg-charcoal-mid rounded-2xl overflow-hidden border border-white/6 card-lift" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+        <div class="relative h-48 img-zoom overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=600&auto=format&fit=crop&q=80" alt="Sunrise run Dubai" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/80 via-transparent to-transparent"></div>
+          <span class="absolute top-4 left-4 bg-accent-green text-charcoal-deep text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-wider">Running</span>
+          <span class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+            <span class="text-white text-[11px] font-bold">Sun · 6:00 AM</span>
+            <span class="text-accent-green text-[11px] font-bold">12 spots left</span>
+          </span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-white text-base">Sunrise Beach Run</h3>
+          <p class="text-text-muted text-sm mt-1"><i class="fas fa-map-marker-alt text-accent-green mr-1.5 text-xs"></i> Kite Beach</p>
+          <div class="flex items-center justify-between mt-5 pt-5 border-t border-white/8">
+            <span class="text-[11px] text-text-muted uppercase tracking-wider">Beginner</span>
+            <button class="bg-accent-green text-charcoal-deep font-bold px-4 py-2 rounded-lg text-xs hover:bg-white transition-all duration-300">Join</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+      <a href="#" class="inline-flex items-center gap-2 bg-accent-green text-charcoal-deep font-bold px-7 py-4 rounded-xl hover:bg-white transition-all duration-300 text-sm">
+        View Full Calendar <i class="fas fa-arrow-right text-xs"></i>
+      </a>
+      <p class="text-[11px] text-text-muted mt-3">Updated every week</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════ WHY CHOOSE ZENFIT ═══════════ -->
+<section id="why" class="relative py-20 lg:py-28 bg-bone-warm overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none opacity-[0.3]" style="background-image: radial-gradient(rgba(11,21,16,0.06) 1px, transparent 1px); background-size: 22px 22px;"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-14" data-aos="fade-up" data-aos-duration="800">
+      <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#2E7D32] mb-3">Why ZenFit</p>
+      <h2 class="text-3xl md:text-[46px] font-black text-charcoal-deep tracking-tight leading-[1.08]">
+        Built for events that <br class="hidden md:block">actually <span class="text-accent-green">deliver.</span>
+      </h2>
+      <p class="text-text-muted mt-5 text-[15px] leading-relaxed max-w-xl">
+        One team. Every detail. From the first planning call to the final whistle — ZenFit handles the work behind great sporting experiences.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-6 gap-4">
+      <!-- Card 1 — large, accent color -->
+      <div class="lg:col-span-3 relative bg-[#2E7D32] rounded-3xl p-8 lg:p-10 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700">
+        <div class="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-accent-green/20 blur-3xl pointer-events-none"></div>
+        <div class="relative">
+          <div class="flex items-center justify-between mb-8">
+            <span class="text-[10px] font-bold text-accent-green tracking-[0.24em] uppercase">01 — End-to-End</span>
+            <div class="w-11 h-11 rounded-xl bg-accent-green flex items-center justify-center text-charcoal-deep">
+              <i class="fas fa-clipboard-check text-base"></i>
+            </div>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-black text-white tracking-tight leading-tight">
+            One team for the <br>whole event.
+          </h3>
+          <p class="text-white/80 text-sm mt-4 leading-relaxed max-w-md">
+            Coordination, planning, communication, on-ground logistics — handled by a single point of contact.
           </p>
+          <div class="flex flex-wrap gap-2 mt-7">
+            <span class="text-[11px] bg-white/12 border border-white/15 text-white px-3 py-1.5 rounded-full">Planning</span>
+            <span class="text-[11px] bg-white/12 border border-white/15 text-white px-3 py-1.5 rounded-full">Scheduling</span>
+            <span class="text-[11px] bg-white/12 border border-white/15 text-white px-3 py-1.5 rounded-full">Coordination</span>
+          </div>
+        </div>
+      </div>
 
-          <div class="grid sm:grid-cols-2 gap-5 mt-9">
-            <div class="flex items-start gap-3.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
-              <div class="w-10 h-10 rounded-lg bg-accent-green/15 flex items-center justify-center text-accent-green shrink-0">
-                <i class="fas fa-trophy text-sm"></i>
-              </div>
-              <div>
-                <h4 class="font-semibold text-white text-sm">Custom Tournaments</h4>
-                <p class="text-text-muted text-xs mt-1 leading-relaxed">Padel, football, cricket, and more.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-              <div class="w-10 h-10 rounded-lg bg-accent-green/15 flex items-center justify-center text-accent-green shrink-0">
-                <i class="fas fa-calendar-check text-sm"></i>
-              </div>
-              <div>
-                <h4 class="font-semibold text-white text-sm">League Management</h4>
-                <p class="text-text-muted text-xs mt-1 leading-relaxed">Referees, scheduling, and stats.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-              <div class="w-10 h-10 rounded-lg bg-accent-green/15 flex items-center justify-center text-accent-green shrink-0">
-                <i class="fas fa-user-tie text-sm"></i>
-              </div>
-              <div>
-                <h4 class="font-semibold text-white text-sm">Professional Coaching</h4>
-                <p class="text-text-muted text-xs mt-1 leading-relaxed">Certified coaches for team training.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-              <div class="w-10 h-10 rounded-lg bg-accent-green/15 flex items-center justify-center text-accent-green shrink-0">
-                <i class="fas fa-chart-line text-sm"></i>
-              </div>
-              <div>
-                <h4 class="font-semibold text-white text-sm">Wellness Programs</h4>
-                <p class="text-text-muted text-xs mt-1 leading-relaxed">Yoga, fitness challenges, workshops.</p>
-              </div>
+      <!-- Card 2 — large, light -->
+      <div class="lg:col-span-3 relative bg-bone-white rounded-3xl p-8 lg:p-10 border border-charcoal-deep/8 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#2E7D32] via-accent-green to-transparent"></div>
+        <div class="flex items-center justify-between mb-8">
+          <span class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase">02 — Multiple Sports</span>
+          <div class="w-11 h-11 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green">
+            <i class="fas fa-layer-group text-base"></i>
+          </div>
+        </div>
+        <h3 class="text-2xl md:text-3xl font-black text-charcoal-deep tracking-tight leading-tight">
+          Eight sports. <br>One standard.
+        </h3>
+        <p class="text-text-muted text-sm mt-4 leading-relaxed">
+          Cricket, football, badminton, padel, tennis, basketball, volleyball, running — organized with the same professional approach.
+        </p>
+        <div class="grid grid-cols-4 gap-2 mt-7">
+          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
+            <i class="fas fa-baseball-ball text-base"></i>
+          </div>
+          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
+            <i class="fas fa-futbol text-base"></i>
+          </div>
+          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
+            <i class="fas fa-table-tennis text-base"></i>
+          </div>
+          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
+            <i class="fas fa-running text-base"></i>
+          </div>
+          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
+            <i class="fas fa-basketball-ball text-base"></i>
+          </div>
+          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
+            <i class="fas fa-volleyball-ball text-base"></i>
+          </div>
+          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
+            <i class="fas fa-baseball text-base"></i>
+          </div>
+          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
+            <i class="fas fa-bolt text-base"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="lg:col-span-2 relative bg-bone-white rounded-3xl p-7 border border-charcoal-deep/8 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700">
+        <div class="flex items-center justify-between mb-6">
+          <span class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase">03</span>
+          <div class="w-10 h-10 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green">
+            <i class="fas fa-users text-sm"></i>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold text-charcoal-deep tracking-tight leading-snug">Community Driven</h3>
+        <p class="text-text-muted text-sm mt-2 leading-relaxed">Players, teams, organizers, and communities — connected under one platform.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="lg:col-span-2 relative bg-bone-white rounded-3xl p-7 border border-charcoal-deep/8 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <div class="flex items-center justify-between mb-6">
+          <span class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase">04</span>
+          <div class="w-10 h-10 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green">
+            <i class="fas fa-diagram-project text-sm"></i>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold text-charcoal-deep tracking-tight leading-snug">Professional Coordination</h3>
+        <p class="text-text-muted text-sm mt-2 leading-relaxed">Structured planning, registrations, scheduling, and on-ground event support.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="lg:col-span-2 relative bg-accent-sand rounded-3xl p-7 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+        <div class="absolute -bottom-16 -right-16 w-52 h-52 rounded-full bg-white/20 blur-3xl pointer-events-none"></div>
+        <div class="relative">
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-[10px] font-bold text-charcoal-deep/70 tracking-[0.24em] uppercase">05</span>
+            <div class="w-10 h-10 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-sand">
+              <i class="fas fa-heart text-sm"></i>
             </div>
           </div>
+          <h3 class="text-lg font-bold text-charcoal-deep tracking-tight leading-snug">Experiences That Connect</h3>
+          <p class="text-charcoal-deep/75 text-sm mt-2 leading-relaxed">We don't just organize games — we build the moments that turn players into communities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="flex flex-wrap gap-4 mt-9" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-            <a href="#" class="bg-accent-green text-charcoal-deep font-bold px-7 py-3.5 rounded-xl hover:bg-white transition-all duration-300 inline-flex items-center gap-2 text-sm">
-              <i class="fas fa-briefcase"></i> Enquire Now
-            </a>
-            <a href="#" class="border border-white/15 text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 inline-flex items-center gap-2 text-sm">
-              <i class="fas fa-download"></i> Brochure
-            </a>
+<!-- ═══════════ CORPORATE SPORTS ═══════════ -->
+<section id="corporate" class="relative py-20 lg:py-28 bg-charcoal-deep overflow-hidden">
+  <div class="absolute inset-0 anim-field-grid opacity-30 pointer-events-none"></div>
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-0 left-1/3 w-80 h-[900px] bg-gradient-to-b from-accent-sand/15 to-transparent anim-light-sweep"></div>
+    <div class="absolute top-0 right-1/3 w-80 h-[900px] bg-gradient-to-b from-accent-green/10 to-transparent anim-light-sweep" style="animation-delay: 3s;"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-accent-sand mb-3" data-aos="fade-right" data-aos-duration="600"> For Companies</p>
+        <h2 class="text-3xl md:text-[44px] font-black text-white tracking-tight leading-tight"
+            data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
+          Corporate <span class="text-accent-green">Sports</span><br>in Dubai
+        </h2>
+        <p class="text-text-light mt-6 text-[15px] leading-relaxed max-w-lg"
+           data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+          Boost team morale, improve wellness, and build stronger connections with custom corporate sports programs. From weekly leagues to one-off tournaments — we handle everything.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-5 mt-9">
+          <div class="flex items-start gap-3.5" data-aos="fade-up" data-aos-duration="600">
+            <div class="w-10 h-10 rounded-lg bg-accent-green/15 flex items-center justify-center text-accent-green shrink-0">
+              <i class="fas fa-trophy text-sm"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-sm">Custom Tournaments</h4>
+              <p class="text-text-muted text-xs mt-1 leading-relaxed">Padel, football, cricket, and more.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <div class="w-10 h-10 rounded-lg bg-accent-green/15 flex items-center justify-center text-accent-green shrink-0">
+              <i class="fas fa-calendar-check text-sm"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-sm">League Management</h4>
+              <p class="text-text-muted text-xs mt-1 leading-relaxed">Referees, scheduling, and stats.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <div class="w-10 h-10 rounded-lg bg-accent-green/15 flex items-center justify-center text-accent-green shrink-0">
+              <i class="fas fa-user-tie text-sm"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-sm">Professional Coaching</h4>
+              <p class="text-text-muted text-xs mt-1 leading-relaxed">Certified coaches for team training.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3.5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+            <div class="w-10 h-10 rounded-lg bg-accent-green/15 flex items-center justify-center text-accent-green shrink-0">
+              <i class="fas fa-chart-line text-sm"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white text-sm">Wellness Programs</h4>
+              <p class="text-text-muted text-xs mt-1 leading-relaxed">Yoga, fitness challenges, workshops.</p>
+            </div>
           </div>
         </div>
 
-        <div class="relative" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
-          <div class="grid grid-cols-2 gap-4">
-            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&auto=format&fit=crop&q=80" alt="Corporate team sports day Dubai" class="rounded-xl h-52 w-full object-cover">
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&auto=format&fit=crop&q=80" alt="Corporate padel tournament" class="rounded-xl h-52 w-full object-cover mt-6">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&auto=format&fit=crop&q=80" alt="Corporate football match" class="rounded-xl h-52 w-full object-cover -mt-2">
-            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&auto=format&fit=crop&q=80" alt="Corporate wellness session" class="rounded-xl h-52 w-full object-cover mt-4">
-          </div>
-          <div class="absolute -bottom-4 -left-4 bg-charcoal-mid rounded-xl p-4 border border-white/8 shadow-xl">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-lg bg-accent-green flex items-center justify-center text-charcoal-deep">
-                <i class="fas fa-building text-sm"></i>
-              </div>
-              <div>
-                <p class="text-xl font-bold text-white">150+</p>
-                <p class="text-[10px] text-text-muted">Companies served</p>
-              </div>
+        <div class="flex flex-wrap gap-4 mt-9" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+          <a href="/contact.html" class="bg-accent-green text-charcoal-deep font-bold px-7 py-3.5 rounded-xl hover:bg-white transition-all duration-300 inline-flex items-center gap-2 text-sm">
+            <i class="fas fa-briefcase"></i> Enquire Now
+          </a>
+        </div>
+      </div>
+
+      <div class="relative" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&auto=format&fit=crop&q=80" alt="Corporate team sports day Dubai" class="rounded-xl h-52 w-full object-cover">
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&auto=format&fit=crop&q=80" alt="Corporate padel tournament" class="rounded-xl h-52 w-full object-cover mt-6">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&auto=format&fit=crop&q=80" alt="Corporate football match" class="rounded-xl h-52 w-full object-cover -mt-2">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&auto=format&fit=crop&q=80" alt="Corporate wellness session" class="rounded-xl h-52 w-full object-cover mt-4">
+        </div>
+        <div class="absolute -bottom-4 -left-4 bg-charcoal-mid rounded-xl p-4 border border-white/8 shadow-xl">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-accent-green flex items-center justify-center text-charcoal-deep">
+              <i class="fas fa-building text-sm"></i>
+            </div>
+            <div>
+              <p class="text-xl font-bold text-white">20+</p>
+              <p class="text-[10px] text-text-muted">Companies served</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══════════ WHY JOIN / FEATURED LOCATIONS ═══════════ -->
-  <section class="relative py-20 lg:py-28 bg-bone overflow-hidden">
-    <!-- Mesh background -->
-    <div class="absolute inset-0 anim-mesh opacity-30 pointer-events-none"></div>
+<!-- ═══════════ HOST YOUR EVENT WITH ZENFIT ═══════════ -->
+<section class="relative py-24 lg:py-32 bg-bone overflow-hidden">
+  <!-- Dotted texture -->
+  <div class="absolute inset-0 pointer-events-none opacity-[0.3]" style="background-image: radial-gradient(rgba(11,21,16,0.06) 1px, transparent 1px); background-size: 22px 22px;"></div>
 
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <p class="section-label mb-3" data-aos="fade-up" data-aos-duration="600">The ZenFit Difference</p>
-        <h2 class="text-3xl md:text-[44px] font-black text-charcoal-deep tracking-tight"
-            data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-          Why Join <span class="text-accent-green">ZenFit.ae</span>
+  <!-- Ambient glows -->
+  <div class="absolute -top-20 -right-20 w-[600px] h-[600px] rounded-full bg-accent-green/8 blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-20 -left-20 w-[500px] h-[500px] rounded-full bg-accent-sand/8 blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <!-- Left copy -->
+      <div class="lg:col-span-6" data-aos="fade-right" data-aos-duration="900">
+        <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#2E7D32] mb-4"> Host With ZenFit</p>
+        <h2 class="text-[36px] sm:text-[44px] md:text-[56px] font-black text-charcoal-deep tracking-tight leading-[1.05]">
+          Have an event <br>in <span class="text-accent-green">mind?</span>
         </h2>
+        <p class="text-text-muted mt-7 text-[16px] leading-relaxed max-w-lg">
+          Whether you're a company planning a corporate sports day, a club organizing a tournament, or a community hosting a sports event — ZenFit brings your idea to life.
+        </p>
+
+        <!-- Process strip -->
+        <div class="grid grid-cols-3 gap-4 mt-9 max-w-lg">
+          <div class="border-l-2 border-[#2E7D32]/50 pl-4">
+            <p class="text-[10px] text-text-muted uppercase tracking-wider">Step 01</p>
+            <p class="text-sm text-charcoal-deep font-semibold mt-1">Share your idea</p>
+          </div>
+          <div class="border-l-2 border-charcoal-deep/15 pl-4">
+            <p class="text-[10px] text-text-muted uppercase tracking-wider">Step 02</p>
+            <p class="text-sm text-charcoal-deep font-semibold mt-1">We plan it</p>
+          </div>
+          <div class="border-l-2 border-charcoal-deep/15 pl-4">
+            <p class="text-[10px] text-text-muted uppercase tracking-wider">Step 03</p>
+            <p class="text-sm text-charcoal-deep font-semibold mt-1">You play it</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mt-10" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <a href="mailto:team@zenfit.ae" class="inline-flex items-center gap-2 bg-charcoal-deep text-accent-green font-bold px-7 py-4 rounded-xl hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300 text-sm">
+            <i class="fas fa-calendar-plus"></i> Plan My Event
+          </a>
+          <a href="#events" class="inline-flex items-center gap-2 border border-charcoal-deep/25 text-charcoal-deep font-semibold px-7 py-4 rounded-xl hover:bg-charcoal-deep/5 transition-all duration-300 text-sm">
+            See past events
+          </a>
+        </div>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-24">
-        <div class="text-center p-7 rounded-2xl bg-bone-white border border-charcoal-deep/8 card-lift"
-             data-aos="zoom-in" data-aos-duration="600" data-aos-delay="0">
-          <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg mb-4">
-            <i class="fas fa-users"></i>
+      <!-- Right visual -->
+      <div class="lg:col-span-6 relative" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+        <div class="relative rounded-3xl overflow-hidden border border-charcoal-deep/8 shadow-2xl img-zoom">
+          <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?w=1000&auto=format&fit=crop&q=80"
+               alt="Sports event planning with ZenFit in Dubai"
+               class="w-full h-[500px] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/85 via-charcoal-deep/20 to-transparent"></div>
+
+          <!-- Live status pill -->
+          <div class="absolute top-5 left-5 flex items-center gap-2 bg-charcoal-mid/90 backdrop-blur-md rounded-full pl-2 pr-4 py-1.5 border border-white/10">
+            <span class="relative flex w-4 h-4 items-center justify-center">
+              <span class="absolute w-4 h-4 rounded-full bg-accent-green/30 animate-ping"></span>
+              <span class="relative w-1.5 h-1.5 rounded-full bg-accent-green"></span>
+            </span>
+            <span class="text-[11px] font-semibold text-text-light">Planning live now</span>
           </div>
-          <p class="text-3xl font-black text-charcoal-deep">15K+</p>
-          <p class="text-xs text-text-muted mt-1.5 uppercase tracking-wider">Active Members</p>
-        </div>
-        <div class="text-center p-7 rounded-2xl bg-bone-white border border-charcoal-deep/8 card-lift"
-             data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-          <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg mb-4">
-            <i class="fas fa-map-marked-alt"></i>
+
+          <!-- Bottom stat card -->
+          <div class="absolute bottom-5 left-5 right-5 bg-charcoal-mid/90 backdrop-blur-md rounded-2xl p-5 border border-white/10">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-[10px] text-text-muted uppercase tracking-wider">Planned this month</p>
+                <p class="text-xl font-black text-white mt-1">24 events across Dubai</p>
+                <div class="flex items-center gap-3 mt-2">
+                  <span class="text-[10px] text-accent-green">● Padel</span>
+                  <span class="text-[10px] text-accent-sand">● Football</span>
+                  <span class="text-[10px] text-text-muted">● Cricket +5</span>
+                </div>
+              </div>
+              <div class="w-12 h-12 rounded-xl bg-accent-green flex items-center justify-center text-charcoal-deep">
+                <i class="fas fa-arrow-right text-base"></i>
+              </div>
+            </div>
           </div>
-          <p class="text-3xl font-black text-charcoal-deep">250+</p>
-          <p class="text-xs text-text-muted mt-1.5 uppercase tracking-wider">Premium Venues</p>
-        </div>
-        <div class="text-center p-7 rounded-2xl bg-bone-white border border-charcoal-deep/8 card-lift"
-             data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-          <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg mb-4">
-            <i class="fas fa-calendar-check"></i>
-          </div>
-          <p class="text-3xl font-black text-charcoal-deep">500+</p>
-          <p class="text-xs text-text-muted mt-1.5 uppercase tracking-wider">Weekly Games</p>
-        </div>
-        <div class="text-center p-7 rounded-2xl bg-bone-white border border-charcoal-deep/8 card-lift"
-             data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-          <div class="w-12 h-12 mx-auto rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green text-lg mb-4">
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="text-3xl font-black text-charcoal-deep">4.9★</p>
-          <p class="text-xs text-text-muted mt-1.5 uppercase tracking-wider">Member Rating</p>
         </div>
       </div>
 
-      <div class="text-center mb-12">
-        <p class="section-label mb-3" data-aos="fade-up" data-aos-duration="600">Across the City</p>
-        <h2 class="text-3xl md:text-[44px] font-black text-charcoal-deep tracking-tight"
-            data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-          Featured <span class="text-accent-green">Locations</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ RESOURCES ═══════════ -->
+<section id="resources" class="relative py-20 lg:py-28 bg-bone overflow-hidden">
+  <div class="absolute inset-0 anim-mesh opacity-20 pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#2E7D32] mb-3"
+         data-aos="fade-up" data-aos-duration="600">Resources</p>
+      <h2 class="text-3xl md:text-[44px] font-black text-charcoal-deep tracking-tight"
+          data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        Sports Resources
+      </h2>
+      <p class="text-text-muted mt-4 max-w-lg mx-auto text-[15px] leading-relaxed"
+         data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        Guides, tips, and insights to help you make the most of Dubai's sports scene.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      <a href="#" class="group bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom" data-aos="fade-up" data-aos-duration="700">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=500&auto=format&fit=crop&q=80" alt="Best padel courts in Dubai" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] bg-[#2E7D32]/12 text-[#2E7D32] font-bold px-2.5 py-1 rounded-full">Guide</span>
+          <h3 class="font-bold text-charcoal-deep mt-3 group-hover:text-[#2E7D32] transition-colors text-[15px]">Best Padel Courts in Dubai (2025)</h3>
+          <p class="text-text-muted text-xs mt-2 leading-relaxed">From Al Quoz to JLT — the ultimate guide to Dubai's top padel venues, pricing, and booking tips.</p>
+          <span class="inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs mt-4 group-hover:gap-2.5 transition-all duration-300">
+            Read More <i class="fas fa-arrow-right text-[9px]"></i>
+          </span>
+        </div>
+      </a>
+
+      <a href="#" class="group bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=500&auto=format&fit=crop&q=80" alt="Running clubs in Dubai" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] bg-[#2E7D32]/12 text-[#2E7D32] font-bold px-2.5 py-1 rounded-full">Guide</span>
+          <h3 class="font-bold text-charcoal-deep mt-3 group-hover:text-[#2E7D32] transition-colors text-[15px]">Running Clubs in Dubai: Complete Guide</h3>
+          <p class="text-text-muted text-xs mt-2 leading-relaxed">Find the best running clubs, routes, and communities across Dubai. From beginners to marathoners.</p>
+          <span class="inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs mt-4 group-hover:gap-2.5 transition-all duration-300">
+            Read More <i class="fas fa-arrow-right text-[9px]"></i>
+          </span>
+        </div>
+      </a>
+
+      <a href="#" class="group bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+        <div class="h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&auto=format&fit=crop&q=80" alt="Corporate sports Dubai" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] bg-[#2E7D32]/12 text-[#2E7D32] font-bold px-2.5 py-1 rounded-full">Business</span>
+          <h3 class="font-bold text-charcoal-deep mt-3 group-hover:text-[#2E7D32] transition-colors text-[15px]">Corporate Sports: Why It Matters</h3>
+          <p class="text-text-muted text-xs mt-2 leading-relaxed">How corporate sports programs improve team morale, health, and productivity in Dubai companies.</p>
+          <span class="inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs mt-4 group-hover:gap-2.5 transition-all duration-300">
+            Read More <i class="fas fa-arrow-right text-[9px]"></i>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section class="relative py-24 lg:py-28 bg-bone overflow-hidden">
+  <div class="absolute inset-0 anim-mesh opacity-25 pointer-events-none"></div>
+  <div class="absolute -top-20 left-1/3 w-[500px] h-[500px] rounded-full bg-accent-green/6 blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-5xl mx-auto px-5 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12">
+
+      <!-- Left label -->
+      <div class="lg:col-span-4" data-aos="fade-right" data-aos-duration="800">
+        <p class="section-label mb-3">Common Questions</p>
+        <h2 class="text-[32px] md:text-[42px] font-black text-charcoal-deep tracking-tight leading-[1.1]">
+          Everything <br>you need <br>to <span class="text-accent-green">know.</span>
         </h2>
-        <p class="text-text-muted mt-4 max-w-lg mx-auto text-[15px] leading-relaxed"
-           data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-          From the Marina to Mirdif — discover sports facilities in Dubai's most vibrant neighborhoods.
+        <p class="text-text-muted mt-5 text-[14px] leading-relaxed max-w-xs">
+          Still have questions? Write to us at <a href="mailto:team@zenfit.ae" class="text-accent-green font-semibold hover:underline">team@zenfit.ae</a>
         </p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5">
-        <a href="#" class="group relative rounded-xl overflow-hidden h-40 img-zoom"
-           data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
-          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&auto=format&fit=crop&q=80" alt="Dubai Marina sports venues" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 to-transparent"></div>
-          <div class="absolute bottom-3 left-3">
-            <span class="text-white font-bold text-sm">Dubai Marina</span>
-            <p class="text-text-light/70 text-[10px] mt-0.5">42 venues</p>
-          </div>
-        </a>
-        <a href="#" class="group relative rounded-xl overflow-hidden h-40 img-zoom"
-           data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
-          <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=400&auto=format&fit=crop&q=80" alt="Downtown Dubai sports" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 to-transparent"></div>
-          <div class="absolute bottom-3 left-3">
-            <span class="text-white font-bold text-sm">Downtown</span>
-            <p class="text-text-light/70 text-[10px] mt-0.5">38 venues</p>
-          </div>
-        </a>
-        <a href="#" class="group relative rounded-xl overflow-hidden h-40 img-zoom"
-           data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">
-          <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&auto=format&fit=crop&q=80" alt="Jumeirah sports facilities" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 to-transparent"></div>
-          <div class="absolute bottom-3 left-3">
-            <span class="text-white font-bold text-sm">Jumeirah</span>
-            <p class="text-text-light/70 text-[10px] mt-0.5">35 venues</p>
-          </div>
-        </a>
-        <a href="#" class="group relative rounded-xl overflow-hidden h-40 img-zoom"
-           data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
-          <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=400&auto=format&fit=crop&q=80" alt="Dubai Sports City" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 to-transparent"></div>
-          <div class="absolute bottom-3 left-3">
-            <span class="text-white font-bold text-sm">Sports City</span>
-            <p class="text-text-light/70 text-[10px] mt-0.5">28 venues</p>
-          </div>
-        </a>
-        <a href="#" class="group relative rounded-xl overflow-hidden h-40 img-zoom"
-           data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
-          <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?w=400&auto=format&fit=crop&q=80" alt="Business Bay sports" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 to-transparent"></div>
-          <div class="absolute bottom-3 left-3">
-            <span class="text-white font-bold text-sm">Business Bay</span>
-            <p class="text-text-light/70 text-[10px] mt-0.5">24 venues</p>
-          </div>
-        </a>
-        <a href="#" class="group relative rounded-xl overflow-hidden h-40 img-zoom"
-           data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
-          <img src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=400&auto=format&fit=crop&q=80" alt="Al Quoz sports district" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep/90 to-transparent"></div>
-          <div class="absolute bottom-3 left-3">
-            <span class="text-white font-bold text-sm">Al Quoz</span>
-            <p class="text-text-light/70 text-[10px] mt-0.5">22 venues</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+      <!-- FAQ list -->
+      <div class="lg:col-span-8 space-y-3">
 
-  <!-- ═══════════ RESOURCES ═══════════ -->
-  <section id="resources" class="relative py-20 lg:py-28 bg-bone-warm overflow-hidden">
-    <!-- Field grid -->
-    <div class="absolute inset-0 anim-field-grid opacity-30 pointer-events-none"></div>
-
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <p class="section-label mb-3" data-aos="fade-up" data-aos-duration="600">Learn & Improve</p>
-        <h2 class="text-3xl md:text-[44px] font-black text-charcoal-deep tracking-tight"
-            data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Sports Resources</h2>
-        <p class="text-text-muted mt-4 max-w-lg mx-auto text-[15px] leading-relaxed"
-           data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-          Guides, tips, and insights to help you make the most of Dubai's sports scene.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-5">
-        <a href="#" class="group bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom"
-           data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=500&auto=format&fit=crop&q=80" alt="Best padel courts in Dubai guide" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6">
-            <span class="text-[10px] bg-accent-green/15 text-charcoal-deep font-bold px-2.5 py-1 rounded-full">Guide</span>
-            <h3 class="font-bold text-charcoal-deep mt-3 group-hover:text-accent-green transition-colors text-[15px]">Best Padel Courts in Dubai (2025)</h3>
-            <p class="text-text-muted text-xs mt-2 leading-relaxed">From Al Quoz to JLT — the ultimate guide to Dubai's top padel venues, pricing, and booking tips.</p>
-            <span class="inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs mt-4 group-hover:gap-2.5 transition-all duration-300">
-              Read More <i class="fas fa-arrow-right text-[9px]"></i>
+        <details class="group bg-bone-white rounded-2xl border border-charcoal-deep/8 overflow-hidden transition-colors hover:border-accent-green/40" data-aos="fade-up" data-aos-duration="600">
+          <summary class="flex items-center justify-between cursor-pointer p-6 list-none">
+            <span class="font-semibold text-charcoal-deep text-[15px] pr-4">What type of sports events does ZenFit organize?</span>
+            <span class="w-8 h-8 rounded-full bg-charcoal-deep flex items-center justify-center text-accent-green shrink-0 transition-transform duration-300 group-open:rotate-45 group-open:bg-accent-green group-open:text-charcoal-deep">
+              <i class="fas fa-plus text-xs"></i>
             </span>
+          </summary>
+          <div class="px-6 pb-6 -mt-1 border-t border-charcoal-deep/6 pt-4">
+            <p class="text-text-muted text-[14px] leading-relaxed">We organize tournaments, corporate sports events, community games, social sporting events, and private sports experiences across multiple sports.</p>
           </div>
-        </a>
+        </details>
 
-        <a href="#" class="group bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom"
-           data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=500&auto=format&fit=crop&q=80" alt="Running clubs in Dubai guide" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6">
-            <span class="text-[10px] bg-accent-green/15 text-charcoal-deep font-bold px-2.5 py-1 rounded-full">Guide</span>
-            <h3 class="font-bold text-charcoal-deep mt-3 group-hover:text-accent-green transition-colors text-[15px]">Running Clubs in Dubai: Complete Guide</h3>
-            <p class="text-text-muted text-xs mt-2 leading-relaxed">Find the best running clubs, routes, and communities across Dubai. From beginners to marathoners.</p>
-            <span class="inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs mt-4 group-hover:gap-2.5 transition-all duration-300">
-              Read More <i class="fas fa-arrow-right text-[9px]"></i>
+        <details class="group bg-bone-white rounded-2xl border border-charcoal-deep/8 overflow-hidden transition-colors hover:border-accent-green/40" data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
+          <summary class="flex items-center justify-between cursor-pointer p-6 list-none">
+            <span class="font-semibold text-charcoal-deep text-[15px] pr-4">Can ZenFit organize a complete tournament?</span>
+            <span class="w-8 h-8 rounded-full bg-charcoal-deep flex items-center justify-center text-accent-green shrink-0 transition-transform duration-300 group-open:rotate-45 group-open:bg-accent-green group-open:text-charcoal-deep">
+              <i class="fas fa-plus text-xs"></i>
             </span>
+          </summary>
+          <div class="px-6 pb-6 -mt-1 border-t border-charcoal-deep/6 pt-4">
+            <p class="text-text-muted text-[14px] leading-relaxed">Yes. ZenFit can support tournament planning, venue coordination, registrations, scheduling, match operations, and other event requirements.</p>
           </div>
-        </a>
+        </details>
 
-        <a href="#" class="group bg-bone-white rounded-2xl overflow-hidden border border-charcoal-deep/8 card-lift img-zoom"
-           data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-          <div class="h-48 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&auto=format&fit=crop&q=80" alt="Corporate sports Dubai guide" class="w-full h-full object-cover">
-          </div>
-          <div class="p-6">
-            <span class="text-[10px] bg-accent-green/15 text-charcoal-deep font-bold px-2.5 py-1 rounded-full">Business</span>
-            <h3 class="font-bold text-charcoal-deep mt-3 group-hover:text-accent-green transition-colors text-[15px]">Corporate Sports: Why It Matters</h3>
-            <p class="text-text-muted text-xs mt-2 leading-relaxed">How corporate sports programs improve team morale, health, and productivity in Dubai companies.</p>
-            <span class="inline-flex items-center gap-1.5 text-charcoal-deep font-semibold text-xs mt-4 group-hover:gap-2.5 transition-all duration-300">
-              Read More <i class="fas fa-arrow-right text-[9px]"></i>
+        <details class="group bg-bone-white rounded-2xl border border-charcoal-deep/8 overflow-hidden transition-colors hover:border-accent-green/40" data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">
+          <summary class="flex items-center justify-between cursor-pointer p-6 list-none">
+            <span class="font-semibold text-charcoal-deep text-[15px] pr-4">Can companies organize sports events with ZenFit?</span>
+            <span class="w-8 h-8 rounded-full bg-charcoal-deep flex items-center justify-center text-accent-green shrink-0 transition-transform duration-300 group-open:rotate-45 group-open:bg-accent-green group-open:text-charcoal-deep">
+              <i class="fas fa-plus text-xs"></i>
             </span>
+          </summary>
+          <div class="px-6 pb-6 -mt-1 border-t border-charcoal-deep/6 pt-4">
+            <p class="text-text-muted text-[14px] leading-relaxed">Yes. We organize corporate tournaments, sports days, team challenges, and other employee-focused sporting experiences.</p>
           </div>
-        </a>
+        </details>
+
+        <details class="group bg-bone-white rounded-2xl border border-charcoal-deep/8 overflow-hidden transition-colors hover:border-accent-green/40" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
+          <summary class="flex items-center justify-between cursor-pointer p-6 list-none">
+            <span class="font-semibold text-charcoal-deep text-[15px] pr-4">Do you organize events for schools and colleges?</span>
+            <span class="w-8 h-8 rounded-full bg-charcoal-deep flex items-center justify-center text-accent-green shrink-0 transition-transform duration-300 group-open:rotate-45 group-open:bg-accent-green group-open:text-charcoal-deep">
+              <i class="fas fa-plus text-xs"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 -mt-1 border-t border-charcoal-deep/6 pt-4">
+            <p class="text-text-muted text-[14px] leading-relaxed">Yes. Sports tournaments and competitions can be planned for schools, colleges, clubs, communities, and other organizations.</p>
+          </div>
+        </details>
+
+        <details class="group bg-bone-white rounded-2xl border border-charcoal-deep/8 overflow-hidden transition-colors hover:border-accent-green/40" data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
+          <summary class="flex items-center justify-between cursor-pointer p-6 list-none">
+            <span class="font-semibold text-charcoal-deep text-[15px] pr-4">Can I host my own sports event?</span>
+            <span class="w-8 h-8 rounded-full bg-charcoal-deep flex items-center justify-center text-accent-green shrink-0 transition-transform duration-300 group-open:rotate-45 group-open:bg-accent-green group-open:text-charcoal-deep">
+              <i class="fas fa-plus text-xs"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 -mt-1 border-t border-charcoal-deep/6 pt-4">
+            <p class="text-text-muted text-[14px] leading-relaxed">Yes. Tell us about your sport, date, participants, and requirements, and our team can help plan the event.</p>
+          </div>
+        </details>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══════════ FINAL CTA ═══════════ -->
-  <section class="relative py-20 lg:py-28 overflow-hidden">
-    <div class="absolute inset-0 blur-sm brightness-100 saturate-90 contrast-90 pointer-events-none">
-        <img src="images/newai/football2.jpg" alt="Football players in action and handshake moment" class="w-full h-full object-cover " />
+
+<!-- ═══════════ FINAL CTA ═══════════ -->
+<section class="relative py-24 lg:py-28 overflow-hidden bg-charcoal-deep">
+  <!-- Background image -->
+  <div class="absolute inset-0 pointer-events-none">
+    <img src="images/newai/football2.jpg" alt="Football players in action" class="w-full h-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-deep via-charcoal-deep/70 to-charcoal-deep/85"></div>
+  </div>
+
+  <div class="absolute inset-0 anim-field-grid opacity-25 pointer-events-none"></div>
+  <div class="absolute -top-40 left-[15%] w-96 h-[800px] bg-gradient-to-b from-accent-sand/15 to-transparent blur-2xl anim-light-sweep pointer-events-none"></div>
+  <div class="absolute -top-40 right-[15%] w-96 h-[800px] bg-gradient-to-b from-accent-green/10 to-transparent blur-2xl anim-light-sweep pointer-events-none" style="animation-delay: 5s;"></div>
+
+  <div class="relative max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+    <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-accent-sand mb-4" data-aos="fade-up" data-aos-duration="600">10 / Ready When You Are</p>
+    <h2 class="text-3xl md:text-[48px] font-black text-white tracking-tight leading-tight"
+        data-aos="zoom-in" data-aos-duration="800">
+      Ready to Play <br><span class="text-accent-green">in Dubai?</span>
+    </h2>
+    <p class="text-text-light mt-6 text-[15px] max-w-lg mx-auto leading-relaxed"
+       data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+      Join 15,000+ athletes already using ZenFit.ae to find venues, join communities, and play the sports they love.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3.5 justify-center mt-9"
+         data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+      <a href="/contact.html" class="bg-accent-green text-charcoal-deep font-bold px-8 py-4 rounded-xl hover:bg-white transition-all duration-300 inline-flex items-center justify-center gap-2 text-sm">
+        <i class="fas fa-user-plus"></i> Contact Us
+      </a>
+      <a href="#venues" class="border-2 border-white/25 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-all duration-300 inline-flex items-center justify-center gap-2 text-sm">
+        <i class="fas fa-compass"></i> Explore Venues
+      </a>
     </div>
-
-    <div class="absolute inset-0 anim-mesh opacity-25 pointer-events-none"></div>
-
-    <div class="absolute top-10 right-10 w-3 h-3 rounded-full bg-accent-green/30 anim-radar"></div>
-    <div class="absolute top-10 right-10 w-3 h-3 rounded-full bg-accent-green/30 anim-radar" style="animation-delay: 1.5s;"></div>
-
-    <div class="relative max-w-3xl mx-auto px-5 py-10 sm:px-6 lg:px-8 text-center bg-black/40" rounded-md>
-      <h2 class="text-3xl md:text-[44px] font-black text-white tracking-tight leading-tight"
-          data-aos="zoom-in" data-aos-duration="800">Ready to Play in Dubai?</h2>
-      <p class="text-text-light mt-5 text-[15px] max-w-lg mx-auto leading-relaxed"
-         data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
-        Join 15,000+ athletes already using ZenFit.ae to find venues, join communities, and play the sports they love.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3.5 justify-center mt-9"
-           data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
-        <a href="#" class="bg-accent-green text-charcoal-deep font-bold px-8 py-4 rounded-xl hover:bg-white transition-all duration-300 inline-flex items-center justify-center gap-2 text-sm">
-          <i class="fas fa-user-plus"></i> Sign Up Free
-        </a>
-        <a href="#" class="border-2 border-white/30 text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-all duration-300 inline-flex items-center justify-center gap-2 text-sm">
-          <i class="fas fa-compass"></i> Explore Venues
-        </a>
-      </div>
-      <p class="text-text-light/70 text-xs mt-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
-        <i class="fas fa-check-circle mr-1.5 text-accent-green"></i> No credit card required • Free forever
-      </p>
-    </div>
-  </section>
+    <p class="text-text-light/60 text-xs mt-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+      <i class="fas fa-check-circle mr-1.5 text-accent-green"></i> Free to join • Dubai-wide venues • Multi-sport community
+    </p>
+  </div>
+</section>
 
   <!-- ═══════════ FOOTER ═══════════ -->
    <footer class="bg-charcoal-deep pt-16 pb-8">
