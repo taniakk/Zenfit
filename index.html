@@ -1089,12 +1089,19 @@
 </section>
 
 <!-- ═══════════ WHY CHOOSE ZENFIT ═══════════ -->
-<section id="why" class="relative py-20 lg:py-28 bg-bone-warm overflow-hidden">
-  <div class="absolute inset-0 pointer-events-none opacity-[0.3]" style="background-image: radial-gradient(rgba(11,21,16,0.06) 1px, transparent 1px); background-size: 22px 22px;"></div>
+<section id="why" class="relative py-20 lg:py-28 bg-bone overflow-hidden">
+  <!-- Subtle dotted texture -->
+  <div class="absolute inset-0 pointer-events-none opacity-[0.28]" style="background-image: radial-gradient(rgba(11,21,16,0.06) 1px, transparent 1px); background-size: 22px 22px;"></div>
+
+  <!-- Soft green ambient glow -->
+  <div class="absolute -top-32 -left-24 w-[600px] h-[600px] rounded-full bg-accent-green/8 blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-[#2E7D32]/6 blur-3xl pointer-events-none"></div>
 
   <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+    <!-- Header -->
     <div class="max-w-3xl mb-14" data-aos="fade-up" data-aos-duration="800">
-      <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#2E7D32] mb-3">Why ZenFit</p>
+      <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-[#2E7D32] mb-3">05 / Why ZenFit</p>
       <h2 class="text-3xl md:text-[46px] font-black text-charcoal-deep tracking-tight leading-[1.08]">
         Built for events that <br class="hidden md:block">actually <span class="text-accent-green">deliver.</span>
       </h2>
@@ -1103,112 +1110,214 @@
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-6 gap-4">
-      <!-- Card 1 — large, accent color -->
-      <div class="lg:col-span-3 relative bg-[#2E7D32] rounded-3xl p-8 lg:p-10 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700">
-        <div class="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-accent-green/20 blur-3xl pointer-events-none"></div>
-        <div class="relative">
-          <div class="flex items-center justify-between mb-8">
-            <span class="text-[10px] font-bold text-accent-green tracking-[0.24em] uppercase">01 — End-to-End</span>
-            <div class="w-11 h-11 rounded-xl bg-accent-green flex items-center justify-center text-charcoal-deep">
-              <i class="fas fa-clipboard-check text-base"></i>
-            </div>
+    <!-- Grid — 3 columns, equal cards -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Card 1 — End-to-End Support (GREEN) -->
+      <div class="group relative bg-[#2E7D32] rounded-2xl p-7 lg:p-8 overflow-hidden card-lift h-full flex flex-col" data-aos="fade-up" data-aos-duration="700">
+        <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-accent-green/20 blur-3xl pointer-events-none"></div>
+        <div class="absolute inset-0 pointer-events-none" style="background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+        <div class="relative flex-1 flex flex-col">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-accent-green flex items-center justify-center text-charcoal-deep mb-7">
+            <i class="fas fa-clipboard-check text-lg"></i>
           </div>
-          <h3 class="text-2xl md:text-3xl font-black text-white tracking-tight leading-tight">
-            One team for the <br>whole event.
-          </h3>
-          <p class="text-white/80 text-sm mt-4 leading-relaxed max-w-md">
-            Coordination, planning, communication, on-ground logistics — handled by a single point of contact.
-          </p>
-          <div class="flex flex-wrap gap-2 mt-7">
-            <span class="text-[11px] bg-white/12 border border-white/15 text-white px-3 py-1.5 rounded-full">Planning</span>
-            <span class="text-[11px] bg-white/12 border border-white/15 text-white px-3 py-1.5 rounded-full">Scheduling</span>
-            <span class="text-[11px] bg-white/12 border border-white/15 text-white px-3 py-1.5 rounded-full">Coordination</span>
+
+          <!-- Content -->
+          <div class="flex-1">
+            <p class="text-[10px] font-bold text-accent-green tracking-[0.24em] uppercase mb-2">01 — End-to-End</p>
+            <h3 class="text-xl font-black text-white tracking-tight leading-snug">
+              One team for the whole event.
+            </h3>
+            <p class="text-white/75 text-sm mt-3 leading-relaxed">
+              Coordination, planning, communication and on-ground logistics — handled by a single point of contact.
+            </p>
+          </div>
+
+          <!-- Footer tags -->
+          <div class="flex flex-wrap gap-2 mt-6 pt-5 border-t border-white/15">
+            <span class="text-[10px] bg-white/10 border border-white/15 text-white px-2.5 py-1 rounded-full">Planning</span>
+            <span class="text-[10px] bg-white/10 border border-white/15 text-white px-2.5 py-1 rounded-full">Scheduling</span>
+            <span class="text-[10px] bg-white/10 border border-white/15 text-white px-2.5 py-1 rounded-full">Coordination</span>
           </div>
         </div>
       </div>
 
-      <!-- Card 2 — large, light -->
-      <div class="lg:col-span-3 relative bg-bone-white rounded-3xl p-8 lg:p-10 border border-charcoal-deep/8 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+      <!-- Card 2 — Multi-Sport (DARK) -->
+      <div class="group relative bg-charcoal-deep rounded-2xl p-7 lg:p-8 overflow-hidden card-lift h-full flex flex-col" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-accent-green/12 blur-3xl pointer-events-none"></div>
+        <div class="absolute inset-0 pointer-events-none" style="background-image: radial-gradient(rgba(165,214,106,0.08) 1px, transparent 1px); background-size: 20px 20px;"></div>
+
+        <div class="relative flex-1 flex flex-col">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-accent-green/15 border border-accent-green/25 flex items-center justify-center text-accent-green mb-7">
+            <i class="fas fa-layer-group text-lg"></i>
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1">
+            <p class="text-[10px] font-bold text-accent-green tracking-[0.24em] uppercase mb-2">02 — Multiple Sports</p>
+            <h3 class="text-xl font-black text-white tracking-tight leading-snug">
+              Eight sports. One standard.
+            </h3>
+            <p class="text-text-light text-sm mt-3 leading-relaxed">
+              Cricket, football, badminton, padel, tennis, basketball, volleyball, running — all organized the same way.
+            </p>
+          </div>
+
+          <!-- Sport icons row -->
+          <div class="flex flex-wrap gap-1.5 mt-6 pt-5 border-t border-white/10">
+            <span class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-text-light hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300">
+              <i class="fas fa-baseball-ball text-[11px]"></i>
+            </span>
+            <span class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-text-light hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300">
+              <i class="fas fa-futbol text-[11px]"></i>
+            </span>
+            <span class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-text-light hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300">
+              <i class="fas fa-table-tennis text-[11px]"></i>
+            </span>
+            <span class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-text-light hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300">
+              <i class="fas fa-running text-[11px]"></i>
+            </span>
+            <span class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-text-light hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300">
+              <i class="fas fa-basketball-ball text-[11px]"></i>
+            </span>
+            <span class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-text-light hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300">
+              <i class="fas fa-volleyball-ball text-[11px]"></i>
+            </span>
+            <span class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-text-light hover:bg-accent-green hover:text-charcoal-deep transition-all duration-300">
+              <i class="fas fa-bolt text-[11px]"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Community Driven (LIGHT) -->
+      <div class="group relative bg-bone-white rounded-2xl p-7 lg:p-8 border border-charcoal-deep/8 overflow-hidden card-lift h-full flex flex-col" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
         <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#2E7D32] via-accent-green to-transparent"></div>
-        <div class="flex items-center justify-between mb-8">
-          <span class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase">02 — Multiple Sports</span>
-          <div class="w-11 h-11 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green">
-            <i class="fas fa-layer-group text-base"></i>
+
+        <div class="relative flex-1 flex flex-col">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green mb-7">
+            <i class="fas fa-users text-lg"></i>
           </div>
-        </div>
-        <h3 class="text-2xl md:text-3xl font-black text-charcoal-deep tracking-tight leading-tight">
-          Eight sports. <br>One standard.
-        </h3>
-        <p class="text-text-muted text-sm mt-4 leading-relaxed">
-          Cricket, football, badminton, padel, tennis, basketball, volleyball, running — organized with the same professional approach.
-        </p>
-        <div class="grid grid-cols-4 gap-2 mt-7">
-          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
-            <i class="fas fa-baseball-ball text-base"></i>
+
+          <!-- Content -->
+          <div class="flex-1">
+            <p class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase mb-2">03 — Community</p>
+            <h3 class="text-xl font-black text-charcoal-deep tracking-tight leading-snug">
+              Community driven.
+            </h3>
+            <p class="text-text-muted text-sm mt-3 leading-relaxed">
+              Players, teams, organizers and communities — connected under one platform for the long term.
+            </p>
           </div>
-          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
-            <i class="fas fa-futbol text-base"></i>
-          </div>
-          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
-            <i class="fas fa-table-tennis text-base"></i>
-          </div>
-          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
-            <i class="fas fa-running text-base"></i>
-          </div>
-          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
-            <i class="fas fa-basketball-ball text-base"></i>
-          </div>
-          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
-            <i class="fas fa-volleyball-ball text-base"></i>
-          </div>
-          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
-            <i class="fas fa-baseball text-base"></i>
-          </div>
-          <div class="aspect-square rounded-xl bg-bone border border-charcoal-deep/8 flex items-center justify-center text-charcoal-deep hover:bg-[#2E7D32] hover:text-white transition-all duration-300">
-            <i class="fas fa-bolt text-base"></i>
-          </div>
+
+          <!-- Footer link -->
+          <a href="#communities" class="inline-flex items-center gap-2 text-[#2E7D32] font-semibold text-xs mt-6 pt-5 border-t border-charcoal-deep/8 hover:gap-3 transition-all duration-300">
+            Explore communities <i class="fas fa-arrow-right text-[10px]"></i>
+          </a>
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="lg:col-span-2 relative bg-bone-white rounded-3xl p-7 border border-charcoal-deep/8 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700">
-        <div class="flex items-center justify-between mb-6">
-          <span class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase">03</span>
-          <div class="w-10 h-10 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green">
-            <i class="fas fa-users text-sm"></i>
-          </div>
-        </div>
-        <h3 class="text-lg font-bold text-charcoal-deep tracking-tight leading-snug">Community Driven</h3>
-        <p class="text-text-muted text-sm mt-2 leading-relaxed">Players, teams, organizers, and communities — connected under one platform.</p>
-      </div>
+      <!-- Card 4 — Coordination (LIGHT) -->
+      <div class="group relative bg-bone-white rounded-2xl p-7 lg:p-8 border border-charcoal-deep/8 overflow-hidden card-lift h-full flex flex-col" data-aos="fade-up" data-aos-duration="700">
+        <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#2E7D32] to-transparent"></div>
 
-      <!-- Card 4 -->
-      <div class="lg:col-span-2 relative bg-bone-white rounded-3xl p-7 border border-charcoal-deep/8 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
-        <div class="flex items-center justify-between mb-6">
-          <span class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase">04</span>
-          <div class="w-10 h-10 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green">
-            <i class="fas fa-diagram-project text-sm"></i>
+        <div class="relative flex-1 flex flex-col">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green mb-7">
+            <i class="fas fa-diagram-project text-lg"></i>
           </div>
-        </div>
-        <h3 class="text-lg font-bold text-charcoal-deep tracking-tight leading-snug">Professional Coordination</h3>
-        <p class="text-text-muted text-sm mt-2 leading-relaxed">Structured planning, registrations, scheduling, and on-ground event support.</p>
-      </div>
 
-      <!-- Card 5 -->
-      <div class="lg:col-span-2 relative bg-accent-sand rounded-3xl p-7 overflow-hidden card-lift" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-        <div class="absolute -bottom-16 -right-16 w-52 h-52 rounded-full bg-white/20 blur-3xl pointer-events-none"></div>
-        <div class="relative">
-          <div class="flex items-center justify-between mb-6">
-            <span class="text-[10px] font-bold text-charcoal-deep/70 tracking-[0.24em] uppercase">05</span>
-            <div class="w-10 h-10 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-sand">
-              <i class="fas fa-heart text-sm"></i>
+          <!-- Content -->
+          <div class="flex-1">
+            <p class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase mb-2">04 — Coordination</p>
+            <h3 class="text-xl font-black text-charcoal-deep tracking-tight leading-snug">
+              Professional coordination.
+            </h3>
+            <p class="text-text-muted text-sm mt-3 leading-relaxed">
+              Structured planning, registrations, scheduling and on-ground event support — every time.
+            </p>
+          </div>
+
+          <!-- Footer detail -->
+          <div class="mt-6 pt-5 border-t border-charcoal-deep/8">
+            <div class="flex items-center gap-2 text-[11px] text-text-muted">
+              <i class="fas fa-check-circle text-[#2E7D32]"></i>
+              <span>Structured event workflows</span>
             </div>
           </div>
-          <h3 class="text-lg font-bold text-charcoal-deep tracking-tight leading-snug">Experiences That Connect</h3>
-          <p class="text-charcoal-deep/75 text-sm mt-2 leading-relaxed">We don't just organize games — we build the moments that turn players into communities.</p>
         </div>
       </div>
+
+      <!-- Card 5 — Experiences (DARK GREEN / MID) -->
+      <div class="group relative bg-charcoal-mid rounded-2xl p-7 lg:p-8 border border-white/6 overflow-hidden card-lift h-full flex flex-col" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+        <div class="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-accent-green/10 blur-3xl pointer-events-none"></div>
+
+        <div class="relative flex-1 flex flex-col">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-accent-green flex items-center justify-center text-charcoal-deep mb-7">
+            <i class="fas fa-heart text-lg"></i>
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1">
+            <p class="text-[10px] font-bold text-accent-green tracking-[0.24em] uppercase mb-2">05 — Experience</p>
+            <h3 class="text-xl font-black text-white tracking-tight leading-snug">
+              Experiences that connect.
+            </h3>
+            <p class="text-text-light text-sm mt-3 leading-relaxed">
+              We don't just organize games — we build the moments that turn players into communities.
+            </p>
+          </div>
+
+          <!-- Footer stats -->
+          <div class="mt-6 pt-5 border-t border-white/10 flex items-center gap-4">
+            <div>
+              <p class="text-xl font-black text-white">120+</p>
+              <p class="text-[10px] text-text-muted uppercase tracking-wider">Events hosted</p>
+            </div>
+            <div class="w-px h-8 bg-white/10"></div>
+            <div>
+              <p class="text-xl font-black text-white">850+</p>
+              <p class="text-[10px] text-text-muted uppercase tracking-wider">Players</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 — Dubai Connected (LIGHT) -->
+      <div class="group relative bg-bone-white rounded-2xl p-7 lg:p-8 border border-charcoal-deep/8 overflow-hidden card-lift h-full flex flex-col" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+        <div class="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#2E7D32] to-transparent"></div>
+
+        <div class="relative flex-1 flex flex-col">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-charcoal-deep flex items-center justify-center text-accent-green mb-7">
+            <i class="fas fa-map-marked-alt text-lg"></i>
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1">
+            <p class="text-[10px] font-bold text-[#2E7D32] tracking-[0.24em] uppercase mb-2">06 — Location</p>
+            <h3 class="text-xl font-black text-charcoal-deep tracking-tight leading-snug">
+              Dubai connected.
+            </h3>
+            <p class="text-text-muted text-sm mt-3 leading-relaxed">
+              Built around Dubai's diverse sports communities, venues and activities — citywide.
+            </p>
+          </div>
+
+          <!-- Footer locations -->
+          <div class="flex flex-wrap gap-1.5 mt-6 pt-5 border-t border-charcoal-deep/8">
+            <span class="text-[10px] bg-bone text-text-muted px-2.5 py-1 rounded-full border border-charcoal-deep/8">Al Quoz</span>
+            <span class="text-[10px] bg-bone text-text-muted px-2.5 py-1 rounded-full border border-charcoal-deep/8">Marina</span>
+            <span class="text-[10px] bg-bone text-text-muted px-2.5 py-1 rounded-full border border-charcoal-deep/8">+ more</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
