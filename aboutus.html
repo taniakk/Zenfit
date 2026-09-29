@@ -217,41 +217,35 @@
 <body class="bg-bone text-charcoal-mid">
 
 <!-- ═══════════ TOP RIBBON ═══════════ -->
-<div class="fixed top-0 left-0 right-0 z-[60] bg-charcoal-mid border-b border-white/6 h-10">
+<div class="fixed top-0 left-0 right-0 z-[60] bg-charcoal-mid border-b border-white/6 h-10 overflow-hidden">
   <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 h-full">
-    <div class="flex items-center justify-between h-full text-[11px] sm:text-xs">
+    <div class="flex items-center justify-between h-full text-[11px] sm:text-xs gap-3 min-w-0">
 
       <!-- Left — Contact info -->
-      <div class="flex items-center gap-3 sm:gap-4">
+      <div class="flex items-center gap-3 sm:gap-4 min-w-0 flex-1">
 
         <!-- Phone -->
-        <a href="tel:+971582657975" class="flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group">
+        <a href="tel:+971582657975" class="flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group shrink-0">
           <i class="fas fa-phone-alt text-accent-green text-[10px] group-hover:scale-110 transition-transform"></i>
-          <span class="font-medium tracking-wide">058 265 7975</span>
+          <span class="font-medium tracking-wide whitespace-nowrap">058 265 7975</span>
         </a>
 
-        <span class="hidden md:block w-px h-3 bg-white/10"></span>
+        <span class="hidden md:block w-px h-3 bg-white/10 shrink-0"></span>
 
         <!-- Email -->
-        <a href="mailto:team@zenfit.ae" class="hidden md:flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group">
+        <a href="mailto:team@zenfit.ae" class="hidden md:flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group shrink-0">
           <i class="fas fa-envelope text-accent-green text-[10px] group-hover:scale-110 transition-transform"></i>
-          <span class="font-medium tracking-wide">team@zenfit.ae</span>
+          <span class="font-medium tracking-wide whitespace-nowrap">team@zenfit.ae</span>
         </a>
 
-        <span class="hidden lg:block w-px h-3 bg-white/10"></span>
+        <span class="hidden lg:block w-px h-3 bg-white/10 shrink-0"></span>
 
-        <!-- Address -->
-        <a href="https://maps.google.com/?q=Aspin+Commercial+Tower,+106+Sheikh+Zayed+Rd,+Dubai,+UAE"
-           target="_blank" rel="noopener"
-           class="hidden lg:flex items-center gap-1.5 text-text-light hover:text-accent-green transition-colors duration-200 group">
-          <i class="fas fa-map-marker-alt text-accent-green text-[10px] group-hover:scale-110 transition-transform"></i>
-          <span class="font-medium tracking-wide">Aspin Commercial Tower, 106 Sheikh Zayed Rd, Dubai</span>
-        </a>
+       
 
       </div>
 
       <!-- Right — Social icons -->
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 shrink-0">
         <a href="https://instagram.com/zenfit.ae" target="_blank" rel="noopener"
            aria-label="ZenFit on Instagram"
            class="w-6 h-6 rounded-full bg-white/5 border border-white/8 flex items-center justify-center text-text-muted hover:text-accent-green hover:border-accent-green/40 hover:bg-accent-green/10 transition-all duration-200">
@@ -274,9 +268,9 @@
 </div>
 
 <!-- ═══════════ NAVBAR ═══════════ -->
-<header id="navbar" class="fixed top-10 left-0 right-0 z-50 py-4 transition-all duration-500 ease-premium">
+<header id="navbar" class="fixed top-10 left-0 right-0 z-50 py-4 transition-all duration-500 ease-premium overflow-hidden">
   <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center gap-4 min-w-0">
 
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2.5 group shrink-0">
@@ -284,22 +278,22 @@
           <span class="text-charcoal-deep font-black text-base">Z</span>
         </div>
         <div class="flex flex-col leading-none">
-          <span class="text-lg font-bold text-white tracking-tight">
+          <span class="text-lg font-bold text-white tracking-tight whitespace-nowrap">
             Zen<span class="text-accent-green">Fit</span><span class="text-white">.ae</span>
           </span>
-          <span class="text-[9px] text-text-muted tracking-[0.2em] uppercase mt-0.5 font-medium">Dubai Sports</span>
+          <span class="text-[9px] text-text-muted tracking-[0.2em] uppercase mt-0.5 font-medium whitespace-nowrap">Dubai Sports</span>
         </div>
       </a>
 
       <!-- Desktop Nav — evenly spaced -->
-      <nav class="hidden lg:flex items-center gap-8 xl:gap-10">
-        <a href="/" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Home</a>
-        <a href="aboutus.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">About</a>
-        <a href="#events" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Events</a>
-        <a href="registrations.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Registrations</a>
-        <a href="whatwedo.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">What We Do</a>
-        <a href="#venues" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Our Venues</a>
-        <a href="/contact.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200">Contact</a>
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 min-w-0">
+        <a href="/" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Home</a>
+        <a href="aboutus.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">About</a>
+        <a href="#events" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Events</a>
+        <a href="registrations.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Registrations</a>
+        <a href="whatwedo.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">What We Do</a>
+        <a href="#venues" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Our Venues</a>
+        <a href="/contact.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Contact</a>
       </nav>
 
       <!-- Mobile menu button -->
@@ -449,33 +443,39 @@
 </script>
 
   <main>
-    <section class="relative overflow-hidden pt-36 pb-16 sm:pt-40 lg:pt-44 bg-charcoal-deep">
-      <div class="absolute inset-0">
-        <img src="images/newai/football2.jpg" alt="Football training and community match play" class="w-full h-full object-cover opacity-90" />
-        <div class="absolute inset-0 bg-gradient-to-r from-charcoal-deep via-charcoal-mid/85 to-charcoal-deep/70"></div>
-      </div>
+  <section class="relative overflow-hidden pt-32 pb-20 sm:pt-36 lg:pt-40 bg-charcoal-deep">
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <img src="images/newai/football2.jpg" alt="Football training and community match play" class="w-full h-full object-cover opacity-85" />
+    <div class="absolute inset-0 bg-gradient-to-r from-charcoal-deep via-charcoal-mid/85 to-charcoal-deep/70"></div>
+    <!-- Subtle field grid overlay -->
+    <div class="absolute inset-0 anim-field-grid opacity-20 pointer-events-none"></div>
+  </div>
 
-      <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="800">
-          <p class="section-label mb-5">About ZenFit</p>
-          <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-white leading-[1.02]">
-            We turn sport into<br>
-            <span class="text-accent-green">connection, energy, and growth.</span>
-          </h1>
-          <p class="mt-6 max-w-xl text-base sm:text-lg text-text-light leading-relaxed">
-            ZenFit.ae brings together Dubai’s athletes, communities, and teams through memorable experiences designed to move people, challenge limits, and build lasting friendships.
-          </p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <a href="#story" class="inline-flex items-center gap-2 bg-accent-green text-charcoal-deep px-6 py-3 rounded-full font-bold hover:bg-white transition-all duration-300">
-              Our Story <i class="fas fa-arrow-right text-xs"></i>
-            </a>
-            <a href="#mission" class="inline-flex items-center gap-2 border border-white/15 bg-white/5 text-white px-6 py-3 rounded-full font-semibold hover:border-accent-green/40 hover:text-accent-green transition-all duration-300">
-              Mission & Vision
-            </a>
-          </div>
-        </div>
+  <!-- Ambient glow -->
+  <div class="absolute -top-32 -right-20 w-[500px] h-[500px] rounded-full bg-accent-green/8 blur-3xl pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+    <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="800">
+      <p class="text-[11px] font-bold tracking-[0.22em] uppercase text-accent-green mb-5">About ZenFit</p>
+      <h1 class="text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-black tracking-tight text-white leading-[1.04]">
+        We turn sport into<br>
+        <span class="text-accent-green">connection, energy, and growth.</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-[15px] sm:text-[17px] text-text-light leading-relaxed">
+        ZenFit.ae brings together Dubai's athletes, communities, and teams through memorable experiences designed to move people, challenge limits, and build lasting friendships.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#story" class="inline-flex items-center gap-2 bg-accent-green text-charcoal-deep px-6 py-3.5 rounded-xl font-bold hover:bg-white transition-all duration-300 text-sm">
+          Our Story <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <a href="#mission" class="inline-flex items-center gap-2 border border-white/20 text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-white/5 transition-all duration-300 text-sm">
+          Mission &amp; Vision
+        </a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <section id="story" class="py-20 sm:py-24">
       <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
