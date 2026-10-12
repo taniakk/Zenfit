@@ -199,12 +199,13 @@
       opacity: 1;
       pointer-events: auto;
     }
-    #navbar.scrolled {
-      background-color: rgba(20, 20, 20, 0.85);
+    #navbar.scrolled, #navbar.nav-scrolled {
+      background-color: rgba(7, 16, 12, 0.95) !important;
       backdrop-filter: blur(12px);
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 0.65rem;
+      padding-bottom: 0.65rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
     }
     #navbar {
       background-color: transparent;
@@ -280,7 +281,7 @@
     <div class="flex justify-between items-center gap-4 min-w-0">
 
       <!-- Logo -->
-      <a href="/" class="flex items-center gap-2.5 group shrink-0">
+      <a href="index.html" class="flex items-center gap-2.5 group shrink-0">
         <div class="w-9 h-9 rounded-lg bg-accent-green flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
           <span class="text-charcoal-deep font-black text-base">Z</span>
         </div>
@@ -293,14 +294,16 @@
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 min-w-0">
-        <a href="/" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Home</a>
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-6 min-w-0">
+        <a href="index.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Home</a>
         <a href="aboutus.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">About</a>
-        <a href="#events" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Events</a>
+        <a href="events-activations.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Events & Activations</a>
+        <a href="corporate-team-building.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Team Building</a>
+        <a href="sports-tournaments.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Tournaments</a>
+        <a href="brand-activations.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Brand Activations</a>
         <a href="registrations.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Registrations</a>
-        <a href="whatwedo.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">What We Do</a>
-        <a href="#venues" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Our Venues</a>
-        <a href="/contact.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Contact</a>
+        <a href="whatwedo.html" class="text-[13px] font-medium text-accent-green hover:text-white transition-colors duration-200 whitespace-nowrap">What We Do</a>
+        <a href="contact.html" class="text-[13px] font-medium text-text-light hover:text-white transition-colors duration-200 whitespace-nowrap">Contact</a>
       </nav>
 
       <!-- Mobile menu button -->
@@ -312,13 +315,15 @@
     <!-- MOBILE MENU PANEL -->
     <div id="mobile-menu" class="mobile-menu lg:hidden mt-4 rounded-2xl bg-[#1a1a1a]/95 backdrop-blur-xl border border-white/10 shadow-2xl">
       <nav class="flex flex-col p-4 space-y-1">
-        <a href="/" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Home</a>
-        <a href="aboutus.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">About</a>
-        <a href="#events" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Events</a>
-        <a href="registrations.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Registrations</a>
-        <a href="whatwedo.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">What We Do</a>
-        <a href="#venues" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Our Venues</a>
-        <a href="/contact.html" class="mobile-link px-4 py-3 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Contact</a>
+        <a href="index.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Home</a>
+        <a href="aboutus.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">About</a>
+        <a href="events-activations.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Events & Activations</a>
+        <a href="corporate-team-building.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Team Building</a>
+        <a href="sports-tournaments.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Tournaments</a>
+        <a href="brand-activations.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Brand Activations</a>
+        <a href="registrations.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Registrations</a>
+        <a href="whatwedo.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-accent-green hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">What We Do</a>
+        <a href="contact.html" class="mobile-link px-4 py-2.5 text-[15px] font-medium text-text-light hover:text-white rounded-xl hover:bg-white/5 transition-all duration-200">Contact</a>
       </nav>
     </div>
   </div>
@@ -759,7 +764,7 @@
           </div>
           <span class="text-lg font-bold text-white">ZenFit<span class="text-accent-green">.ae</span></span>
         </div>
-        <p class="text-text-muted text-sm leading-relaxed max-w-sm">Dubai's premier sports community platform. Discover venues, join communities, and play the sports you love — all in one place.</p>
+        <p class="text-text-muted text-sm leading-relaxed max-w-sm">Dubai's premier sports community & events activation platform. Discover venues, corporate team building, tournaments & brand activations across the UAE.</p>
         <div class="flex gap-3 mt-6">
           <a href="https://instagram.com/zenfit.ae" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center text-text-muted hover:text-accent-green hover:border-accent-green/30 transition-all duration-300"><i class="fab fa-instagram text-sm"></i></a>
           <a href="https://linkedin.com/company/zenfit-ae" target="_blank" rel="noopener" class="w-9 h-9 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center text-text-muted hover:text-accent-green hover:border-accent-green/30 transition-all duration-300"><i class="fab fa-linkedin-in text-sm"></i></a>
@@ -768,13 +773,13 @@
       </div>
 
       <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-        <h4 class="text-white font-semibold mb-4 text-xs uppercase tracking-wider">Sports</h4>
+        <h4 class="text-white font-semibold mb-4 text-xs uppercase tracking-wider">Events & Sports</h4>
         <ul class="space-y-2.5 text-sm">
-          <li><a href="#sports" class="text-text-muted hover:text-accent-green transition-colors">Cricket</a></li>
-          <li><a href="#sports" class="text-text-muted hover:text-accent-green transition-colors">Football</a></li>
-          <li><a href="#sports" class="text-text-muted hover:text-accent-green transition-colors">Tennis</a></li>
-          <li><a href="#sports" class="text-text-muted hover:text-accent-green transition-colors">Volleyball</a></li>
-          <li><a href="#sports" class="text-text-muted hover:text-accent-green transition-colors">Badminton</a></li>
+          <li><a href="events-activations.html" class="text-text-muted hover:text-accent-green transition-colors">Events & Activations</a></li>
+          <li><a href="corporate-team-building.html" class="text-text-muted hover:text-accent-green transition-colors">Team Building</a></li>
+          <li><a href="sports-tournaments.html" class="text-text-muted hover:text-accent-green transition-colors">Sports Tournaments</a></li>
+          <li><a href="brand-activations.html" class="text-text-muted hover:text-accent-green transition-colors">Brand Activations</a></li>
+          <li><a href="registrations.html" class="text-text-muted hover:text-accent-green transition-colors">Event Registrations</a></li>
         </ul>
       </div>
 
@@ -783,28 +788,28 @@
         <ul class="space-y-2.5 text-sm">
           <li><a href="aboutus.html" class="text-text-muted hover:text-accent-green transition-colors">About ZenFit</a></li>
           <li><a href="whatwedo.html" class="text-text-muted hover:text-accent-green transition-colors">What We Do</a></li>
-          <li><a href="index.html#venues" class="text-text-muted hover:text-accent-green transition-colors">Venues</a></li>
+          <li><a href="index.html#venues" class="text-text-muted hover:text-accent-green transition-colors">Our Venues</a></li>
           <li><a href="index.html#communities" class="text-text-muted hover:text-accent-green transition-colors">Communities</a></li>
-          <li><a href="index.html#events" class="text-text-muted hover:text-accent-green transition-colors">Events</a></li>
+          <li><a href="contact.html" class="text-text-muted hover:text-accent-green transition-colors">Contact Us</a></li>
         </ul>
       </div>
 
       <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-        <h4 class="text-white font-semibold mb-4 text-xs uppercase tracking-wider">Support</h4>
+        <h4 class="text-white font-semibold mb-4 text-xs uppercase tracking-wider">Contact & Support</h4>
         <ul class="space-y-2.5 text-sm">
-          <li><a href="#" class="text-text-muted hover:text-accent-green transition-colors">Help Center</a></li>
-          <li><a href="/contact.html" class="text-text-muted hover:text-accent-green transition-colors">Contact Us</a></li>
-          <li><a href="#" class="text-text-muted hover:text-accent-green transition-colors">Privacy Policy</a></li>
-          <li><a href="#" class="text-text-muted hover:text-accent-green transition-colors">Terms of Service</a></li>
+          <li><a href="tel:+971582657975" class="text-text-muted hover:text-accent-green transition-colors"><i class="fas fa-phone-alt text-accent-green mr-1.5 text-xs"></i> 058 265 7975</a></li>
+          <li><a href="https://wa.me/971582657975" target="_blank" rel="noopener" class="text-text-muted hover:text-accent-green transition-colors"><i class="fab fa-whatsapp text-accent-green mr-1.5 text-xs"></i> WhatsApp Direct</a></li>
+          <li><a href="mailto:team@zenfit.ae" class="text-text-muted hover:text-accent-green transition-colors"><i class="fas fa-envelope text-accent-green mr-1.5 text-xs"></i> team@zenfit.ae</a></li>
+          <li><a href="contact.html" class="text-text-muted hover:text-accent-green transition-colors">Book An Event</a></li>
         </ul>
       </div>
     </div>
 
     <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-muted">
-      <p>© 2025 ZenFit.ae — Dubai's Premier Sports Community. All rights reserved.</p>
+      <p>© 2026 ZenFit.ae — Dubai's Premier Sports & Event Activations Platform. All rights reserved.</p>
       <div class="flex items-center gap-5">
         <span><i class="fas fa-map-marker-alt text-accent-green mr-1.5"></i> Dubai, UAE</span>
-        <span><i class="fas fa-envelope text-accent-green mr-1.5"></i> hello@zenfit.ae</span>
+        <a href="tel:+971582657975" class="hover:text-accent-green transition-colors"><i class="fas fa-phone-alt text-accent-green mr-1.5"></i> 058 265 7975</a>
       </div>
     </div>
   </div>
